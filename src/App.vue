@@ -40,7 +40,7 @@ export default {
   --bg-secondary: #EB5E28;
   --bg-tertiary: #FEC007;
   --bg-forth: #FBF4F4;
-  --brand-color: #04cbff
+  --brand-color: #021444
 }
 
  
