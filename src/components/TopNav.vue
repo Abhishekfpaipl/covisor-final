@@ -18,7 +18,7 @@
             </div> -->
             <div class="btn border d-flex justify-content-center align-items-center gap-2" @click="openDialer()">
                 <i class="bi bi-telephone text-white fs-4"></i>
-                <span class="text-white">Contact Sales</span>
+                <span class="text-white d-none d-md-block">Contact Sales</span>
             </div>
             <!-- <router-link v-if="showOnDemo && !showOnFree" to="/free-trial"
                 class="text-decoration-none btn btn-danger rounded p-2 border px-2 ms-2">
