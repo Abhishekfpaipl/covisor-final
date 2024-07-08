@@ -107,496 +107,496 @@ export default {
     name: "PriceSection",
     data() {
         return {
-            // pricing: [
-            //     {
-            //         id: 2,
-            //         name: "Digital Marketing",
-            //         description: "This is a basic plan",
-            //         plans: [
-            //             {
-            //                 id: 1,
-            //                 name: "Starter",
-            //                 price: "500",
-            //                 mrp: "5,000",
-            //                 link: "/digital-marketing/",
-            //                 tag: "/user/yearly/billed yearly",
-            //                 description: "Start with our Starter plan and upgrade only when you need additional features.",
-            //                 button: "Get Started",
-            //                 key: "key features",
-            //                 features: [
-            //                     {
-            //                         text: "Search Engine Optimization (SEO)",
-            //                         tooltip: "Improve rankings with on-page and off-page SEO techniques."
-            //                     },
-            //                     {
-            //                         text: "Pay-Per-Click Advertising (PPC)",
-            //                         tooltip: "Manage paid ads on search engines and social media for targeted visibility."
-            //                     },
-            //                     {
-            //                         text: "Content Marketing",
-            //                         tooltip: "Create and distribute engaging content to attract and retain audiences."
-            //                     },
-            //                     {
-            //                         text: "Social Media Marketing (SMM)",
-            //                         tooltip: "Manage social media content and run targeted ad campaigns."
-            //                     },
-            //                     {
-            //                         text: "Email Marketing",
-            //                         tooltip: "Design and execute personalized email campaigns for better engagement."
-            //                     },
-            //                     {
-            //                         text: "Influencer Marketing",
-            //                         tooltip: "Partner with influencers to endorse products and reach new audiences."
-            //                     },
-            //                     {
-            //                         text: "Conversion Rate Optimization (CRO)",
-            //                         tooltip: "Optimize websites to increase conversion rates through data analysis."
-            //                     },
-            //                     {
-            //                         text: "Analytics and Reporting",
-            //                         tooltip: "Monitor and analyze marketing metrics to inform strategic decisions."
-            //                     },
-            //                     {
-            //                         text: "Online Reputation Management (ORM)",
-            //                         tooltip: "Manage online reviews and feedback to maintain a positive brand image."
-            //                     },
-            //                     {
-            //                         text: "Mobile Marketing",
-            //                         tooltip: "Optimize marketing strategies for mobile users and mobile-specific behaviors."
-            //                     },
-            //                     {
-            //                         text: "Customer Relationship Management (CRM)",
-            //                         tooltip: "Use CRM systems to manage leads and personalize marketing efforts."
-            //                     },
-            //                     {
-            //                         text: "Marketing Automation",
-            //                         tooltip: "Automate marketing tasks with tools like HubSpot, Marketo, or Mailchimp."
-            //                     },
-            //                 ]
-            //             },
-            //             {
-            //                 id: 2,
-            //                 name: "Enterprise",
-            //                 price: "1000",
-            //                 mrp: "10,000",
-            //                 link: "/digital-marketing/",
-            //                 tag: "/user/yearly/billed yearly",
-            //                 description: "Choose the right set of features you need to begin your  journey.",
-            //                 button: "Get Started",
-            //                 button2: "Buy now",
-            //                 key: "key features",
-            //                 features: [
-            //                     {
-            //                         text: "Search Engine Optimization (SEO)",
-            //                         tooltip: "Improve rankings with on-page and off-page SEO techniques."
-            //                     },
-            //                     {
-            //                         text: "Pay-Per-Click Advertising (PPC)",
-            //                         tooltip: "Manage paid ads on search engines and social media for targeted visibility."
-            //                     },
-            //                     {
-            //                         text: "Content Marketing",
-            //                         tooltip: "Create and distribute engaging content to attract and retain audiences."
-            //                     },
-            //                     {
-            //                         text: "Social Media Marketing (SMM)",
-            //                         tooltip: "Manage social media content and run targeted ad campaigns."
-            //                     },
-            //                     {
-            //                         text: "Email Marketing",
-            //                         tooltip: "Design and execute personalized email campaigns for better engagement."
-            //                     },
-            //                     {
-            //                         text: "Influencer Marketing",
-            //                         tooltip: "Partner with influencers to endorse products and reach new audiences."
-            //                     },
-            //                     {
-            //                         text: "Conversion Rate Optimization (CRO)",
-            //                         tooltip: "Optimize websites to increase conversion rates through data analysis."
-            //                     },
-            //                     {
-            //                         text: "Analytics and Reporting",
-            //                         tooltip: "Monitor and analyze marketing metrics to inform strategic decisions."
-            //                     },
-            //                     {
-            //                         text: "Online Reputation Management (ORM)",
-            //                         tooltip: "Manage online reviews and feedback to maintain a positive brand image."
-            //                     },
-            //                     {
-            //                         text: "Mobile Marketing",
-            //                         tooltip: "Optimize marketing strategies for mobile users and mobile-specific behaviors."
-            //                     },
-            //                     {
-            //                         text: "Customer Relationship Management (CRM)",
-            //                         tooltip: "Use CRM systems to manage leads and personalize marketing efforts."
-            //                     },
-            //                     {
-            //                         text: "Marketing Automation",
-            //                         tooltip: "Automate marketing tasks with tools like HubSpot, Marketo, or Mailchimp."
-            //                     },
-            //                 ]
-            //             },
-            //             {
-            //                 id: 3,
-            //                 name: "Business",
-            //                 // price: "5,000",
-            //                 // mrp: "50,000",
-            //                 link: "/digital-marketing/",
-            //                 tag: "/user/yearly/billed yearly",
-            //                 description: "Enjoy our advanced offering for fast-growing businesses and startups.",
-            //                 button: "Get Started",
-            //                 button2: "Buy now",
-            //                 key: "key features",
-            //                 features: [
-            //                     {
-            //                         text: "Search Engine Optimization (SEO)",
-            //                         tooltip: "Improve rankings with on-page and off-page SEO techniques."
-            //                     },
-            //                     {
-            //                         text: "Pay-Per-Click Advertising (PPC)",
-            //                         tooltip: "Manage paid ads on search engines and social media for targeted visibility."
-            //                     },
-            //                     {
-            //                         text: "Content Marketing",
-            //                         tooltip: "Create and distribute engaging content to attract and retain audiences."
-            //                     },
-            //                     {
-            //                         text: "Social Media Marketing (SMM)",
-            //                         tooltip: "Manage social media content and run targeted ad campaigns."
-            //                     },
-            //                     {
-            //                         text: "Email Marketing",
-            //                         tooltip: "Design and execute personalized email campaigns for better engagement."
-            //                     },
-            //                     {
-            //                         text: "Influencer Marketing",
-            //                         tooltip: "Partner with influencers to endorse products and reach new audiences."
-            //                     },
-            //                     {
-            //                         text: "Conversion Rate Optimization (CRO)",
-            //                         tooltip: "Optimize websites to increase conversion rates through data analysis."
-            //                     },
-            //                     {
-            //                         text: "Analytics and Reporting",
-            //                         tooltip: "Monitor and analyze marketing metrics to inform strategic decisions."
-            //                     },
-            //                     {
-            //                         text: "Online Reputation Management (ORM)",
-            //                         tooltip: "Manage online reviews and feedback to maintain a positive brand image."
-            //                     },
-            //                     {
-            //                         text: "Mobile Marketing",
-            //                         tooltip: "Optimize marketing strategies for mobile users and mobile-specific behaviors."
-            //                     },
-            //                     {
-            //                         text: "Customer Relationship Management (CRM)",
-            //                         tooltip: "Use CRM systems to manage leads and personalize marketing efforts."
-            //                     },
-            //                     {
-            //                         text: "Marketing Automation",
-            //                         tooltip: "Automate marketing tasks with tools like HubSpot, Marketo, or Mailchimp."
-            //                     },
-            //                 ]
-            //             }
-            //         ]
-            //     },
-            //     {
-            //         id: 3,
-            //         name: "Website Development",
-            //         description: "This is a basic plan",
-            //         plans: [
-            //             {
-            //                 id: 1,
-            //                 name: "Starter",
-            //                 price: "1,250",
-            //                 mrp: "5,000",
-            //                 link: "/website-development/",
-            //                 tag: "/user/quartly/billed quartly",
-            //                 description: "Start with our Starter plan and upgrade only when you need additional features.",
-            //                 button: "Get Started",
-            //                 key: "key features",
-            //                 features: [
-            //                     {
-            //                         text: "Custom Website Design",
-            //                         tooltip: "Tailored designs to fit your unique brand identity."
-            //                     },
-            //                     {
-            //                         text: "Responsive Web Development",
-            //                         tooltip: "Optimized for seamless experiences on all devices."
-            //                     },
-            //                     {
-            //                         text: "Content Management System (CMS) Integration",
-            //                         tooltip: "Efficient CMS solutions for easy content updates."
-            //                     },
-            //                     {
-            //                         text: "E-commerce Development",
-            //                         tooltip: "Robust online stores to boost your sales."
-            //                     },
-            //                     {
-            //                         text: "Custom Web Application Development",
-            //                         tooltip: "Bespoke applications to meet your business needs."
-            //                     },
-            //                     {
-            //                         text: "SEO and Performance Optimization",
-            //                         tooltip: "Enhance visibility and speed for better rankings."
-            //                     },
-            //                     {
-            //                         text: "Website Maintenance and Support",
-            //                         tooltip: "Reliable support to keep your site running smoothly."
-            //                     },
-            //                     {
-            //                         text: "Integration with Third-party Services",
-            //                         tooltip: "Seamlessly connect with essential external tools."
-            //                     },
-            //                 ]
-            //             },
-            //             {
-            //                 id: 2,
-            //                 name: "Enterprise",
-            //                 price: "2,500",
-            //                 mrp: "10,000",
-            //                 link: "/website-development/",
-            //                 tag: "/user/quartly/billed quartly",
-            //                 description: "Choose the right set of features you need to begin your journey.",
-            //                 button: "Get Started",
-            //                 button2: "Buy now",
-            //                 key: "key features",
-            //                 features: [
-            //                     {
-            //                         text: "Custom Website Design",
-            //                         tooltip: "Tailored designs to fit your unique brand identity."
-            //                     },
-            //                     {
-            //                         text: "Responsive Web Development",
-            //                         tooltip: "Optimized for seamless experiences on all devices."
-            //                     },
-            //                     {
-            //                         text: "Content Management System (CMS) Integration",
-            //                         tooltip: "Efficient CMS solutions for easy content updates."
-            //                     },
-            //                     {
-            //                         text: "E-commerce Development",
-            //                         tooltip: "Robust online stores to boost your sales."
-            //                     },
-            //                     {
-            //                         text: "Custom Web Application Development",
-            //                         tooltip: "Bespoke applications to meet your business needs."
-            //                     },
-            //                     {
-            //                         text: "SEO and Performance Optimization",
-            //                         tooltip: "Enhance visibility and speed for better rankings."
-            //                     },
-            //                     {
-            //                         text: "Website Maintenance and Support",
-            //                         tooltip: "Reliable support to keep your site running smoothly."
-            //                     },
-            //                     {
-            //                         text: "Integration with Third-party Services",
-            //                         tooltip: "Seamlessly connect with essential external tools."
-            //                     },
-            //                 ]
-            //             },
-            //             {
-            //                 id: 3,
-            //                 name: "Business",
-            //                 // price: "Custom",
-            //                 // mrp: "50,000",
-            //                 link: "/website-development/",
-            //                 tag: "/user/quartly/billed quartly",
-            //                 description: "Enjoy our advanced offering for fast-growing businesses and startups.",
-            //                 button: "Get Started",
-            //                 button2: "Buy now",
-            //                 key: "key features",
-            //                 features: [
-            //                     {
-            //                         text: "Custom Website Design",
-            //                         tooltip: "Tailored designs to fit your unique brand identity."
-            //                     },
-            //                     {
-            //                         text: "Responsive Web Development",
-            //                         tooltip: "Optimized for seamless experiences on all devices."
-            //                     },
-            //                     {
-            //                         text: "Content Management System (CMS) Integration",
-            //                         tooltip: "Efficient CMS solutions for easy content updates."
-            //                     },
-            //                     {
-            //                         text: "E-commerce Development",
-            //                         tooltip: "Robust online stores to boost your sales."
-            //                     },
-            //                     {
-            //                         text: "Custom Web Application Development",
-            //                         tooltip: "Bespoke applications to meet your business needs."
-            //                     },
-            //                     {
-            //                         text: "SEO and Performance Optimization",
-            //                         tooltip: "Enhance visibility and speed for better rankings."
-            //                     },
-            //                     {
-            //                         text: "Website Maintenance and Support",
-            //                         tooltip: "Reliable support to keep your site running smoothly."
-            //                     },
-            //                     {
-            //                         text: "Integration with Third-party Services",
-            //                         tooltip: "Seamlessly connect with essential external tools."
-            //                     },
-            //                 ]
-            //             }
-            //         ]
-            //     },
-            //     {
-            //         id: 1,
-            //         name: "Software Development",
-            //         description: "This is a basic plan",
-            //         plans: [
-            //             {
-            //                 id: 1,
-            //                 name: "Starter",
-            //                 price: "2,500",
-            //                 mrp: "5,000",
-            //                 link: "/software-development/",
-            //                 tag: "/user/month/billed monthly",
-            //                 description: "Start with our Starter plan and upgrade only when you need additional features.",
-            //                 button: "Get Started",
-            //                 key: "key features",
-            //                 features: [
-            //                     {
-            //                         text: "Stock Management System",
-            //                         tooltip: "Track inventory levels and manage stock efficiently."
-            //                     },
-            //                     {
-            //                         text: "Financial Management System",
-            //                         tooltip: "Handle financial transactions and budgeting seamlessly."
-            //                     },
-            //                     {
-            //                         text: "Payment Management System",
-            //                         tooltip: "Streamline payment processing and transactions.",
-            //                     },
-            //                     {
-            //                         text: "Asset Management System",
-            //                         tooltip: "Manage and track company assets effectively.",
-            //                     },
-            //                     {
-            //                         text: "Human Resources Management System",
-            //                         tooltip: "Automate HR processes and manage employee data.",
-            //                     },
-            //                     {
-            //                         text: "Document Management System",
-            //                         tooltip: "Organize and store documents securely.",
-            //                     },
-            //                     {
-            //                         text: "Project Management System",
-            //                         tooltip: "Plan, track, and manage projects efficiently.",
-            //                     },
-            //                     {
-            //                         text: "Lead Management System",
-            //                         tooltip: "Track and manage leads through the sales process.",
-            //                     },
-            //                 ]
-            //             },
-            //             {
-            //                 id: 2,
-            //                 name: "Enterprise",
-            //                 price: "5,000",
-            //                 mrp: "10,000",
-            //                 link: "/software-development/",
-            //                 tag: "/user/month/billed monthly",
-            //                 description: "Choose the right set of features you need to begin your journey.",
-            //                 button: "Get Started",
-            //                 button2: "Buy now",
-            //                 key: "key features",
-            //                 features: [
-            //                     {
-            //                         text: "Stock Management System",
-            //                         tooltip: "Track inventory levels and manage stock efficiently."
-            //                     },
-            //                     {
-            //                         text: "Financial Management System",
-            //                         tooltip: "Handle financial transactions and budgeting seamlessly."
-            //                     },
-            //                     {
-            //                         text: "Payment Management System",
-            //                         tooltip: "Streamline payment processing and transactions.",
-            //                     },
-            //                     {
-            //                         text: "Asset Management System",
-            //                         tooltip: "Manage and track company assets effectively.",
-            //                     },
-            //                     {
-            //                         text: "Human Resources Management System",
-            //                         tooltip: "Automate HR processes and manage employee data.",
-            //                     },
-            //                     {
-            //                         text: "Document Management System",
-            //                         tooltip: "Organize and store documents securely.",
-            //                     },
-            //                     {
-            //                         text: "Project Management System",
-            //                         tooltip: "Plan, track, and manage projects efficiently.",
-            //                     },
-            //                     {
-            //                         text: "Lead Management System",
-            //                         tooltip: "Track and manage leads through the sales process.",
-            //                     },
-            //                 ]
-            //             },
-            //             {
-            //                 id: 3,
-            //                 name: "Business",
-            //                 // price: "25,000",
-            //                 // mrp: "50,000",
-            //                 link: "/software-development/",
-            //                 tag: "/user/month/billed monthly",
-            //                 description: "Enjoy our advanced offering for fast growing businesses and startups.",
-            //                 button: "Get Started",
-            //                 button2: "Buy now",
-            //                 key: "key features",
-            //                 features: [
-            //                     {
-            //                         text: "Stock Management System",
-            //                         tooltip: "Track inventory levels and manage stock efficiently."
-            //                     },
-            //                     {
-            //                         text: "Financial Management System",
-            //                         tooltip: "Handle financial transactions and budgeting seamlessly."
-            //                     },
-            //                     {
-            //                         text: "Payment Management System",
-            //                         tooltip: "Streamline payment processing and transactions.",
-            //                     },
-            //                     {
-            //                         text: "Asset Management System",
-            //                         tooltip: "Manage and track company assets effectively.",
-            //                     },
-            //                     {
-            //                         text: "Human Resources Management System",
-            //                         tooltip: "Automate HR processes and manage employee data.",
-            //                     },
-            //                     {
-            //                         text: "Document Management System",
-            //                         tooltip: "Organize and store documents securely.",
-            //                     },
-            //                     {
-            //                         text: "Project Management System",
-            //                         tooltip: "Plan, track, and manage projects efficiently.",
-            //                     },
-            //                     {
-            //                         text: "Lead Management System",
-            //                         tooltip: "Track and manage leads through the sales process.",
-            //                     },
-            //                 ]
-            //             }
-            //         ]
-            //     },
+            pricing: [
+                {
+                    id: 2,
+                    name: "Digital Marketing",
+                    description: "This is a basic plan",
+                    plans: [
+                        {
+                            id: 1,
+                            name: "Starter",
+                            price: "500",
+                            mrp: "5,000",
+                            link: "/digital-marketing/",
+                            tag: "/user/yearly/billed yearly",
+                            description: "Start with our Starter plan and upgrade only when you need additional features.",
+                            button: "Get Started",
+                            key: "key features",
+                            features: [
+                                {
+                                    text: "Search Engine Optimization (SEO)",
+                                    tooltip: "Improve rankings with on-page and off-page SEO techniques."
+                                },
+                                {
+                                    text: "Pay-Per-Click Advertising (PPC)",
+                                    tooltip: "Manage paid ads on search engines and social media for targeted visibility."
+                                },
+                                {
+                                    text: "Content Marketing",
+                                    tooltip: "Create and distribute engaging content to attract and retain audiences."
+                                },
+                                {
+                                    text: "Social Media Marketing (SMM)",
+                                    tooltip: "Manage social media content and run targeted ad campaigns."
+                                },
+                                {
+                                    text: "Email Marketing",
+                                    tooltip: "Design and execute personalized email campaigns for better engagement."
+                                },
+                                {
+                                    text: "Influencer Marketing",
+                                    tooltip: "Partner with influencers to endorse products and reach new audiences."
+                                },
+                                {
+                                    text: "Conversion Rate Optimization (CRO)",
+                                    tooltip: "Optimize websites to increase conversion rates through data analysis."
+                                },
+                                {
+                                    text: "Analytics and Reporting",
+                                    tooltip: "Monitor and analyze marketing metrics to inform strategic decisions."
+                                },
+                                {
+                                    text: "Online Reputation Management (ORM)",
+                                    tooltip: "Manage online reviews and feedback to maintain a positive brand image."
+                                },
+                                {
+                                    text: "Mobile Marketing",
+                                    tooltip: "Optimize marketing strategies for mobile users and mobile-specific behaviors."
+                                },
+                                {
+                                    text: "Customer Relationship Management (CRM)",
+                                    tooltip: "Use CRM systems to manage leads and personalize marketing efforts."
+                                },
+                                {
+                                    text: "Marketing Automation",
+                                    tooltip: "Automate marketing tasks with tools like HubSpot, Marketo, or Mailchimp."
+                                },
+                            ]
+                        },
+                        {
+                            id: 2,
+                            name: "Enterprise",
+                            price: "1000",
+                            mrp: "10,000",
+                            link: "/digital-marketing/",
+                            tag: "/user/yearly/billed yearly",
+                            description: "Choose the right set of features you need to begin your  journey.",
+                            button: "Get Started",
+                            button2: "Buy now",
+                            key: "key features",
+                            features: [
+                                {
+                                    text: "Search Engine Optimization (SEO)",
+                                    tooltip: "Improve rankings with on-page and off-page SEO techniques."
+                                },
+                                {
+                                    text: "Pay-Per-Click Advertising (PPC)",
+                                    tooltip: "Manage paid ads on search engines and social media for targeted visibility."
+                                },
+                                {
+                                    text: "Content Marketing",
+                                    tooltip: "Create and distribute engaging content to attract and retain audiences."
+                                },
+                                {
+                                    text: "Social Media Marketing (SMM)",
+                                    tooltip: "Manage social media content and run targeted ad campaigns."
+                                },
+                                {
+                                    text: "Email Marketing",
+                                    tooltip: "Design and execute personalized email campaigns for better engagement."
+                                },
+                                {
+                                    text: "Influencer Marketing",
+                                    tooltip: "Partner with influencers to endorse products and reach new audiences."
+                                },
+                                {
+                                    text: "Conversion Rate Optimization (CRO)",
+                                    tooltip: "Optimize websites to increase conversion rates through data analysis."
+                                },
+                                {
+                                    text: "Analytics and Reporting",
+                                    tooltip: "Monitor and analyze marketing metrics to inform strategic decisions."
+                                },
+                                {
+                                    text: "Online Reputation Management (ORM)",
+                                    tooltip: "Manage online reviews and feedback to maintain a positive brand image."
+                                },
+                                {
+                                    text: "Mobile Marketing",
+                                    tooltip: "Optimize marketing strategies for mobile users and mobile-specific behaviors."
+                                },
+                                {
+                                    text: "Customer Relationship Management (CRM)",
+                                    tooltip: "Use CRM systems to manage leads and personalize marketing efforts."
+                                },
+                                {
+                                    text: "Marketing Automation",
+                                    tooltip: "Automate marketing tasks with tools like HubSpot, Marketo, or Mailchimp."
+                                },
+                            ]
+                        },
+                        {
+                            id: 3,
+                            name: "Business",
+                            // price: "5,000",
+                            // mrp: "50,000",
+                            link: "/digital-marketing/",
+                            tag: "/user/yearly/billed yearly",
+                            description: "Enjoy our advanced offering for fast-growing businesses and startups.",
+                            button: "Get Started",
+                            button2: "Buy now",
+                            key: "key features",
+                            features: [
+                                {
+                                    text: "Search Engine Optimization (SEO)",
+                                    tooltip: "Improve rankings with on-page and off-page SEO techniques."
+                                },
+                                {
+                                    text: "Pay-Per-Click Advertising (PPC)",
+                                    tooltip: "Manage paid ads on search engines and social media for targeted visibility."
+                                },
+                                {
+                                    text: "Content Marketing",
+                                    tooltip: "Create and distribute engaging content to attract and retain audiences."
+                                },
+                                {
+                                    text: "Social Media Marketing (SMM)",
+                                    tooltip: "Manage social media content and run targeted ad campaigns."
+                                },
+                                {
+                                    text: "Email Marketing",
+                                    tooltip: "Design and execute personalized email campaigns for better engagement."
+                                },
+                                {
+                                    text: "Influencer Marketing",
+                                    tooltip: "Partner with influencers to endorse products and reach new audiences."
+                                },
+                                {
+                                    text: "Conversion Rate Optimization (CRO)",
+                                    tooltip: "Optimize websites to increase conversion rates through data analysis."
+                                },
+                                {
+                                    text: "Analytics and Reporting",
+                                    tooltip: "Monitor and analyze marketing metrics to inform strategic decisions."
+                                },
+                                {
+                                    text: "Online Reputation Management (ORM)",
+                                    tooltip: "Manage online reviews and feedback to maintain a positive brand image."
+                                },
+                                {
+                                    text: "Mobile Marketing",
+                                    tooltip: "Optimize marketing strategies for mobile users and mobile-specific behaviors."
+                                },
+                                {
+                                    text: "Customer Relationship Management (CRM)",
+                                    tooltip: "Use CRM systems to manage leads and personalize marketing efforts."
+                                },
+                                {
+                                    text: "Marketing Automation",
+                                    tooltip: "Automate marketing tasks with tools like HubSpot, Marketo, or Mailchimp."
+                                },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: 3,
+                    name: "Website Development",
+                    description: "This is a basic plan",
+                    plans: [
+                        {
+                            id: 1,
+                            name: "Starter",
+                            price: "1,250",
+                            mrp: "5,000",
+                            link: "/website-development/",
+                            tag: "/user/quartly/billed quartly",
+                            description: "Start with our Starter plan and upgrade only when you need additional features.",
+                            button: "Get Started",
+                            key: "key features",
+                            features: [
+                                {
+                                    text: "Custom Website Design",
+                                    tooltip: "Tailored designs to fit your unique brand identity."
+                                },
+                                {
+                                    text: "Responsive Web Development",
+                                    tooltip: "Optimized for seamless experiences on all devices."
+                                },
+                                {
+                                    text: "Content Management System (CMS) Integration",
+                                    tooltip: "Efficient CMS solutions for easy content updates."
+                                },
+                                {
+                                    text: "E-commerce Development",
+                                    tooltip: "Robust online stores to boost your sales."
+                                },
+                                {
+                                    text: "Custom Web Application Development",
+                                    tooltip: "Bespoke applications to meet your business needs."
+                                },
+                                {
+                                    text: "SEO and Performance Optimization",
+                                    tooltip: "Enhance visibility and speed for better rankings."
+                                },
+                                {
+                                    text: "Website Maintenance and Support",
+                                    tooltip: "Reliable support to keep your site running smoothly."
+                                },
+                                {
+                                    text: "Integration with Third-party Services",
+                                    tooltip: "Seamlessly connect with essential external tools."
+                                },
+                            ]
+                        },
+                        {
+                            id: 2,
+                            name: "Enterprise",
+                            price: "2,500",
+                            mrp: "10,000",
+                            link: "/website-development/",
+                            tag: "/user/quartly/billed quartly",
+                            description: "Choose the right set of features you need to begin your journey.",
+                            button: "Get Started",
+                            button2: "Buy now",
+                            key: "key features",
+                            features: [
+                                {
+                                    text: "Custom Website Design",
+                                    tooltip: "Tailored designs to fit your unique brand identity."
+                                },
+                                {
+                                    text: "Responsive Web Development",
+                                    tooltip: "Optimized for seamless experiences on all devices."
+                                },
+                                {
+                                    text: "Content Management System (CMS) Integration",
+                                    tooltip: "Efficient CMS solutions for easy content updates."
+                                },
+                                {
+                                    text: "E-commerce Development",
+                                    tooltip: "Robust online stores to boost your sales."
+                                },
+                                {
+                                    text: "Custom Web Application Development",
+                                    tooltip: "Bespoke applications to meet your business needs."
+                                },
+                                {
+                                    text: "SEO and Performance Optimization",
+                                    tooltip: "Enhance visibility and speed for better rankings."
+                                },
+                                {
+                                    text: "Website Maintenance and Support",
+                                    tooltip: "Reliable support to keep your site running smoothly."
+                                },
+                                {
+                                    text: "Integration with Third-party Services",
+                                    tooltip: "Seamlessly connect with essential external tools."
+                                },
+                            ]
+                        },
+                        {
+                            id: 3,
+                            name: "Business",
+                            // price: "Custom",
+                            // mrp: "50,000",
+                            link: "/website-development/",
+                            tag: "/user/quartly/billed quartly",
+                            description: "Enjoy our advanced offering for fast-growing businesses and startups.",
+                            button: "Get Started",
+                            button2: "Buy now",
+                            key: "key features",
+                            features: [
+                                {
+                                    text: "Custom Website Design",
+                                    tooltip: "Tailored designs to fit your unique brand identity."
+                                },
+                                {
+                                    text: "Responsive Web Development",
+                                    tooltip: "Optimized for seamless experiences on all devices."
+                                },
+                                {
+                                    text: "Content Management System (CMS) Integration",
+                                    tooltip: "Efficient CMS solutions for easy content updates."
+                                },
+                                {
+                                    text: "E-commerce Development",
+                                    tooltip: "Robust online stores to boost your sales."
+                                },
+                                {
+                                    text: "Custom Web Application Development",
+                                    tooltip: "Bespoke applications to meet your business needs."
+                                },
+                                {
+                                    text: "SEO and Performance Optimization",
+                                    tooltip: "Enhance visibility and speed for better rankings."
+                                },
+                                {
+                                    text: "Website Maintenance and Support",
+                                    tooltip: "Reliable support to keep your site running smoothly."
+                                },
+                                {
+                                    text: "Integration with Third-party Services",
+                                    tooltip: "Seamlessly connect with essential external tools."
+                                },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: 1,
+                    name: "Software Development",
+                    description: "This is a basic plan",
+                    plans: [
+                        {
+                            id: 1,
+                            name: "Starter",
+                            price: "2,500",
+                            mrp: "5,000",
+                            link: "/software-development/",
+                            tag: "/user/month/billed monthly",
+                            description: "Start with our Starter plan and upgrade only when you need additional features.",
+                            button: "Get Started",
+                            key: "key features",
+                            features: [
+                                {
+                                    text: "Stock Management System",
+                                    tooltip: "Track inventory levels and manage stock efficiently."
+                                },
+                                {
+                                    text: "Financial Management System",
+                                    tooltip: "Handle financial transactions and budgeting seamlessly."
+                                },
+                                {
+                                    text: "Payment Management System",
+                                    tooltip: "Streamline payment processing and transactions.",
+                                },
+                                {
+                                    text: "Asset Management System",
+                                    tooltip: "Manage and track company assets effectively.",
+                                },
+                                {
+                                    text: "Human Resources Management System",
+                                    tooltip: "Automate HR processes and manage employee data.",
+                                },
+                                {
+                                    text: "Document Management System",
+                                    tooltip: "Organize and store documents securely.",
+                                },
+                                {
+                                    text: "Project Management System",
+                                    tooltip: "Plan, track, and manage projects efficiently.",
+                                },
+                                {
+                                    text: "Lead Management System",
+                                    tooltip: "Track and manage leads through the sales process.",
+                                },
+                            ]
+                        },
+                        {
+                            id: 2,
+                            name: "Enterprise",
+                            price: "5,000",
+                            mrp: "10,000",
+                            link: "/software-development/",
+                            tag: "/user/month/billed monthly",
+                            description: "Choose the right set of features you need to begin your journey.",
+                            button: "Get Started",
+                            button2: "Buy now",
+                            key: "key features",
+                            features: [
+                                {
+                                    text: "Stock Management System",
+                                    tooltip: "Track inventory levels and manage stock efficiently."
+                                },
+                                {
+                                    text: "Financial Management System",
+                                    tooltip: "Handle financial transactions and budgeting seamlessly."
+                                },
+                                {
+                                    text: "Payment Management System",
+                                    tooltip: "Streamline payment processing and transactions.",
+                                },
+                                {
+                                    text: "Asset Management System",
+                                    tooltip: "Manage and track company assets effectively.",
+                                },
+                                {
+                                    text: "Human Resources Management System",
+                                    tooltip: "Automate HR processes and manage employee data.",
+                                },
+                                {
+                                    text: "Document Management System",
+                                    tooltip: "Organize and store documents securely.",
+                                },
+                                {
+                                    text: "Project Management System",
+                                    tooltip: "Plan, track, and manage projects efficiently.",
+                                },
+                                {
+                                    text: "Lead Management System",
+                                    tooltip: "Track and manage leads through the sales process.",
+                                },
+                            ]
+                        },
+                        {
+                            id: 3,
+                            name: "Business",
+                            // price: "25,000",
+                            // mrp: "50,000",
+                            link: "/software-development/",
+                            tag: "/user/month/billed monthly",
+                            description: "Enjoy our advanced offering for fast growing businesses and startups.",
+                            button: "Get Started",
+                            button2: "Buy now",
+                            key: "key features",
+                            features: [
+                                {
+                                    text: "Stock Management System",
+                                    tooltip: "Track inventory levels and manage stock efficiently."
+                                },
+                                {
+                                    text: "Financial Management System",
+                                    tooltip: "Handle financial transactions and budgeting seamlessly."
+                                },
+                                {
+                                    text: "Payment Management System",
+                                    tooltip: "Streamline payment processing and transactions.",
+                                },
+                                {
+                                    text: "Asset Management System",
+                                    tooltip: "Manage and track company assets effectively.",
+                                },
+                                {
+                                    text: "Human Resources Management System",
+                                    tooltip: "Automate HR processes and manage employee data.",
+                                },
+                                {
+                                    text: "Document Management System",
+                                    tooltip: "Organize and store documents securely.",
+                                },
+                                {
+                                    text: "Project Management System",
+                                    tooltip: "Plan, track, and manage projects efficiently.",
+                                },
+                                {
+                                    text: "Lead Management System",
+                                    tooltip: "Track and manage leads through the sales process.",
+                                },
+                            ]
+                        }
+                    ]
+                },
 
 
-            // ],
+            ],
         };
     },
     computed:{
-        pricing(){
-            return this.$store.getters.getPricing
-        }
+        // pricing(){
+        //     return this.$store.getters.getPricing
+        // }
     },
     mounted() {
         this.initTooltips();
