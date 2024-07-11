@@ -82,8 +82,9 @@ export default {
 .text-typing-deleting {
     display: inline-block;
     overflow: hidden;
-    background-color: var(--brand-color);
-    color: white;
+    background-color: white;
+    color: var(--brand-color);
+    /* color: white; */
 }
 
 .typed-text {

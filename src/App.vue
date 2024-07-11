@@ -36,12 +36,13 @@ export default {
 }
 
 :root {
-  --bg-primary: #014c75;
+  // --bg-primary: #02539E !important;
   --bg-secondary: #EB5E28;
   --bg-tertiary: #FEC007;
   --bg-forth: #FBF4F4;
-  --brand-color: #021444
+  --brand-color: #02539E
 }
+
 
  
 

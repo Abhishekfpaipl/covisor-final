@@ -1,5 +1,5 @@
 <template>
-  <div class="" style="padding-top:70px">
+  <div class="" style="padding-top:66px">
     <Banner brandColorOne="#125252" v-observe />
     <!-- <div class="my-5">
       <VideoSection v-observe />
@@ -50,12 +50,12 @@
 
 <script>
 import Banner from "@/components/BannerSection.vue";
-import WelcomeModal from "@/components/WelcomeModal.vue";
+// import WelcomeModal from "@/components/WelcomeModal.vue";
 import LeadManagement from "@/components/services/LeadManagement.vue";
-import FreeConsultation from "@/components/FreeConsultation.vue";
+// import FreeConsultation from "@/components/FreeConsultation.vue";
 // import VideoSection from "@/components/VideoSection.vue";
 import AutoScrolling from "@/components/services/AutoScrolling.vue";
-import BookDemo from "@/components/BookDemo.vue";
+// import BookDemo from "@/components/BookDemo.vue";
 import PriceSection from "@/components/PriceSection.vue";
 import ImageSection from "@/components/ImageSection.vue";
 // import SalesFunnel from "@/components/SalesFunnel.vue";
@@ -67,12 +67,12 @@ import TempCustomers from "@/components/TempCustomers.vue";
 export default {
   components: {
     Banner,
-    WelcomeModal,
+    // WelcomeModal,
     LeadManagement,
-    FreeConsultation,
+    // FreeConsultation,
     // VideoSection,
     AutoScrolling,
-    BookDemo,
+    // BookDemo,
     PriceSection,
     ImageSection,
     // SalesFunnel,

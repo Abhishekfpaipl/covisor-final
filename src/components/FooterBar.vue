@@ -1,9 +1,9 @@
 <template>
-    <div class="container-fluid text-white pt-3 border-top border-bottom" style="background-color: var(--brand-color)">
+    <div class="container-fluid pt-3 border-top border-bottom" style="color: var(--brand-color) !important">
         <div class="row">
             <div class="col-12 col-md-4 mb-3">
                 <router-link to="/">
-                    <img :src="img" style="width: 100px;object-fit: contain; filter: invert(1)">
+                    <img :src="img" style="width: 100px;object-fit: contain;">
                 </router-link>
                 <p class="mb-0 fw-bold fs-2 text-uppercase" >covisor</p>
                 <p class="mb-2 text-capitalize" >solutions for business</p>
@@ -12,7 +12,7 @@
 
             <div class=" col-12 col-md-4 mb-3 text-center">
                 <p class="mb-2 fw-bold">Contact Us</p>
-                <p class="mb-2">Email : support@covisor.com</p>
+                <p class="mb-2">Email : support@covisor.in</p>
                 <p class="mb-2">Mob no. : 91 8860012001</p>
                 <p class="mb-2">Address : 2nd Floor, Block B1/632, <br> Janakpuri, 110058, Delhi, India</p>
                 <div class="d-flex gap-2 justify-content-center">
@@ -28,15 +28,19 @@
                 <div class="mb-3 text-start">
                     <p class="mb-2 fw-bold">Company</p>
                     <div class="d-flex flex-column">
-                        <router-link :to="link.link" class="text-decoration-none my-1 text-white"
+                        <router-link to="/#" class="text-decoration-none my-1 " style="color: var(--brand-color) !important"
                             v-for="(link, index) in company" :key="index">{{ link.name }}</router-link>
+                        <!-- <router-link :to="link.link" class="text-decoration-none my-1 " style="color: var(--brand-color) !important"
+                            v-for="(link, index) in company" :key="index">{{ link.name }}</router-link> -->
                     </div>
                 </div>
                 <div class="mb-3 text-start">
                     <p class="mb-2 fw-bold">Resources</p>
                     <div class="d-flex flex-column">
-                        <router-link :to="link.link" class="text-decoration-none my-1 text-white"
+                        <router-link to="/#" class="text-decoration-none my-1" style="color: var(--brand-color) !important"
                             v-for="(link, index) in links" :key="index">{{ link.name }}</router-link>
+                        <!-- <router-link :to="link.link" class="text-decoration-none my-1" style="color: var(--brand-color) !important"
+                            v-for="(link, index) in links" :key="index">{{ link.name }}</router-link> -->
                     </div>
                 </div>
             </div>
