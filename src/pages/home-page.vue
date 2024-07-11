@@ -61,7 +61,7 @@ import ImageSection from "@/components/ImageSection.vue";
 // import SalesFunnel from "@/components/SalesFunnel.vue";
 // import CustomCounter from "@/components/CustomCounter.vue";
 import WhyChooseUs from "@/components/WhyChooseUs.vue";
-import TempFaqs from "@/components/TempFaqs.vue";
+// import TempFaqs from "@/components/TempFaqs.vue";
 import TempCustomers from "@/components/TempCustomers.vue";
 // import BottomShareIcons from "@/components/BottomShareIcons.vue";
 export default {
@@ -78,7 +78,7 @@ export default {
     // SalesFunnel,
     // CustomCounter,
     WhyChooseUs,
-    TempFaqs,
+    // TempFaqs,
     TempCustomers,
     // BottomShareIcons,
   },
