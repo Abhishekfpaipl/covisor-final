@@ -45,12 +45,7 @@ const routes = [
     path: "/contact-us",
     name: "contact-us",
     component: () => import("@/pages/contact-us.vue")
-  },
-  {
-    path: "/demo",
-    name: "demo-page",
-    component: () => import("@/pages/demo-page.vue")
-  },
+  }, 
   {
     path: "/faqs",
     name: "faqs-page",
@@ -111,6 +106,12 @@ const routes = [
     name: "DigitalMarketingPage",
     component: () => import('@/pages/DigitalMarketingPage.vue')
   },
+  {
+    path: "/plan/:priceId/:planId",
+    name: "PricePlanDetailPage",
+    component: () => import('@/pages/PricePlanDetailPage.vue')
+  },
+
 ];
 
 const router = createRouter({

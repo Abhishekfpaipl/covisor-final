@@ -9,7 +9,7 @@
                     <div class="card border-0 text-start">
                         <div class="card-body"> 
 
-                            <p>SalesWik respects your privacy and is committed to protecting the personal
+                            <p>Covisor respects your privacy and is committed to protecting the personal
                                 information you share with us. This Privacy Policy outlines how we collect, use,
                                 share, and protect your information when you use our lead management software and
                                 related services.</p>
@@ -70,7 +70,7 @@
 
                             <h3>8. Contact Us</h3>
                             <p>If you have any questions about this Privacy Policy or our data practices, please
-                                contact us at support@saleswik.in.</p>
+                                contact us at support@Covisor.in.</p>
                         </div>
                     </div>
                 </div>

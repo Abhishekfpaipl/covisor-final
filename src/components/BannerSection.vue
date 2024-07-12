@@ -14,15 +14,15 @@
                         <p class="my-1"><i class="bi bi-check2-square me-2"></i> How to compete online with big giants.</p>
                     </div>
                     <!-- <RouterLink to="/free-trial"> -->
-                        <div class="btn my-4 fs-5 fw-bold border bg-white text-capitalize" @click="openDialer()" style="color:var(--brand-color)">
+                        <!-- <div class="btn my-4 fs-5 fw-bold border bg-white text-capitalize" @click="openDialer()" style="color:var(--brand-color)">
                             free consultation
-                        </div>
+                        </div> -->
                     <!-- </RouterLink> -->
-                    <!-- <RouterLink to="/free-trial">
+                    <RouterLink to="/free-trial">
                         <div class="btn my-4 fs-5 fw-bold border bg-white text-capitalize" style="color:var(--brand-color)">
                             free consultation
                         </div>
-                    </RouterLink> -->
+                    </RouterLink>
                     <a href="#second"><i class="bi bi-chevron-down fs-1 text-white" ></i></a>
                 </div>
             </div>

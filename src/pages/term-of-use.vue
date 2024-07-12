@@ -9,8 +9,8 @@
                 <div class="card-body">
                     <section>
                         <h4>1. Introduction</h4>
-                        <p>Welcome to SalesWik. These Terms of Use govern your use of our lead management
-                            software, accessible from [Website URL]. By using our software, you agree to these terms
+                        <p>Welcome to Covisor. These Terms of Use govern your use of our lead management
+                            software. By using our software, you agree to these terms
                             in full. If you disagree with any part of these terms, you must not use our software.
                         </p>
                     </section>
@@ -19,7 +19,7 @@
                         <h4>2. License to Use</h4>
                         <p>We grant you a limited, non-exclusive, non-transferable license to use our software,
                             subject to these terms. This license is for the sole purpose of enabling you to use and
-                            enjoy the benefits of our services as provided by SalesWik.</p>
+                            enjoy the benefits of our services as provided by Covisor.</p>
                     </section>
 
                     <section>
@@ -45,7 +45,7 @@
                     <section>
                         <h4>5. Intellectual Property</h4>
                         <p>All content included in the software, such as text, graphics, logos, and software, is the
-                            property of SalesWik and is protected by Indian and international copyright laws.
+                            property of Covisor and is protected by Indian and international copyright laws.
                         </p>
                     </section>
 
@@ -57,7 +57,7 @@
 
                     <section>
                         <h4>7. Limitation of Liability</h4>
-                        <p>To the maximum extent permitted by law, SalesWik shall not be liable for any
+                        <p>To the maximum extent permitted by law, Covisor shall not be liable for any
                             indirect, incidental, special, consequential, or punitive damages, or any loss of
                             profits or revenues, whether incurred directly or indirectly, or any loss of data, use,
                             goodwill, or other intangible losses, resulting from your use of our software.</p>
@@ -78,7 +78,7 @@
 
                     <section>
                         <h4>10. Contact Us</h4>
-                        <p>If you have any questions about these Terms of Use, please contact us at support@saleswik.in.</p>
+                        <p>If you have any questions about these Terms of Use, please contact us at support@Covisor.in.</p>
                     </section>
                 </div>
             </div>

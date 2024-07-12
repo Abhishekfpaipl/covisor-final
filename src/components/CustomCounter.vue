@@ -1,11 +1,11 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: var(--bg-forth);">
         <div class="row py-4">
             <div v-if="image" class="col-12 col-md-4">
                 <img :src="image" style="width: 450px; max-width: 80%" alt="">
             </div>
             <div :class="{ 'col-12': !image, 'col-12 col-md-8': image }">
-                <div class="row mt-4">
+                <div class="row mt-4 text-dark">
                     <div class="d-flex flex-column justify-content-center mb-4">
                         <h1 class=" text-center text-capitalize">{{title}}</h1>
                     </div>

@@ -20,10 +20,6 @@
                             <label for="floatingInput" class="ms-2 text-muted">Designation</label>
                         </div>
                         <div class="mt-2 form-floating">
-                            <input type="number" class="form-control" placeholder="Phone No." v-model="number">
-                            <label for="floatingInput" class="ms-2 text-muted">Phone No</label>
-                        </div>
-                        <div class="mt-2 form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
                                 v-model="note"></textarea>
                             <label for="floatingTextarea" class="ms-2 text-muted">Notes</label>
@@ -51,7 +47,7 @@
                 </div>
             </div>
         </div>
- 
+
         <div class="container my-5">
             <h3 class="text-center ">Our Core Values</h3>
             <p class="text-center container">
@@ -168,16 +164,15 @@ export default {
                     icon: 'bi bi-diagram-2 fs-3',
                     heading: 'bulks subscriptions'
                 },
-            ],
-            mobile: '', 
+            ], 
             name: '',
             note: '',
-            designation:'',
+            designation: '',
             questions: [
                 {
                     id: 1,
                     question: "What else do I get with a reseller plan?",
-                    answer: "Your reseller plan includes the following extras: * Free SalesWik software including email marketing to use for your business."
+                    answer: "Your reseller plan includes the following extras: * Free Covisor software including email marketing to use for your business."
                 },
                 {
                     id: 2,
@@ -192,7 +187,7 @@ export default {
                 {
                     id: 4,
                     question: "What's your commission payment process?",
-                    answer: "We offer a wide variety of payout options for your commissions (PayPal, EFT, Check, SalesWik Good as Gold). We usually pay the commission you earn during one month at the end of the following month. For example, if you earned commission on your reseller hosting sales during January, we'll pay you at the end of February."
+                    answer: "We offer a wide variety of payout options for your commissions (PayPal, EFT, Check, Covisor Good as Gold). We usually pay the commission you earn during one month at the end of the following month. For example, if you earned commission on your reseller hosting sales during January, we'll pay you at the end of February."
                 },
                 {
                     id: 5,
@@ -202,7 +197,7 @@ export default {
                 {
                     id: 6,
                     question: "Can I customize my storefront?",
-                    answer: "Yes. You can use our Storefront Branding to make your storefront reflect your personal brand. We give you control over your site's domain name, site logo, color scheme, page layout and more. You can always go back and make changes as your business grows. Or, for those resellers that are familiar with WordPress, we encourage you to make a fully customized site using SalesWik's WordPress plugin, which you can learn more about here."
+                    answer: "Yes. You can use our Storefront Branding to make your storefront reflect your personal brand. We give you control over your site's domain name, site logo, color scheme, page layout and more. You can always go back and make changes as your business grows. Or, for those resellers that are familiar with WordPress, we encourage you to make a fully customized site using Covisor's WordPress plugin, which you can learn more about here."
                 },
                 {
                     id: 7,
@@ -216,25 +211,33 @@ export default {
                 },
                 {
                     id: 9,
-                    question: "Are there different ways to partner with SalesWik?",
-                    answer: "If you'd like to earn generous commissions through referral sales from your website visitors and email recipients, check out our Affiliate Program. Or, if you are looking for a way to manage all of your customers websites and clients, with one dashboard and a family of integrated tools, check out our SalesWik Pro Program."
+                    question: "Are there different ways to partner with Covisor?",
+                    answer: "If you'd like to earn generous commissions through referral sales from your website visitors and email recipients, check out our Affiliate Program. Or, if you are looking for a way to manage all of your customers websites and clients, with one dashboard and a family of integrated tools, check out our Covisor Pro Program."
                 },
                 {
                     id: 10,
-                    question: "What is the difference between SalesWik Pro and Reseller?",
-                    answer: "SalesWik's Reseller program allows you to set your own prices and sell SalesWik products under your own brand, whereas SalesWik Pro provides developers and designers with free tools to manage their clients and sites."
+                    question: "What is the difference between Covisor Pro and Reseller?",
+                    answer: "Covisor's Reseller program allows you to set your own prices and sell Covisor products under your own brand, whereas Covisor Pro provides developers and designers with free tools to manage their clients and sites."
                 },
                 {
                     id: 8,
                     question: "Who takes payment from my customer?",
-                    answer: "Although your customers will buy from your white labeled store front, when they enter the transaction experience they will be directed to a still white-labeled cart experience, but that contract, experience and payment collection are managed by WildWestDomains.com, a SalesWik entity, in the background. You, as the reseller, then get paid the net commissions from each transacted amount."
+                    answer: "Although your customers will buy from your white labeled store front, when they enter the transaction experience they will be directed to a still white-labeled cart experience, but that contract, experience and payment collection are managed by WildWestDomains.com, a Covisor entity, in the background. You, as the reseller, then get paid the net commissions from each transacted amount."
                 },
             ],
         }
     },
     methods: {
         submitQuery() {
-            console.log(this.mobile, this.email, this.number, this.note)
+            if (this.name != "" && this.designation != "" && this.note != "") {
+                const phoneNumber = '918860012001'; // Replace with your WhatsApp number
+                const message = `Hello, my name is ${this.name}. I am : ${this.designation}. Here are some additional notes: ${this.note}.`;
+                const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+                this.name = "",
+                    this.service = "",
+                    this.note = "";
+            }
         }
     }
 

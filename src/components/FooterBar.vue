@@ -28,19 +28,19 @@
                 <div class="mb-3 text-start">
                     <p class="mb-2 fw-bold">Company</p>
                     <div class="d-flex flex-column">
-                        <router-link to="/#" class="text-decoration-none my-1 " style="color: var(--brand-color) !important"
-                            v-for="(link, index) in company" :key="index">{{ link.name }}</router-link>
-                        <!-- <router-link :to="link.link" class="text-decoration-none my-1 " style="color: var(--brand-color) !important"
+                        <!-- <router-link to="/#" class="text-decoration-none my-1 " style="color: var(--brand-color) !important"
                             v-for="(link, index) in company" :key="index">{{ link.name }}</router-link> -->
+                        <router-link :to="link.link" class="text-decoration-none my-1 " style="color: var(--brand-color) !important"
+                            v-for="(link, index) in company" :key="index">{{ link.name }}</router-link>
                     </div>
                 </div>
                 <div class="mb-3 text-start">
                     <p class="mb-2 fw-bold">Resources</p>
                     <div class="d-flex flex-column">
-                        <router-link to="/#" class="text-decoration-none my-1" style="color: var(--brand-color) !important"
-                            v-for="(link, index) in links" :key="index">{{ link.name }}</router-link>
-                        <!-- <router-link :to="link.link" class="text-decoration-none my-1" style="color: var(--brand-color) !important"
+                        <!-- <router-link to="/#" class="text-decoration-none my-1" style="color: var(--brand-color) !important"
                             v-for="(link, index) in links" :key="index">{{ link.name }}</router-link> -->
+                        <router-link :to="link.link" class="text-decoration-none my-1" style="color: var(--brand-color) !important"
+                            v-for="(link, index) in links" :key="index">{{ link.name }}</router-link>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
     </div>
     <FameFoot />
     <div class="bg-light text-center py-3 d-flex align-items-center justify-content-center">
-        <p class="text-dark mb-0"> Copyright © 2024 covisor.com All rights reserved</p>
+        <p class="text-dark mb-0"> Copyright © 2024 Covisor Infotech Pvt Ltd All rights reserved</p>
     </div>
 </template>
 

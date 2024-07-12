@@ -71,7 +71,7 @@ export default {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-}
+} 
 
 .text-ellipsis4 {
   display: -webkit-box;

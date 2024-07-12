@@ -3,14 +3,15 @@
         <div class="container mb-5 pb-5">
             <div class="row">
                 <div class="col-12 col-md-6 py-3 text-center px-4 px-md-2">
-                    <h1 class="lh-1 text-capitalize">book your free consultation</h1>
-                    <p class="text-capitalize">and learn how to grow your business digitally</p>
-                    <form @submit.prevent="submitForm()" class="mt-4 row g-3 needs-validation" novalidate>
+                    <h1 class="mt-3 text-capitalize">book your free consultation</h1>
+                    <p class="fs-5 text-capitalize">and learn how to, start your digital journey, grow your business
+                        digitally, compete online with big giants.</p>
+                    <form @submit.prevent="submitQuery()" class="mt-4 row g-3 needs-validation">
                         <div class="w-100 form-floating mt-0">
                             <input type="text" class="form-control" placeholder="" v-model="name" required>
                             <label for="floatingInput" class="text-muted ms-2">Name</label>
                         </div>
-                        <div class="w-50 form-floating mt-2">
+                        <!-- <div class="w-50 form-floating mt-2">
                             <input type="tel" class="form-control" placeholder="Mobile" v-model="number" required>
                             <label class="ms-2 text-muted">Mobile No</label>
                         </div>
@@ -23,24 +24,26 @@
                                     {{ country.label }}
                                 </option>
                             </select>
-                        </div>
+                        </div> -->
                         <div class="w-100 form-floating mt-2">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
-                                v-model="note"></textarea>
+                                v-model="note" style="height: 100px;"></textarea>
                             <label for="floatingTextarea" class="ms-2 text-muted">Describe your requirements</label>
                         </div>
 
-                        <div class="form-check text-start ms-2">
+                        <!-- <div class="form-check text-start ms-2">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
                                 v-model="agree">
                             <label class="form-check-label text-dark small" for="flexCheckDefault">
                                 I agree to share my contact details
                             </label>
-                        </div>
+                        </div> -->
                         <div class="col-12">
-                            <button class="btn btn-warning py-2 fs-5 w-100 rounded-0 text-dark text-capitalize"
-                                type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">get my
-                                consultation</button>
+                            <button class="btn btn-warning py-2 fs-5 w-100 rounded-0 text-dark text-capitalize">booking
+                                confirm</button>
+                            <!-- <button class="btn btn-warning py-2 fs-5 w-100 rounded-0 text-dark text-capitalize"
+                                type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">booking
+                                confirm</button> -->
                         </div>
                     </form>
 
@@ -58,10 +61,10 @@
         </div>
         <p class="text-center py-4 text-white mb-0 position-fixed bottom-0 w-100"
             style="background-color: var(--brand-color);">Questions? Talk to an
-            expert: 8860012001</p>
+            expert: 91 8860012001</p>
 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -74,7 +77,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- image url -->
         <!-- https://www.freepik.com/free-vector/thank-you-card-concept-illustration_44955445.htm#fromView=search&page=1&position=36&uuid=3a324ee3-8e9c-4e4a-9fed-3b9443d57291 -->
     </div>
@@ -321,6 +324,8 @@ export default {
             ],
             selectedCountry: 'IN',
             agree: false,
+            name: '',
+            note: '',
         }
     },
     methods: {
@@ -330,7 +335,23 @@ export default {
             } else {
                 alert('Please agree to the terms and conditions');
             }
+        },
+        submitQuery() {
+            if (this.name != '' && this.note != '') {
+                const phoneNumber = '918860012001'; // Replace with your WhatsApp number
+                const message = `Hello, my name is ${this.name} i would like to book my 30 mins free consultation. Here are some additional notes: ${this.note}.`;
+                const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+                this.name = "";
+                this.note = "";
+            }
         }
+        // submitQuery() {
+        //     const phoneNumber = '918860012001'; // Replace with your WhatsApp number
+        //     const message = `Hello, my name is ${this.name} i would like to book my 30 mins free consultation. Here are some additional notes: ${this.note}.`;
+        //     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+        //     window.open(whatsappUrl, '_blank');
+        // }
     }
 }
 </script>

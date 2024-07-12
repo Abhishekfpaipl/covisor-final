@@ -88,7 +88,7 @@ export default {
                 { id: 11, img: '/img/categories/Import n Export.svg', name: "Import n Export" },
                 { id: 12, img: '/img/categories/Manufacturing.svg', name: "Manufacturing" },
                 { id: 13, img: '/img/categories/Pharmaceuticals.svg', name: "Pharmaceuticals" },
-                { id: 14, img: '/img/categories/Restaurants.svg', name: "Restaurants" },
+                { id: 14, img: '/img/categories/Restraunts.svg', name: "Restaurants" },
                 { id: 15, img: '/img/categories/Retail Shop.svg', name: "Retail Shop" },
                 { id: 16, img: '/img/categories/Retail.svg', name: "Retail" },
                 { id: 17, img: '/img/categories/Salon.svg', name: "Salon" },

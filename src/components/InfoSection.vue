@@ -1,30 +1,84 @@
 <template>
-  <div class="container py-3">
-    <h1 class="px-2 text-center mb-0">About Us</h1>
-    <!-- <router-link to="/about-us" class="text-decoration-none text-dark d-flex justify-content-end mb-2">
-      <span>Know More </span>
-      <i class="bi bi-arrow-right"></i>
-    </router-link> -->
-    <div class="position-relative">
-      <div class="d-flex gap-3 overflow-x-scroll" id="scroll" ref="scrollContainer">
-        <div class="" v-for="(custom, index) in customFields" :key="index">
-          <div class="card" style="min-width: 18rem; min-height: 12rem">
-            <div class="card-body p-0">
-              <h5 class="text-center card-title border-bottom py-3 bg-light">{{ custom.name }}</h5>
-              <p class="card-text px-2 overflow-scroll" id="scroll">{{ custom.value }}</p>
+  <div>
+    <div class="container py-3">
+      <h1 class="px-2 text-center mb-5">Tech Team</h1>
+      <div class="position-relative">
+        <div class="d-flex gap-3 overflow-x-scroll" ref="techScrollContainer" id="scroll">
+          <div class="" v-for="(team, index) in techTeam" :key="index">
+            <div class="card" style="min-width: 18rem;">
+              <div class="card-body p-0">
+                <div class="text-center card-title border-bottom py-2 bg-light">
+                  <h5 class="lh-1 mb-0">{{ team.name }}</h5>
+                  <small>{{ team.post }}</small>
+                </div>
+                <p class="px-2 text-ellipsis4">{{ team.value }}</p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="rounded-circle border d-flex justify-content-center align-items-center position-absolute bg-light"
+          @click="scrollLeft($refs.techScrollContainer)" style="width: 40px; height:40px ;top: 40%; left: -2%">
+          <i class="bi bi-chevron-left"></i>
+        </div>
+        <div class="rounded-circle border d-flex justify-content-center align-items-center position-absolute bg-light"
+          @click="scrollRight($refs.techScrollContainer)" style="width: 40px; height:40px ;top: 40%; right: -2%">
+          <i class="bi bi-chevron-right"></i>
+        </div>
       </div>
-      <div class="rounded-circle border d-flex justify-content-center align-items-center position-absolute bg-light"
-        @click="scrollLeft" style="width: 40px; height:40px ;top: 40%; left: -2%">
-        <i class="bi bi-chevron-left"></i>
-      </div>
-      <div class="rounded-circle border d-flex justify-content-center align-items-center position-absolute bg-light"
-        @click="scrollRight" style="width: 40px; height:40px ;top: 40%; right: -2%">
-        <i class="bi bi-chevron-right"></i>
-      </div>
+    </div>
 
+    <div class="container py-3 my-5">
+      <h1 class="px-2 text-center mb-5">Marketing Team</h1>
+      <div class="position-relative">
+        <div class="d-flex gap-3 overflow-x-scroll" ref="marketingScrollContainer" id="scroll">
+          <div class="" v-for="(team, index) in marketingTeam" :key="index">
+            <div class="card" style="min-width: 18rem;">
+              <div class="card-body p-0">
+                <div class="text-center card-title border-bottom py-2 bg-light">
+                  <h5 class="lh-1 mb-0">{{ team.name }}</h5>
+                  <small>{{ team.post }}</small>
+                </div>
+                <p class="px-2text-ellipsis4">{{ team.value }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-circle border d-flex justify-content-center align-items-center position-absolute bg-light"
+          @click="scrollLeft($refs.marketingScrollContainer)" style="width: 40px; height:40px ;top: 40%; left: -2%">
+          <i class="bi bi-chevron-left"></i>
+        </div>
+        <div class="rounded-circle border d-flex justify-content-center align-items-center position-absolute bg-light"
+          @click="scrollRight($refs.marketingScrollContainer)" style="width: 40px; height:40px ;top: 40%; right: -2%">
+          <i class="bi bi-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-3 my-5">
+      <h1 class="px-2 text-center mb-5">Management Team</h1>
+      <div class="position-relative">
+        <div class="d-flex gap-3 overflow-x-scroll" ref="managementScrollContainer" id="scroll">
+          <div class="" v-for="(team, index) in managementTeam" :key="index">
+            <div class="card" style="min-width: 18rem; min-height: 12rem">
+              <div class="card-body p-0">
+                <div class="text-center card-title border-bottom py-2 bg-light">
+                  <h5 class="lh-1 mb-0">{{ team.name }}</h5>
+                  <small>{{ team.post }}</small>
+                </div>
+                <p class="card-text px-2 text-ellipsis4">{{ team.value }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-circle border d-flex justify-content-center align-items-center position-absolute bg-light"
+          @click="scrollLeft($refs.managementScrollContainer)" style="width: 40px; height:40px ;top: 40%; left: -2%">
+          <i class="bi bi-chevron-left"></i>
+        </div>
+        <div class="rounded-circle border d-flex justify-content-center align-items-center position-absolute bg-light"
+          @click="scrollRight($refs.managementScrollContainer)" style="width: 40px; height:40px ;top: 40%; right: -2%">
+          <i class="bi bi-chevron-right"></i>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -32,26 +86,31 @@
 <script>
 export default {
   name: 'InfoSection',
-  // props: ['customFields'],
   props: {
-    customFields: {
+    techTeam: {
       type: Array,
       required: true
-    }
+    },
+    managementTeam: {
+      type: Array,
+      required: true
+    },
+    marketingTeam: {
+      type: Array,
+      required: true
+    },
   },
   methods: {
-    scrollLeft() {
-      const container = this.$refs.scrollContainer;
+    scrollLeft(container) {
       const scrollWidth = container.clientWidth;
-      const newScrollLeft = Math.max(container.scrollLeft - scrollWidth);
+      const newScrollLeft = Math.max(container.scrollLeft - scrollWidth, 0);
 
       container.scrollTo({
         left: newScrollLeft,
         behavior: 'smooth'
       });
     },
-    scrollRight() {
-      const container = this.$refs.scrollContainer;
+    scrollRight(container) {
       const scrollWidth = container.clientWidth;
       const maxScrollLeft = container.scrollWidth - scrollWidth;
       const newScrollLeft = Math.min(container.scrollLeft + scrollWidth, maxScrollLeft);
@@ -66,11 +125,10 @@ export default {
 </script>
 
 <style scoped>
-.card-text {
+/* .card-text {
   max-height: 12rem;
-  /* Adjust as needed */
   overflow-y: auto;
-}
+} */
 
 #scroll::-webkit-scrollbar {
   display: none;

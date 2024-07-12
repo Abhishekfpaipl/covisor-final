@@ -202,7 +202,7 @@ export default {
                     name: 'Ram',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
-                    text: "We initially thought Saleswik was a small tool that only stores client data but once we started working on it, we knew its depth. We are very excited to use the new features like Team Pipelines, Email-in, and File Cabinet. We 100% recommend Saleswik to everyone!"
+                    text: "We initially thought Covisor was a small tool that only stores client data but once we started working on it, we knew its depth. We are very excited to use the new features like Team Pipelines, Email-in, and File Cabinet. We 100% recommend Covisor to everyone!"
                 },
                 {
                     id: 2,
@@ -211,7 +211,7 @@ export default {
                     name: 'Shyam',
                     company: 'XYz Pvt Ltd',
                     rating: '4.5',
-                    text: "Saleswik was the perfect solution for our startup, which was moving from paper-based and Excel sheets to an automated solution for sales outreach and managing incoming calls. It has all the basic functionality of other leading CRMs at half the price. In addition, onboarding/training was provided at no additional cost. I highly recommend Zoho Saleswik for any micro business."
+                    text: "Covisor was the perfect solution for our startup, which was moving from paper-based and Excel sheets to an automated solution for sales outreach and managing incoming calls. It has all the basic functionality of other leading CRMs at half the price. In addition, onboarding/training was provided at no additional cost. I highly recommend Zoho Covisor for any micro business."
                 },
                 {
                     id: 3,
@@ -229,7 +229,7 @@ export default {
                     name: 'Abhishek',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
-                    text: "The general idea was to keep everything in one place and at an affordable price, and Saleswik was very accessible that way, and with the ability to expand without switching CRMs."
+                    text: "The general idea was to keep everything in one place and at an affordable price, and Covisor was very accessible that way, and with the ability to expand without switching CRMs."
                 },
                 {
                     id: 5,
@@ -247,7 +247,7 @@ export default {
                     name: 'Yogesh',
                     company: 'XYz Pvt Ltd',
                     rating: '4.5',
-                    text: "Saleswik has been really helpful for us to keep a track on contacts and deals. Since we are small team, Saleswik was so user-friendly that we were able to start using from week 1 of our trial."
+                    text: "Covisor has been really helpful for us to keep a track on contacts and deals. Since we are small team, Covisor was so user-friendly that we were able to start using from week 1 of our trial."
                 },
                 {
                     id: 7,
@@ -256,7 +256,7 @@ export default {
                     name: 'Lokesh',
                     company: 'XYz Pvt Ltd',
                     rating: '4',
-                    text: "The CRM options available in the market are either too expensive, with complex features that are not essential for a small business, or are priced less with nominal features. But Saleswik is game-changing. It has exceeded our expectations such that V4 Creative cannot work without it."
+                    text: "The CRM options available in the market are either too expensive, with complex features that are not essential for a small business, or are priced less with nominal features. But Covisor is game-changing. It has exceeded our expectations such that V4 Creative cannot work without it."
                 },
                 {
                     id: 8,
@@ -265,7 +265,7 @@ export default {
                     name: 'Bhasker',
                     company: 'XYz Pvt Ltd',
                     rating: '3.5',
-                    text: "As vendor and customers needed order visibility, we wanted to automate the entire business and found only Saleswik to be the best suited in terms of integration."
+                    text: "As vendor and customers needed order visibility, we wanted to automate the entire business and found only Covisor to be the best suited in terms of integration."
                 },
                 {
                     id: 9,
@@ -274,7 +274,7 @@ export default {
                     name: 'Vivek',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
-                    text: "Saleswik has stayed true to its value proposition—a CRM tailored for small businesses and startups."
+                    text: "Covisor has stayed true to its value proposition—a CRM tailored for small businesses and startups."
                 },
                 {
                     id: 10,
@@ -283,7 +283,7 @@ export default {
                     name: 'Ankit',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
-                    text: "Since the implementation of Saleswik, we have seen positive outcomes in business operations and the accessibility of data. One glance at the Dashboards indicates the performance of my sales folks!"
+                    text: "Since the implementation of Covisor, we have seen positive outcomes in business operations and the accessibility of data. One glance at the Dashboards indicates the performance of my sales folks!"
                 },
                 {
                     id: 11,
@@ -292,7 +292,7 @@ export default {
                     name: 'Karan',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
-                    text: "The mobile app of Saleswik increases productivity on a whole different level. As a small business, it gives us the edge over our competitors and we're very happy to use Saleswik!"
+                    text: "The mobile app of Covisor increases productivity on a whole different level. As a small business, it gives us the edge over our competitors and we're very happy to use Covisor!"
                 },
                 {
                     id: 12,
@@ -301,7 +301,7 @@ export default {
                     name: 'Rajat',
                     company: 'XYz Pvt Ltd',
                     rating: '4',
-                    text: "Saleswik helps me stay on track, lets me know where I am at any point of time and what I need to do to reach where I really want to go!"
+                    text: "Covisor helps me stay on track, lets me know where I am at any point of time and what I need to do to reach where I really want to go!"
                 },
                 {
                     id: 13,
@@ -310,7 +310,7 @@ export default {
                     name: 'Ajay',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
-                    text: "Since I started using Saleswik, no lead has been lost. The student conversion rate has increased by 25 percent, to 30 percent."
+                    text: "Since I started using Covisor, no lead has been lost. The student conversion rate has increased by 25 percent, to 30 percent."
                 },
                 {
                     id: 14,
@@ -319,7 +319,7 @@ export default {
                     name: 'Vikas',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
-                    text: "Saleswik has helped us to decentralize information. Now all the team has access to the documents and sales information. We no longer have the problem that some documents is stored on the PC of a teammate who is not accessible at the time."
+                    text: "Covisor has helped us to decentralize information. Now all the team has access to the documents and sales information. We no longer have the problem that some documents is stored on the PC of a teammate who is not accessible at the time."
                 },
             ],
             values: [
@@ -328,21 +328,21 @@ export default {
                     icon: 'bi-funnel fs-4',
                     title: "Business & Competitors Analysis",
                     color: '#e76365',
-                    description: "Buy targeted advertising on Facebook and Instagram or Google and start driving high- quality traffic to your Saleswik landing pages.",
+                    description: "Buy targeted advertising on Facebook and Instagram or Google and start driving high- quality traffic to your Covisor landing pages.",
                 },
                 {
                     id: 2,
                     icon: 'bi-diagram-3 fs-4',
                     title: "Development of Strategies ",
                     color: "#f5925e",
-                    description: "Select a high-converting Saleswik landing page which is more optimized for your business goals. ",
+                    description: "Select a high-converting Covisor landing page which is more optimized for your business goals. ",
                 },
                 {
                     id: 3,
                     icon: 'bi-hand-thumbs-up fs-4',
                     title: "Validation of Required Digital Places ",
                     color: "#f8a42a",
-                    description: "Get more conversions by capturing the contact details of the visitors, visiting your Saleswik landing page.",
+                    description: "Get more conversions by capturing the contact details of the visitors, visiting your Covisor landing page.",
                 },
                 {
                     id: 4,
@@ -370,14 +370,14 @@ export default {
                     icon: 'bi-clipboard-data fs-4',
                     title: "Provide Lead Management System",
                     color: "#5ccd5f",
-                    description: "Connect to Payment Gateway without leaving the app. Sell your products and services right on your Saleswik landing page.",
+                    description: "Connect to Payment Gateway without leaving the app. Sell your products and services right on your Covisor landing page.",
                 },
                 {
                     id: 8,
                     icon: 'bi-clipboard-data fs-4',
                     title: "Successfully Achievement of Goals",
                     color: "#5ccd5f",
-                    description: "Connect to Payment Gateway without leaving the app. Sell your products and services right on your Saleswik landing page.",
+                    description: "Connect to Payment Gateway without leaving the app. Sell your products and services right on your Covisor landing page.",
                 },
             ],
             plans: [

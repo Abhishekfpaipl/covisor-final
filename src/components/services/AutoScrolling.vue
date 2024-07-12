@@ -8,7 +8,7 @@
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
                         <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)"
                             alt="">
-                        <p class="text-center mb-0">{{ link.name }}</p>
+                        <p v-if="link.name" class="text-center mb-0">{{ link.name }}</p>
                     </div>
                 </div>
                 <div aria-hidden="true" class="marquee__group"
@@ -16,7 +16,7 @@
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
                         <img :src="link.image" style="width:80px;height:80px;object-fit: contain; filter: invert(1)"
                             alt="">
-                        <p class="text-center mb-0">{{ link.name }}</p>
+                        <p v-if="link.name" class="text-center mb-0">{{ link.name }}</p>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
     </div>
 </template>
 
-<script> 
+<script>
 
 export default {
     name: "AutoScrolling",
@@ -32,54 +32,15 @@ export default {
         brandColorOne: {
             type: String,
             default: '#000'
+        },
+        links: {
+            type: Array,
         }
     },
     data() {
         return {
             isVertical: false,
             isReverse: false,
-            links: [
-                {
-                    id: 1,
-                    name: 'Amazon',
-                    image: '/img/amazon.png'
-                },
-                {
-                    id: 2,
-                    name: 'Apple',
-                    image: "/img/apple.png"
-                },
-                {
-                    id: 3,
-                    name: 'Aws',
-                    image: "/img/aws.png"
-                },
-                {
-                    id: 4,
-                    name: 'Facebook',
-                    image: "/img/fb.png"
-                },
-                {
-                    id: 5,
-                    name: 'Google',
-                    image: "/img/google.png"
-                },
-                {
-                    id: 6,
-                    name: 'Meta',
-                    image: "/img/meta.png"
-                },
-                {
-                    id: 7,
-                    name: 'Microsoft',
-                    image: "/img/microsoft.png"
-                },
-                {
-                    id: 11,
-                    name: 'Vodafone',
-                    image: "/img/vodafone.png"
-                },
-            ]
         };
     },
     methods: {

@@ -5,16 +5,13 @@
                 :category="category" :place="place" v-observe />
         </div>
         <div class="my-5">
-            <TestComponent />
-        </div>
-        <div class="my-5">
             <ServicesLeadManagement :values="leads" title="What makes us different ?" v-observe />
         </div>
         <div class="mt-5">
             <WhyChooseUs :description="whychooseUs" title="why choose us" image="/img/whychooseUs.svg" v-observe />
         </div>
         <div class="">
-            <AutoScrolling v-observe />
+            <AutoScrolling :links="autoScrolling" v-observe />
         </div>
         <div class="my-5">
             <TempCustomers :reviews="customers" title="our customers" v-observe />
@@ -27,7 +24,6 @@
 </template>
 <script>
 import FormBanner from "@/components/FormBanner.vue";
-import TestComponent from "@/components/TestComponent.vue";
 import ServicesLeadManagement from "@/components/services/LeadManagement.vue";
 import WhyChooseUs from "@/components/WhyChooseUs.vue";
 import AutoScrolling from "@/components/services/AutoScrolling.vue";
@@ -38,7 +34,6 @@ export default {
     name: "ServicePage",
     components: {
         FormBanner,
-        TestComponent,
         ServicesLeadManagement,
         WhyChooseUs,
         AutoScrolling,
@@ -52,6 +47,23 @@ export default {
             customer: '',
             category: '',
             place: '',
+            tests: [
+                {
+                    image: 'https://img.freepik.com/premium-vector/ui-ux-programmer-flat-design-vector-illustration-business-information-team-sharing-ideas-with-designer-coding-interface-software-app-development_2175-1809.jpg?w=740',
+                    title: "Website Development",
+                    description: "https://www.freepik.com/premium-vector/ui-ux-programmer-flat-design-vector-illustration-business-information-team-sharing-ideas-with-designer-coding-interface-software-app-development_20986097.htm#fromView=search&page=2&position=29&uuid=3a324ee3-8e9c-4e4a-9fed-3b9443d57291"
+                },
+                {
+                    image: 'https://img.freepik.com/free-vector/app-development-concept-design_23-2148670525.jpg?t=st=1719995008~exp=1719998608~hmac=19e8a06dd32e1962945be0ca586d1f2c9b725fde45e7a863c966703802bdb976&w=740',
+                    title: "Software Development ",
+                    description: "https://www.freepik.com/free-vector/app-development-concept-design_10115990.htm#fromView=search&page=2&position=48&uuid=3a324ee3-8e9c-4e4a-9fed-3b9443d57291"
+                },
+                {
+                    image: 'https://img.freepik.com/free-vector/circular-influencer-marketing-vector_23-2147698406.jpg?t=st=1719994620~exp=1719998220~hmac=b288a55bab315d40852d883990a43f29e7aebce9b59cff9014fa767f6fd0bf16&w=740',
+                    title: "Digital Marketing",
+                    description: "https://www.freepik.com/free-vector/circular-influencer-marketing-vector_1364819.htm#fromView=search&page=1&position=18&uuid=6fa0702f-11c4-4ef2-828e-49bb34fa1cbc"
+                },
+            ],
             leads: [
                 {
                     icon: 'bi-shield-check',
@@ -136,158 +148,30 @@ export default {
                     answer: "Depending on the features, the cost of a CRM system may start from $10-$25 per user per month. CRM companies also offer custom plans for specific features."
                 },
                 {
-                    question: " Can i make whatsApp communication from saleswik CRM?",
-                    answer: "Yes, you can do trasactional whatsapp messaging through saleswik CRM. You can also select automated messages and send to the buyers."
+                    question: " Can i make whatsApp communication from Covisor CRM?",
+                    answer: "Yes, you can do trasactional whatsapp messaging through Covisor CRM. You can also select automated messages and send to the buyers."
                 },
                 {
-                    question: "Is Saleswik CRM gives alert of timely followups?",
-                    answer: "Yes, It gives peding follow-up alerts on dashboard saleswik and sms so that you should not miss any followup"
+                    question: "Is Covisor CRM gives alert of timely followups?",
+                    answer: "Yes, It gives peding follow-up alerts on dashboard Covisor and sms so that you should not miss any followup"
                 },
                 {
-                    question: "Can I sync my call log leads to saleswik CRM?",
-                    answer: "Yes, you can sync all your calls in saleswik CRM and convert them into leads."
+                    question: "Can I sync my call log leads to Covisor CRM?",
+                    answer: "Yes, you can sync all your calls in Covisor CRM and convert them into leads."
                 },
                 {
-                    question: "Is my data secured at saleswik CRM?",
+                    question: "Is my data secured at Covisor CRM?",
                     answer: "Yes, your data is completely safe, and important credentails are encripted."
                 },
                 {
-                    question: "Can i sync leads form my website to saleswik?",
+                    question: "Can i sync leads form my website to Covisor?",
                     answer: "Yes, we have API based solutions for all your lead sources and its sync leads in runtime."
                 },
                 {
-                    question: "Can i manage my accounts at saleswik CRM?",
+                    question: "Can i manage my accounts at Covisor CRM?",
                     answer: "Yes, you can manage your PO, proforma & Tax invoices. You can also manage your credit payment followups & AMC renewal."
                 },
-            ],
-            customers: [
-                {
-                    id: 1,
-                    show: false,
-                    imgr: '/img/users/1.png',
-                    name: 'Ram',
-                    company: 'XYz Pvt Ltd',
-                    rating: '5',
-                    text: "We initially thought Saleswik was a small tool that only stores client data but once we started working on it, we knew its depth. We are very excited to use the new features like Team Pipelines, Email-in, and File Cabinet. We 100% recommend Saleswik to everyone!"
-                },
-                {
-                    id: 2,
-                    show: false,
-                    imgr: '/img/users/2.png',
-                    name: 'Shyam',
-                    company: 'XYz Pvt Ltd',
-                    rating: '4.5',
-                    text: "Saleswik was the perfect solution for our startup, which was moving from paper-based and Excel sheets to an automated solution for sales outreach and managing incoming calls. It has all the basic functionality of other leading CRMs at half the price. In addition, onboarding/training was provided at no additional cost. I highly recommend Zoho Saleswik for any micro business."
-                },
-                {
-                    id: 3,
-                    show: false,
-                    imgr: '/img/users/3.png',
-                    name: 'Nikhil',
-                    company: 'XYz Pvt Ltd',
-                    rating: '5',
-                    text: "Loved its UI. I have tried many other apps but this app is the best. The details in which the products are shown in picture is above all."
-                },
-                {
-                    id: 4,
-                    show: false,
-                    imgr: '/img/users/4.png',
-                    name: 'Abhishek',
-                    company: 'XYz Pvt Ltd',
-                    rating: '5',
-                    text: "The general idea was to keep everything in one place and at an affordable price, and Saleswik was very accessible that way, and with the ability to expand without switching CRMs."
-                },
-                {
-                    id: 5,
-                    show: false,
-                    imgr: '/img/users/5.png',
-                    name: 'Rajan',
-                    company: 'XYz Pvt Ltd',
-                    rating: '4',
-                    text: "When you work with software that is structured with features that make it so easy to use—that's when you realize you've struck gold and you don't want to go anywhere else. The pricing is also just right and ideal for small businesses."
-                },
-                {
-                    id: 6,
-                    show: false,
-                    imgr: '/img/users/1.png',
-                    name: 'Yogesh',
-                    company: 'XYz Pvt Ltd',
-                    rating: '4.5',
-                    text: "Saleswik has been really helpful for us to keep a track on contacts and deals. Since we are small team, Saleswik was so user-friendly that we were able to start using from week 1 of our trial."
-                },
-                {
-                    id: 7,
-                    show: false,
-                    imgr: '/img/users/2.png',
-                    name: 'Lokesh',
-                    company: 'XYz Pvt Ltd',
-                    rating: '4',
-                    text: "The CRM options available in the market are either too expensive, with complex features that are not essential for a small business, or are priced less with nominal features. But Saleswik is game-changing. It has exceeded our expectations such that V4 Creative cannot work without it."
-                },
-                {
-                    id: 8,
-                    show: false,
-                    imgr: '/img/users/3.png',
-                    name: 'Bhasker',
-                    company: 'XYz Pvt Ltd',
-                    rating: '3.5',
-                    text: "As vendor and customers needed order visibility, we wanted to automate the entire business and found only Saleswik to be the best suited in terms of integration."
-                },
-                {
-                    id: 9,
-                    show: false,
-                    imgr: '/img/users/4.png',
-                    name: 'Vivek',
-                    company: 'XYz Pvt Ltd',
-                    rating: '5',
-                    text: "Saleswik has stayed true to its value proposition—a CRM tailored for small businesses and startups."
-                },
-                {
-                    id: 10,
-                    show: false,
-                    imgr: '/img/users/5.png',
-                    name: 'Ankit',
-                    company: 'XYz Pvt Ltd',
-                    rating: '5',
-                    text: "Since the implementation of Saleswik, we have seen positive outcomes in business operations and the accessibility of data. One glance at the Dashboards indicates the performance of my sales folks!"
-                },
-                {
-                    id: 11,
-                    show: false,
-                    imgr: '/img/users/1.png',
-                    name: 'Karan',
-                    company: 'XYz Pvt Ltd',
-                    rating: '5',
-                    text: "The mobile app of Saleswik increases productivity on a whole different level. As a small business, it gives us the edge over our competitors and we're very happy to use Saleswik!"
-                },
-                {
-                    id: 12,
-                    show: false,
-                    imgr: '/img/users/2.png',
-                    name: 'Rajat',
-                    company: 'XYz Pvt Ltd',
-                    rating: '4',
-                    text: "Saleswik helps me stay on track, lets me know where I am at any point of time and what I need to do to reach where I really want to go!"
-                },
-                {
-                    id: 13,
-                    show: false,
-                    imgr: '/img/users/3.png',
-                    name: 'Ajay',
-                    company: 'XYz Pvt Ltd',
-                    rating: '5',
-                    text: "Since I started using Saleswik, no lead has been lost. The student conversion rate has increased by 25 percent, to 30 percent."
-                },
-                {
-                    id: 14,
-                    show: false,
-                    imgr: '/img/users/4.png',
-                    name: 'Vikas',
-                    company: 'XYz Pvt Ltd',
-                    rating: '5',
-                    text: "Saleswik has helped us to decentralize information. Now all the team has access to the documents and sales information. We no longer have the problem that some documents is stored on the PC of a teammate who is not accessible at the time."
-                },
-            ],
+            ], 
             whychooseUs: [
                 {
                     title: 'Ensure Zero Lead Leakage',
@@ -322,6 +206,14 @@ export default {
                     icon: 'bi-stars'
                 },
             ],
+        }
+    },
+    computed: {
+        autoScrolling() {
+            return this.$store.getters.getAutoScrolling
+        },
+        customers() {
+            return this.$store.getters.getCustomers
         }
     },
     mounted() {

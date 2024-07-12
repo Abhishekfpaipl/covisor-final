@@ -5,13 +5,13 @@
           <div class="w-100 overflow-auto d-flex align-items-center hide-scroll" ref="slider">
             <div v-for="(review, index) in infiniteReviews" :key="index" @click="showUser(review, index)"
                  class="btn rounded-circle m-2 mx-3 d-flex" :class="{ selectedDiv: isSelected(review.id) }">
-              <img :src="review.imgr" alt="User Image">
+              <img :src="review.imgr" class="rounded-circle" alt="User Image">
             </div>
           </div>
           <div>
             <div class="text-center">
-              <p class="my-1 fw-bold fs-3">{{ selectedReviewData.name }}</p>
-              <p class="my-1">{{ selectedReviewData.company }}</p>
+              <p class="my-1 fw-bold fs-3">{{ selectedReviewData.name }} ({{ selectedReviewData.company }})</p>
+              <p class="my-1">{{ selectedReviewData.service }}</p>
               <ReviewRating :rating="selectedReviewData.rating" />
             </div>
             <div class="text d-flex justify-content-center text-center">
@@ -82,12 +82,13 @@
   
   <style scoped>
   .btn.selectedDiv {
-    border: 2px solid red;
+    border: 2px solid var(--brand-color);
   }
   
   img {
     width: 80px;
     height: 80px;
+    object-fit: cover;
   }
   
   .btn.selectedDiv img {

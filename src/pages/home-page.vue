@@ -1,9 +1,6 @@
 <template>
   <div class="" style="padding-top:66px">
     <Banner brandColorOne="#125252" v-observe />
-    <!-- <div class="my-5">
-      <VideoSection v-observe />
-    </div> -->
     <div class="">
       <WelcomeModal />
     </div>
@@ -17,22 +14,20 @@
       <PriceSection v-observe />
     </div>
     <div class="">
-      <AutoScrolling v-observe />
+      <AutoScrolling :links="scrolling" v-observe />
     </div>
 
     <div class="">
       <WhyChooseUs v-observe />
     </div>
-    <div class="">
-      <ImageSection banner="/img/banner1.png" v-observe />
+    <div class="my-5">
+      <CustomCounter service="satisfied customers" :serviceCount="1000" category="years of expirence"
+        :categoryCount="10" place="projects completed" :placeCount="4000" title="our facts" v-observe />
     </div>
-    <!-- <div class="my-5">
+
+    <div class="my-5">
       <SalesFunnel v-observe />
-    </div> -->
-    <!-- <div class="my-5">
-      <CustomCounter service="customers" :serviceCount="50" category="years" :categoryCount="10" place="team"
-        :placeCount="150" title="our facts" v-observe />
-    </div> -->
+    </div>
 
     <div class="">
       <TempFaqs :faqs="faqs" image-src="/img/faq.svg" title="Frequently asked questions" image-position="left"
@@ -42,45 +37,43 @@
       <TempCustomers :reviews="customers" title="our customers" v-observe />
     </div>
     <div class="">
+      <ImageSection banner="/img/banner1.png" v-observe />
+    </div>
+    <div class="">
       <BookDemo :faqs="faqs" image-src="/img/demo.svg" title="let's book your free appointment" v-observe />
     </div>
-    <!-- <BottomShareIcons /> -->
   </div>
 </template>
 
 <script>
 import Banner from "@/components/BannerSection.vue";
-// import WelcomeModal from "@/components/WelcomeModal.vue";
+import WelcomeModal from "@/components/WelcomeModal.vue";
 import LeadManagement from "@/components/services/LeadManagement.vue";
-// import FreeConsultation from "@/components/FreeConsultation.vue";
-// import VideoSection from "@/components/VideoSection.vue";
+import FreeConsultation from "@/components/FreeConsultation.vue";
 import AutoScrolling from "@/components/services/AutoScrolling.vue";
-// import BookDemo from "@/components/BookDemo.vue";
+import BookDemo from "@/components/BookDemo.vue";
 import PriceSection from "@/components/PriceSection.vue";
 import ImageSection from "@/components/ImageSection.vue";
 // import SalesFunnel from "@/components/SalesFunnel.vue";
-// import CustomCounter from "@/components/CustomCounter.vue";
+import CustomCounter from "@/components/CustomCounter.vue";
 import WhyChooseUs from "@/components/WhyChooseUs.vue";
 // import TempFaqs from "@/components/TempFaqs.vue";
 import TempCustomers from "@/components/TempCustomers.vue";
-// import BottomShareIcons from "@/components/BottomShareIcons.vue";
 export default {
   components: {
     Banner,
-    // WelcomeModal,
+    WelcomeModal,
     LeadManagement,
-    // FreeConsultation,
-    // VideoSection,
+    FreeConsultation,
     AutoScrolling,
-    // BookDemo,
+    BookDemo,
     PriceSection,
     ImageSection,
     // SalesFunnel,
-    // CustomCounter,
+    CustomCounter,
     WhyChooseUs,
     // TempFaqs,
     TempCustomers,
-    // BottomShareIcons,
   },
   data() {
     return {
@@ -229,135 +222,107 @@ export default {
           description: "Ensuring quick and efficient delivery for our clients."
         }
       ],
-      customers: [
-        {
-          id: 1,
-          show: false,
-          imgr: '/img/users/1.png',
-          name: 'Ram',
-          company: 'XYz Pvt Ltd',
-          rating: '5',
-          text: "We initially thought Saleswik was a small tool that only stores client data but once we started working on it, we knew its depth. We are very excited to use the new features like Team Pipelines, Email-in, and File Cabinet. We 100% recommend Saleswik to everyone!"
-        },
-        {
-          id: 2,
-          show: false,
-          imgr: '/img/users/2.png',
-          name: 'Shyam',
-          company: 'XYz Pvt Ltd',
-          rating: '4.5',
-          text: "Saleswik was the perfect solution for our startup, which was moving from paper-based and Excel sheets to an automated solution for sales outreach and managing incoming calls. It has all the basic functionality of other leading CRMs at half the price. In addition, onboarding/training was provided at no additional cost. I highly recommend Zoho Saleswik for any micro business."
-        },
-        {
-          id: 3,
-          show: false,
-          imgr: '/img/users/3.png',
-          name: 'Nikhil',
-          company: 'XYz Pvt Ltd',
-          rating: '5',
-          text: "Loved its UI. I have tried many other apps but this app is the best. The details in which the products are shown in picture is above all."
-        },
-        {
-          id: 4,
-          show: false,
-          imgr: '/img/users/4.png',
-          name: 'Abhishek',
-          company: 'XYz Pvt Ltd',
-          rating: '5',
-          text: "The general idea was to keep everything in one place and at an affordable price, and Saleswik was very accessible that way, and with the ability to expand without switching CRMs."
-        },
-        {
-          id: 5,
-          show: false,
-          imgr: '/img/users/5.png',
-          name: 'Rajan',
-          company: 'XYz Pvt Ltd',
-          rating: '4',
-          text: "When you work with software that is structured with features that make it so easy to use—that's when you realize you've struck gold and you don't want to go anywhere else. The pricing is also just right and ideal for small businesses."
-        },
-        {
-          id: 6,
-          show: false,
-          imgr: '/img/users/1.png',
-          name: 'Yogesh',
-          company: 'XYz Pvt Ltd',
-          rating: '4.5',
-          text: "Saleswik has been really helpful for us to keep a track on contacts and deals. Since we are small team, Saleswik was so user-friendly that we were able to start using from week 1 of our trial."
-        },
-        {
-          id: 7,
-          show: false,
-          imgr: '/img/users/2.png',
-          name: 'Lokesh',
-          company: 'XYz Pvt Ltd',
-          rating: '4',
-          text: "The CRM options available in the market are either too expensive, with complex features that are not essential for a small business, or are priced less with nominal features. But Saleswik is game-changing. It has exceeded our expectations such that V4 Creative cannot work without it."
-        },
-        {
-          id: 8,
-          show: false,
-          imgr: '/img/users/3.png',
-          name: 'Bhasker',
-          company: 'XYz Pvt Ltd',
-          rating: '3.5',
-          text: "As vendor and customers needed order visibility, we wanted to automate the entire business and found only Saleswik to be the best suited in terms of integration."
-        },
-        {
-          id: 9,
-          show: false,
-          imgr: '/img/users/4.png',
-          name: 'Vivek',
-          company: 'XYz Pvt Ltd',
-          rating: '5',
-          text: "Saleswik has stayed true to its value proposition—a CRM tailored for small businesses and startups."
-        },
-        {
-          id: 10,
-          show: false,
-          imgr: '/img/users/5.png',
-          name: 'Ankit',
-          company: 'XYz Pvt Ltd',
-          rating: '5',
-          text: "Since the implementation of Saleswik, we have seen positive outcomes in business operations and the accessibility of data. One glance at the Dashboards indicates the performance of my sales folks!"
-        },
-        {
-          id: 11,
-          show: false,
-          imgr: '/img/users/1.png',
-          name: 'Karan',
-          company: 'XYz Pvt Ltd',
-          rating: '5',
-          text: "The mobile app of Saleswik increases productivity on a whole different level. As a small business, it gives us the edge over our competitors and we're very happy to use Saleswik!"
-        },
-        {
-          id: 12,
-          show: false,
-          imgr: '/img/users/2.png',
-          name: 'Rajat',
-          company: 'XYz Pvt Ltd',
-          rating: '4',
-          text: "Saleswik helps me stay on track, lets me know where I am at any point of time and what I need to do to reach where I really want to go!"
-        },
-        {
-          id: 13,
-          show: false,
-          imgr: '/img/users/3.png',
-          name: 'Ajay',
-          company: 'XYz Pvt Ltd',
-          rating: '5',
-          text: "Since I started using Saleswik, no lead has been lost. The student conversion rate has increased by 25 percent, to 30 percent."
-        },
-        {
-          id: 14,
-          show: false,
-          imgr: '/img/users/4.png',
-          name: 'Vikas',
-          company: 'XYz Pvt Ltd',
-          rating: '5',
-          text: "Saleswik has helped us to decentralize information. Now all the team has access to the documents and sales information. We no longer have the problem that some documents is stored on the PC of a teammate who is not accessible at the time."
-        },
-      ]
+      // customers: [
+      //   {
+      //     id: 1,
+      //     show: false,
+      //     imgr: '/img/customers/1.jpeg',
+      //     name: 'Kusum',
+      //     service: 'Digital Marketing',
+      //     company: 'Stellar Pvt Ltd',
+      //     rating: '5',
+      //     text: "Covisor transformed our online presence. Their SEO strategies improved our search engine rankings significantly, and their social media campaigns have driven unprecedented traffic to our website. The team is knowledgeable, responsive, and a pleasure to work with. Highly recommend their services!"
+      //   },
+      //   {
+      //     id: 2,
+      //     show: false,
+      //     imgr: '/img/customers/2.jpeg',
+      //     name: 'Payal',
+      //     service: 'Digital Marketing',
+      //     company: 'BrightSpark  Pvt Ltd',
+      //     rating: '4.5',
+      //     text: "Covisor provided us with effective PPC campaigns and valuable insights into our audience's behavior. Their email marketing strategies also helped us retain customers and increase sales. There was a slight delay in the initial setup, but their results made it worth the wait."
+      //   },
+      //   {
+      //     id: 3,
+      //     show: false,
+      //     imgr: '/img/customers/3.jpeg',
+      //     name: 'Sumit',
+      //     service: 'Digital Marketing',
+      //     company: 'Elite Solutions Pvt Ltd',
+      //     rating: '5',
+      //     text: "Covisor offered a comprehensive digital marketing plan, including content marketing and influencer partnerships. While the strategies were innovative, the execution was sometimes inconsistent. Customer support was responsive, but project management could be improved."
+      //   },
+      //   {
+      //     id: 4,
+      //     show: false,
+      //     imgr: '/img/customers/4.jpeg',
+      //     name: 'Abhishek',
+      //     service: 'Software Development',
+      //     company: 'DevMasters Pvt Ltd',
+      //     rating: '5',
+      //     text: "Covisor delivered a robust and scalable software solution tailored to our business needs. Their agile development process kept us involved at every stage, and the final product exceeded our expectations. The team’s expertise and attention to detail were exceptional."
+      //   },
+      //   {
+      //     id: 5,
+      //     show: false,
+      //     imgr: '/img/customers/5.jpeg',
+      //     name: 'Rajat',
+      //     service: 'Software Development',
+      //     company: 'CodeCraft  Pvt Ltd',
+      //     rating: '4',
+      //     text: "We collaborated with Covisor for a custom application development project. Their technical skills are top-notch, and they implemented features that enhanced our operational efficiency. However, there were occasional communication lapses that delayed progress. Overall, a solid choice for software development."
+      //   },
+      //   {
+      //     id: 6,
+      //     show: false,
+      //     imgr: '/img/customers/6.jpeg',
+      //     name: 'Jayshree',
+      //     service: 'Software Development',
+      //     company: 'SoftWave Pvt Ltd',
+      //     rating: '4.5',
+      //     text: "Covisor developed our company's internal software. While the final product met our requirements, the development process faced several delays. The team was knowledgeable but could improve on meeting deadlines and providing clearer updates. The end result was satisfactory."
+      //   },
+      //   {
+      //     id: 7,
+      //     show: false,
+      //     imgr: '/img/customers/7.jpeg',
+      //     name: 'Lokesh',
+      //     service: 'Website Development',
+      //     company: 'PixelPerfect  Pvt Ltd',
+      //     rating: '4',
+      //     text: "Covisor created a stunning and user-friendly website for our business. Their design aesthetics are impeccable, and the site performs flawlessly across all devices. They were receptive to our ideas and made the entire process smooth and enjoyable. Highly recommend!"
+      //   },
+      //   {
+      //     id: 8,
+      //     show: false,
+      //     imgr: '/img/customers/8.jpeg',
+      //     name: 'Bhasker',
+      //     service: 'Website Development',
+      //     company: 'WebInnovators Pvt Ltd',
+      //     rating: '3.5',
+      //     text: "Covisor revamped our outdated website, giving it a modern look and improved functionality. The team was professional and skilled, delivering a site that aligns with our brand. There were minor hiccups during the integration phase, but they were resolved promptly. Overall, a positive experience."
+      //   },
+      //   {
+      //     id: 9,
+      //     show: false,
+      //     imgr: '/img/customers/9.jpeg',
+      //     name: 'Vivek',
+      //     service: 'Website Development',
+      //     company: 'NexGen Pvt Ltd',
+      //     rating: '5',
+      //     text: "Covisor Web Solutions built our new e-commerce site. The design and user interface are excellent, but the project took longer than expected to complete. Communication could have been better, with more frequent updates. Despite the delays, the final website is performing well and attracting more customers."
+      //   },
+      // ]
     }
   },
+  computed: {
+    scrolling() {
+      return this.$store.getters.getAutoScrolling
+    },
+    customers(){
+      return this.$store.getters.getCustomers
+    }
+  }
 }
 </script>

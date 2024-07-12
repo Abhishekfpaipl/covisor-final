@@ -3,38 +3,19 @@
         <div class="query border rounded-circle" style="background-color: var(--brand-color)" @click="openModal">
             <img src="/img/query.svg" style="width: 25px; height: 25px; filter: invert(1);" alt="">
         </div>
-       
+
         <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true" :class="{ 'show': showModal }">
             <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
                 <div class="modal-content text-white position-relative" style="background-color: var(--brand-color)">
                     <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="/img/welcome.svg" style="width: 250px; max-width: 90%" alt="">
+                        <h3 class="my-2 text-capitalize">Hello, how can we help you?</h3>
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <img src="/img/welcome.svg" style="width: 200px; max-width: 90%" alt="">
                             </div>
                             <div class="col-md-6">
-                                <p>Would you like a free non-binding ballpark estimate for your project?</p>
-                                <form @submit.prevent="submitQuery()" class="mt-3 row g-3 needs-validation" novalidate>
-                                    <div class="w-100 form-floating mt-2">
-                                        <input type="text" class="form-control" placeholder="" v-model="name" required>
-                                        <label for="floatingInput" class="text-muted ms-2">Your Name</label>
-                                    </div>
-                                    <div class="w-100 form-floating mt-2">
-                                        <input type="tel" class="form-control" placeholder="Mobile" v-model="number"
-                                            required>
-                                        <label class="ms-2 text-muted">Mobile No</label>
-                                    </div>
-                                    <div class="w-100 form-floating mt-2">
-                                        <textarea class="form-control" placeholder="Leave a comment here"
-                                            id="floatingTextarea" v-model="note"></textarea>
-                                        <label for="floatingTextarea" class="ms-2 text-muted">Services Required</label>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <button class="btn btn-warning py-2 fs-5 w-100" type="submit">Submit</button>
-                                    </div>
-                                </form>
+                                <ContactForm />
                             </div>
                         </div>
                     </div>
@@ -49,16 +30,20 @@
 </template>
 
 <script>
+import ContactForm from "@/components/ContactForm.vue";
 export default {
+    components: {
+        ContactForm,
+    },
     data() {
         return {
-            showModal: false
+            showModal: false,
         };
     },
     mounted() {
         setTimeout(() => {
             this.showModal = true;
-        }, 2000); 
+        }, 2000);
     },
     methods: {
         openModal() {
@@ -66,7 +51,7 @@ export default {
         },
         closeModal() {
             this.showModal = false;
-        }
+        },
     }
 };
 </script>

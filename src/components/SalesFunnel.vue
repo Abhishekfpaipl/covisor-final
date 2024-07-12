@@ -35,21 +35,21 @@ export default {
     //                 icon: 'bi-funnel fs-4',
     //                 title: "Start With High-Quality Traffic from Everywhere",
     //                 color: '#e76365',
-    //                 description: "Buy targeted advertising on Facebook and Instagram or Google and start driving high- quality traffic to your Saleswik landing pages.",
+    //                 description: "Buy targeted advertising on Facebook and Instagram or Google and start driving high- quality traffic to your Covisor landing pages.",
     //             },
     //             {
     //                 id: 2,
     //                 icon: 'bi-diagram-3 fs-4',
     //                 title: "Send the traffic to your Sales Funnel ",
     //                 color: "#f5925e",
-    //                 description: "Select a high-converting Saleswik landing page which is more optimized for your business goals. ",
+    //                 description: "Select a high-converting Covisor landing page which is more optimized for your business goals. ",
     //             },
     //             {
     //                 id: 3,
     //                 icon: 'bi-hand-thumbs-up fs-4',
     //                 title: "Conversion of the traffic into Leads",
     //                 color: "#f8a42a",
-    //                 description: "Get more conversions by capturing the contact details of the visitors, visiting your Saleswik landing page.",
+    //                 description: "Get more conversions by capturing the contact details of the visitors, visiting your Covisor landing page.",
     //             },
     //             {
     //                 id: 4,
@@ -77,7 +77,7 @@ export default {
     //                 icon: 'bi-clipboard-data fs-4',
     //                 title: "Get paid",
     //                 color: "#5ccd5f",
-    //                 description: "Connect to Payment Gateway without leaving the app. Sell your products and services right on your Saleswik landing page.",
+    //                 description: "Connect to Payment Gateway without leaving the app. Sell your products and services right on your Covisor landing page.",
     //             },
     //         ],
     //     }

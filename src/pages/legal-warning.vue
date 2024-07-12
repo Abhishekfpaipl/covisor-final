@@ -67,7 +67,7 @@
                         by this Disclaimer.</p>
 
                     <div class="mt-4">
-                        <p><strong>SalesWik</strong></p>
+                        <p><strong>Covisor</strong></p>
                         <p>2nd Floor, Block B1/632,
                             Janakpuri, 110058, Delhi, India</p>
                         <p>support@salwsik.in</p>

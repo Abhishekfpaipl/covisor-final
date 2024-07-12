@@ -39,27 +39,27 @@ export default {
                     answer: "Depending on the features, the cost of a CRM system may start from $10-$25 per user per month. CRM companies also offer custom plans for specific features."
                 },
                 {
-                    question: " Can i make whatsApp communication from saleswik CRM?",
-                    answer: "Yes, you can do trasactional whatsapp messaging through saleswik CRM. You can also select automated messages and send to the buyers."
+                    question: " Can i make whatsApp communication from Covisor CRM?",
+                    answer: "Yes, you can do trasactional whatsapp messaging through Covisor CRM. You can also select automated messages and send to the buyers."
                 },
                 {
-                    question: "Is Saleswik CRM gives alert of timely followups?",
-                    answer: "Yes, It gives peding follow-up alerts on dashboard saleswik and sms so that you should not miss any followup"
+                    question: "Is Covisor CRM gives alert of timely followups?",
+                    answer: "Yes, It gives peding follow-up alerts on dashboard Covisor and sms so that you should not miss any followup"
                 },
                 {
-                    question: "Can I sync my call log leads to saleswik CRM?",
-                    answer: "Yes, you can sync all your calls in saleswik CRM and convert them into leads."
+                    question: "Can I sync my call log leads to Covisor CRM?",
+                    answer: "Yes, you can sync all your calls in Covisor CRM and convert them into leads."
                 },
                 {
-                    question: "Is my data secured at saleswik CRM?",
+                    question: "Is my data secured at Covisor CRM?",
                     answer: "Yes, your data is completely safe, and important credentails are encripted."
                 },
                 {
-                    question: "Can i sync leads form my website to saleswik?",
+                    question: "Can i sync leads form my website to Covisor?",
                     answer: "Yes, we have API based solutions for all your lead sources and its sync leads in runtime."
                 },
                 {
-                    question: "Can i manage my accounts at saleswik CRM?",
+                    question: "Can i manage my accounts at Covisor CRM?",
                     answer: "Yes, you can manage your PO, proforma & Tax invoices. You can also manage your credit payment followups & AMC renewal."
                 },
             ]
