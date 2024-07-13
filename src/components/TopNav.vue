@@ -8,7 +8,7 @@
                     <img :src="brandLogo" alt="Brand Logo" style="height: 50px; object-fit: contain;">
                     <div class="d-flex flex-column align-items-end ms-2">
                         <span class="text-uppercase fs-4 fw-bold lh-1">covisor</span>
-                        <small class="smaller">Solutions for business</small>
+                        <small class="smaller text-capitalize">Solutions for business</small>
                     </div>
                 </router-link>
             </div>

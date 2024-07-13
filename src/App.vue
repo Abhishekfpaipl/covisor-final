@@ -27,6 +27,14 @@ export default {
 }
 </script>
 <style lang="scss">
+body {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none; //ios safari
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -39,17 +47,13 @@ export default {
   // --bg-primary: #02539E !important;
   --bg-secondary: #EB5E28;
   --bg-tertiary: #FEC007;
-  --bg-forth: #FBF4F4;
+  --bg-forth: #FEFECA;
   --brand-color: #02539E
 }
 
-
- 
-
-
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
 }
 
 .fade-enter-from,
@@ -71,7 +75,7 @@ export default {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-} 
+}
 
 .text-ellipsis4 {
   display: -webkit-box;
@@ -92,7 +96,7 @@ export default {
 .before-enter {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity .6s ease-out, transform .6s ease-out;
 }
 
 .enter {

@@ -16,8 +16,7 @@
             </div>
 
         </div>
-        <div class="container-fluid">
-
+        <div class="container-fluid mt-5 mt-md-0">
             <div class="row d-flex align-items-center justify-content-center p-md-5 p-3 py-5"
                 style="background-color: var(--bg-forth);">
                 <div class="col-12 col-md-6 align-items-center text-center text-md-start">

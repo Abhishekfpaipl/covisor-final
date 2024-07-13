@@ -1,5 +1,6 @@
 import { createStore } from "vuex";
 import about from "./about";
+import business from "./business";
 export default createStore({
   state: {
     pricing: [
@@ -189,7 +190,7 @@ export default createStore({
           {
             "id": "DM8",
             "name": "Online Reputation Management",
-            "banner": "/img/services-banner/ppc.jpg",
+            "banner": "/img/services-banner/online-reputation.jpg",
             "description": "Online reputation management involves monitoring, addressing, and influencing your business's digital reputation and credibility.",
             "features": [
               {
@@ -316,7 +317,7 @@ export default createStore({
           {
             "id": "WB1",
             "name": "Business Website",
-            "banner": "/img/services-banner/business.jpg",
+            "banner": "/img/services-banner/business-web.jpg",
             "description": "A business website serves as an online presence for a company, providing information about products or services, contact details, and other relevant business information.",
             "features": [
               {
@@ -436,6 +437,7 @@ export default createStore({
           {
             "id": "WB6",
             "name": "Membership Website",
+            "banner": "/img/services-banner/membership.jpg",
             "description": "A membership website offers exclusive content or services to registered members, often on a subscription basis.",
             "features": [
               {
@@ -456,9 +458,11 @@ export default createStore({
               }
             ]
           },
+
           {
             "id": "WB7",
-            "name": "Personal Website",
+            "name": "Booking Website",
+            "banner": "/img/services-banner/booking-web.jpg",
             "description": "A personal website serves as an online representation of an individual, often used for professional networking or personal branding.",
             "features": [
               {
@@ -479,9 +483,11 @@ export default createStore({
               }
             ]
           },
+
           {
             "id": "WB8",
             "name": "News Website",
+            "banner": "/img/services-banner/news-web.jpg",
             "description": "A news website provides timely information on current events, typically updated frequently throughout the day.",
             "features": [
               {
@@ -545,6 +551,7 @@ export default createStore({
           {
             "id": "WB9",
             "name": "Custom Website",
+            "banner": "/img/services-banner/custom-web.jpg",
             "description": "A bespoke website solution tailored to meet specific business needs and brand identity.",
             "features": [
               {
@@ -613,8 +620,10 @@ export default createStore({
         "description": "Website development involves creating and maintaining websites. It includes aspects such as web design, web publishing, web programming, and database management.",
         "plans": [
           {
-            id: 'SD1',
-            name: "Stock Management System",
+            "id": 'SD1',
+            "name": "Stock Management System",
+            "banner": "/img/services-banner/stock-management.jpg",
+            "description": "A comprehensive solution for managing an organization's financial operations and reporting.",
             "features": [
               {
                 "name": "Keyword Research",
@@ -645,6 +654,7 @@ export default createStore({
           {
             "id": "SD2",
             "name": "Financial Management System",
+            "banner": "/img/services-banner/finance-management.jpg",
             "description": "A comprehensive solution for managing an organization's financial operations and reporting.",
             "features": [
               {
@@ -705,9 +715,11 @@ export default createStore({
               }
             ]
           },
+
           {
             "id": "SD3",
-            "name": "Payment Management System",
+            "name": "Cash FLow Management System",
+            "banner": "/img/services-banner/cash-flow.jpg",
             "description": "A system to handle all aspects of payment processing and reconciliation.",
             "features": [
               {
@@ -768,9 +780,11 @@ export default createStore({
               }
             ]
           },
+
           {
             "id": "SD4",
             "name": "Asset Management System",
+            "banner": "/img/services-banner/asset-management.jpg",
             "description": "A system for tracking and managing an organization's physical assets throughout their lifecycle.",
             "features": [
               {
@@ -834,6 +848,7 @@ export default createStore({
           {
             "id": "SD5",
             "name": "Human Resources Management System",
+            "banner": "/img/services-banner/human-resource.jpg",
             "description": "A comprehensive system for managing all aspects of an organization's human resources.",
             "features": [
               {
@@ -897,6 +912,7 @@ export default createStore({
           {
             "id": "SD6",
             "name": "Document Management System",
+            "banner": "/img/services-banner/document-management.jpg",
             "description": "A system for storing, organizing, and controlling access to digital documents.",
             "features": [
               {
@@ -957,9 +973,11 @@ export default createStore({
               }
             ]
           },
+
           {
             "id": "SD7",
-            "name": "Project Management System",
+            "name": "Team Work Management System",
+            "banner": "/img/services-banner/team-work.jpg",
             "description": "A system to plan, execute, and monitor projects efficiently.",
             "features": [
               {
@@ -1020,9 +1038,11 @@ export default createStore({
               }
             ]
           },
+
           {
             "id": "SD8",
-            "name": "Lead Management System",
+            "name": "Customer Relationalship Management System",
+            "banner": "/img/services-banner/crm.jpg",
             "description": "A comprehensive system for capturing, tracking, and nurturing potential customer leads to improve conversion rates.",
             "features": [
               {
@@ -1083,9 +1103,11 @@ export default createStore({
               }
             ]
           },
+
           {
             "id": "SD9",
-            "name": "Custom Software",
+            "name": "Customized ERP",
+            "banner": "/img/services-banner/custom-erp.jpg",
             "description": "Bespoke software solutions tailored to specific business needs and requirements.",
             "features": [
               {
@@ -1310,17 +1332,332 @@ export default createStore({
         rating: '5',
         text: "Covisor Web Solutions built our new e-commerce site. The design and user interface are excellent, but the project took longer than expected to complete. Communication could have been better, with more frequent updates. Despite the delays, the final website is performing well and attracting more customers."
       },
-    ]
+    ],
+    faqs: [
+      {
+        id: 109,
+        name: "All",
+        plans: [
+          {
+            question: "What services does your IT company provide?",
+            answer: "Our IT company offers a range of services including software development, IT consulting, managed IT services, cloud solutions, cybersecurity, and technical support."
+          },
+          {
+            question: "Where are you located?",
+            answer: "Our headquarters are located in [City, Country]. We also have offices in [Other Locations]."
+          },
+          {
+            question: "How long have you been in business?",
+            answer: "We have been providing IT services since [Year]."
+          },
+          {
+            question: "Who are your typical clients?",
+            answer: "Our clients range from small businesses to large enterprises across various industries such as finance, healthcare, education, and retail."
+          },
+          {
+            question: "What is managed IT services?",
+            answer: "Managed IT services involve outsourcing your company's IT operations to a third-party service provider, who manages and assumes responsibility for providing a defined set of services."
+          },
+          {
+            question: "What software development services do you offer?",
+            answer: "We offer custom software development, mobile app development, web application development, and software maintenance and support."
+          },
+          {
+            question: "Can you help with cloud migration?",
+            answer: "Yes, we provide comprehensive cloud migration services including planning, execution, and ongoing management."
+          },
+          {
+            question: "What kind of cybersecurity services do you offer?",
+            answer: "Our cybersecurity services include vulnerability assessments, penetration testing, security audits, and incident response."
+          },
+          {
+            question: "What kind of technical support do you offer?",
+            answer: "We offer 24/7 technical support through various channels including phone, email, and live chat."
+          },
+          {
+            question: "How quickly can you respond to support requests?",
+            answer: "Our response times vary based on the service level agreement (SLA) but we strive to respond to all critical issues within [X] hours."
+          },
+          {
+            question: "Do you provide on-site support?",
+            answer: "Yes, we offer on-site support services as needed, in addition to remote support."
+          },
+          {
+            question: "What is your process for handling IT issues?",
+            answer: "Our process includes logging the issue, assessing its severity, assigning it to a specialist, and resolving it promptly. We also follow up to ensure complete resolution."
+          },
+          {
+            question: "How do you price your services?",
+            answer: "Our pricing depends on the type of service and the specific needs of the client. We offer both fixed-price and flexible pricing models."
+          },
+          {
+            question: "Do you offer service packages?",
+            answer: "Yes, we offer several service packages tailored to different business needs and sizes."
+          },
+          {
+            question: "Is there a long-term contract required?",
+            answer: "We offer both short-term and long-term contract options based on client preferences."
+          },
+          {
+            question: "Can I customize my service package?",
+            answer: "Absolutely, we can customize service packages to fit your specific business requirements."
+          },
+          {
+            question: "How do I get started with your services?",
+            answer: "You can get started by contacting us through our website, phone, or email. We will arrange an initial consultation to understand your needs."
+          },
+          {
+            question: "What is the onboarding process like?",
+            answer: "Our onboarding process includes an initial consultation, needs assessment, proposal presentation, contract signing, and project kickoff."
+          },
+          {
+            question: "Do you offer a trial period for your services?",
+            answer: "Yes, we offer a trial period for certain services. Please contact us for more details."
+          },
+          {
+            question: "How do you ensure a smooth transition to your services?",
+            answer: "We have a dedicated onboarding team that works closely with new clients to ensure a smooth transition, including data migration, training, and ongoing support."
+          },
+          {
+            question: "What technologies do you specialize in?",
+            answer: "We specialize in a wide range of technologies including [List of Technologies, e.g., Java, Python, .NET, AWS, Azure, etc.]."
+          },
+          {
+            question: "How do you handle data security and privacy?",
+            answer: "We follow industry best practices and comply with relevant regulations to ensure data security and privacy, including encryption, access controls, and regular security audits."
+          },
+          {
+            question: "Can you integrate with our existing systems?",
+            answer: "Yes, we have extensive experience integrating new solutions with existing systems to ensure seamless operation."
+          },
+          {
+            question: "What is your approach to software development?",
+            answer: "We follow agile methodologies to ensure iterative progress, flexibility, and client collaboration throughout the development process."
+          },
+          {
+            question: "Do you require an NDA before starting a project?",
+            answer: "Yes, we typically require a Non-Disclosure Agreement (NDA) to protect the confidentiality of both parties' information before commencing a project."
+          },
+          {
+            question: "What is included in your NDA?",
+            answer: "Our NDA includes clauses that ensure the confidentiality of shared information, outlines the obligations of both parties, and specifies the duration of the confidentiality agreement."
+          },
+          {
+            question: "Can we use our own NDA?",
+            answer: "Yes, we are open to reviewing and using your company's NDA, provided it meets our standards for confidentiality and mutual protection."
+          },
+          {
+            question: "How long does the NDA remain in effect?",
+            answer: "The NDA remains in effect for the duration specified in the agreement, typically ranging from one to five years, depending on the nature of the project and the information involved."
+          },
+          {
+            question: "How can I contact your support team?",
+            answer: "You can contact our support team via phone, email, or live chat available on our website."
+          },
+          {
+            question: "What are your support hours?",
+            answer: "Our support hours are 24/7, ensuring assistance is available whenever you need it."
+          },
+          {
+            question: "Where can I find documentation and resources?",
+            answer: "Documentation and resources can be found in the client portal on our website."
+          },
+          {
+            question: "How do I provide feedback on your services?",
+            answer: "We welcome feedback and you can provide it through our website, by email, or during regular client meetings."
+          },
+        ]
+      },
+      {
+        id: 1,
+        name: "General Information",
+        plans: [
+          {
+            question: "What services does your IT company provide?",
+            answer: "Our IT company offers a range of services including software development, IT consulting, managed IT services, cloud solutions, cybersecurity, and technical support."
+          },
+          {
+            question: "Where are you located?",
+            answer: "Our headquarters are located in [City, Country]. We also have offices in [Other Locations]."
+          },
+          {
+            question: "How long have you been in business?",
+            answer: "We have been providing IT services since [Year]."
+          },
+          {
+            question: "Who are your typical clients?",
+            answer: "Our clients range from small businesses to large enterprises across various industries such as finance, healthcare, education, and retail."
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Services",
+        plans: [
+          {
+            question: "What is managed IT services?",
+            answer: "Managed IT services involve outsourcing your company's IT operations to a third-party service provider, who manages and assumes responsibility for providing a defined set of services."
+          },
+          {
+            question: "What software development services do you offer?",
+            answer: "We offer custom software development, mobile app development, web application development, and software maintenance and support."
+          },
+          {
+            question: "Can you help with cloud migration?",
+            answer: "Yes, we provide comprehensive cloud migration services including planning, execution, and ongoing management."
+          },
+          {
+            question: "What kind of cybersecurity services do you offer?",
+            answer: "Our cybersecurity services include vulnerability assessments, penetration testing, security audits, and incident response."
+          }
+        ]
+      },
+      {
+        id: 3,
+        name: "Support and Maintenance",
+        plans: [
+          {
+            question: "What kind of technical support do you offer?",
+            answer: "We offer 24/7 technical support through various channels including phone, email, and live chat."
+          },
+          {
+            question: "How quickly can you respond to support requests?",
+            answer: "Our response times vary based on the service level agreement (SLA) but we strive to respond to all critical issues within [X] hours."
+          },
+          {
+            question: "Do you provide on-site support?",
+            answer: "Yes, we offer on-site support services as needed, in addition to remote support."
+          },
+          {
+            question: "What is your process for handling IT issues?",
+            answer: "Our process includes logging the issue, assessing its severity, assigning it to a specialist, and resolving it promptly. We also follow up to ensure complete resolution."
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "Pricing and Contracts",
+        plans: [
+          {
+            question: "How do you price your services?",
+            answer: "Our pricing depends on the type of service and the specific needs of the client. We offer both fixed-price and flexible pricing models."
+          },
+          {
+            question: "Do you offer service packages?",
+            answer: "Yes, we offer several service packages tailored to different business needs and sizes."
+          },
+          {
+            question: "Is there a long-term contract required?",
+            answer: "We offer both short-term and long-term contract options based on client preferences."
+          },
+          {
+            question: "Can I customize my service package?",
+            answer: "Absolutely, we can customize service packages to fit your specific business requirements."
+          }
+        ]
+      },
+      {
+        id: 5,
+        name: "Client Onboarding",
+        plans: [
+          {
+            question: "How do I get started with your services?",
+            answer: "You can get started by contacting us through our website, phone, or email. We will arrange an initial consultation to understand your needs."
+          },
+          {
+            question: "What is the onboarding process like?",
+            answer: "Our onboarding process includes an initial consultation, needs assessment, proposal presentation, contract signing, and project kickoff."
+          },
+          {
+            question: "Do you offer a trial period for your services?",
+            answer: "Yes, we offer a trial period for certain services. Please contact us for more details."
+          },
+          {
+            question: "How do you ensure a smooth transition to your services?",
+            answer: "We have a dedicated onboarding team that works closely with new clients to ensure a smooth transition, including data migration, training, and ongoing support."
+          }
+        ]
+      },
+      {
+        id: 6,
+        name: "Technical Questions",
+        plans: [
+          {
+            question: "What technologies do you specialize in?",
+            answer: "We specialize in a wide range of technologies including [List of Technologies, e.g., Java, Python, .NET, AWS, Azure, etc.]."
+          },
+          {
+            question: "How do you handle data security and privacy?",
+            answer: "We follow industry best practices and comply with relevant regulations to ensure data security and privacy, including encryption, access controls, and regular security audits."
+          },
+          {
+            question: "Can you integrate with our existing systems?",
+            answer: "Yes, we have extensive experience integrating new solutions with existing systems to ensure seamless operation."
+          },
+          {
+            question: "What is your approach to software development?",
+            answer: "We follow agile methodologies to ensure iterative progress, flexibility, and client collaboration throughout the development process."
+          }
+        ]
+      },
+      {
+        id: 7,
+        name: "Non-Disclosure Agreement (NDA)",
+        plans: [
+          {
+            question: "Do you require an NDA before starting a project?",
+            answer: "Yes, we typically require a Non-Disclosure Agreement (NDA) to protect the confidentiality of both parties' information before commencing a project."
+          },
+          {
+            question: "What is included in your NDA?",
+            answer: "Our NDA includes clauses that ensure the confidentiality of shared information, outlines the obligations of both parties, and specifies the duration of the confidentiality agreement."
+          },
+          {
+            question: "Can we use our own NDA?",
+            answer: "Yes, we are open to reviewing and using your company's NDA, provided it meets our standards for confidentiality and mutual protection."
+          },
+          {
+            question: "How long does the NDA remain in effect?",
+            answer: "The NDA remains in effect for the duration specified in the agreement, typically ranging from one to five years, depending on the nature of the project and the information involved."
+          }
+        ]
+      },
+      {
+        id: 8,
+        name: "Contact and Support",
+        plans: [
+          {
+            question: "How can I contact your support team?",
+            answer: "You can contact our support team via phone, email, or live chat available on our website."
+          },
+          {
+            question: "What are your support hours?",
+            answer: "Our support hours are 24/7, ensuring assistance is available whenever you need it."
+          },
+          {
+            question: "Where can I find documentation and resources?",
+            answer: "Documentation and resources can be found in the client portal on our website."
+          },
+          {
+            question: "How do I provide feedback on your services?",
+            answer: "We welcome feedback and you can provide it through our website, by email, or during regular client meetings."
+          }
+        ]
+      }
+    ],
+
   },
   getters: {
     getPricing: state => state.pricing,
     getAutoScrolling: state => state.autoScrolling,
     getFeaturedIn: state => state.featuredIn,
     getCustomers: state => state.customers,
+    getFaqs: state => state.faqs,
   },
   mutations: {},
   actions: {},
   modules: {
     about: about,
+    business:business
   },
 });

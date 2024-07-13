@@ -40,7 +40,7 @@ export default {
             title: "Why Choose Us",
             test: [
                 "We will get to know first your exact requirements.",
-                "Explian you how we can help you to grow your business.",
+                "Explain you how we can help you to grow your business.",
                 "Q&A session with our technical expert.",
                 "In-depth explanation of pricing and features.",
             ],

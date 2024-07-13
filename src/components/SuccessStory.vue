@@ -2,19 +2,19 @@
     <div class="container">
         <h1 class="pt-3">Success Story</h1>
         <div class="row mt-5">
-            <div class="col-12 col-md-6 position-relative flex-wrap d-flex align-items-center justify-content-center pt-5"
-                v-for="(test, index) in tests" :key="index">
+            <div
+                class="col-12 col-md-6 position-relative  d-flex align-items-center justify-content-center pt-5">
                 <div class="card rounded-3">
                     <div class="image rounded-3">
-                        <img href="#" :src="test.image" class="rounded-3" alt="Card image">
+                        <img href="#" :src="image" class="rounded-3" alt="Card image">
                     </div>
                     <div class="content">
-                        <h3 class="mt-4 pt-2">{{ test.title }}</h3>
-                        <p v-if="test.post" class="text-ellipsis2">{{ test.post }}</p>
+                        <h3 class="mt-4 pt-2">{{ title }}</h3>
+                        <p v-if="post" class="text-ellipsis2">{{ post }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 mt-5 mt-md-0">
                 Covisor began as a small startup in 2015, founded by three college friends with a shared
                 vision of helping businesses thrive in the digital age. Initially offering basic website design
                 services, they quickly expanded their expertise to include digital marketing and custom software
@@ -42,6 +42,13 @@ export default {
     props: {
         tests: Array
     },
+    data() {
+        return {
+            image: 'img/about/ayush.jpg',
+            title: "Ayush Gupta",
+            post: "CEO"
+        }
+    }
 
 };
 </script>

@@ -30,16 +30,6 @@
 export default {
   data() {
     return {
-      servicesList: ["Digital Marketing", " Website Development", "Software Development",],
-      customerList: [
-        { name: "businessman", color: "#c6def1", },
-        { name: "manufacturer", color: "#f2c6de", },
-        { name: "Service provider", color: "#f7d9c4", },
-        { name: "trader", color: "#dbcdf0", },
-      ],
-      placesList: [
-        'Delhi NCR', 'India'
-      ],
       title: this.$route.params.id,
       sentences: [],
       randomColors: [],
@@ -51,12 +41,29 @@ export default {
     this.assignRandomColors();
     this.assignRandomIcons();
   },
+  computed: {
+    filteredSentences() {
+      if (!this.selectedCategory) {
+        return this.sentences;
+      }
+      return this.sentences.filter(sentence => sentence.includes(this.selectedCategory));
+    },
+    servicesList() {
+      return this.$store.getters['business/getServices']
+    },
+    placesList() {
+      return this.$store.getters['business/getPlaces']
+    },
+    customerList() {
+      return this.$store.getters['business/getCustomers']
+    },
+  },
   methods: {
     generateSentences() {
       this.servicesList.forEach(service => {
         this.customerList.forEach(customer => {
           this.placesList.forEach(place => {
-            const sentence = `We are offering ${service} to ${customer.name} from ${this.title} in ${place}.`;
+            const sentence = `We are offering ${service.name} to ${customer.name} from ${this.title} in ${place.name}.`;
             this.sentences.push(sentence);
           });
         });
@@ -85,14 +92,6 @@ export default {
     },
     generateSlug(sentence) {
       return sentence.toLowerCase().replace(/\s+/g, '-');
-    }
-  },
-  computed: {
-    filteredSentences() {
-      if (!this.selectedCategory) {
-        return this.sentences;
-      }
-      return this.sentences.filter(sentence => sentence.includes(this.selectedCategory));
     }
   },
   watch: {

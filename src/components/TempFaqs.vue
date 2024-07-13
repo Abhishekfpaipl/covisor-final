@@ -30,11 +30,7 @@ export default {
         title: {
             type: String,
             required: true
-        },
-        faqs: {
-            type: Array,
-            required: true
-        },
+        }, 
         imagePosition: {
             type: String,
             default: 'left',

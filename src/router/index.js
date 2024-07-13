@@ -1,4 +1,7 @@
-import { createRouter, createWebHistory } from "vue-router";
+import {
+  createRouter,
+  createWebHistory
+} from "vue-router";
 
 const routes = [
   {
@@ -45,7 +48,7 @@ const routes = [
     path: "/contact-us",
     name: "contact-us",
     component: () => import("@/pages/contact-us.vue")
-  }, 
+  },
   {
     path: "/faqs",
     name: "faqs-page",
@@ -70,17 +73,7 @@ const routes = [
     path: "/reseller-program",
     name: "reseller-program",
     component: () => import("@/pages/reseller-program.vue")
-  },
-  {
-    path: "/sales-demo-one",
-    name: "sales-demo-one",
-    component: () => import("@/pages/sales-demo-one.vue")
-  },
-  {
-    path: "/sales-demo-two",
-    name: "sales-demo-two",
-    component: () => import("@/pages/sales-demo-two.vue")
-  },
+  }, 
   {
     path: "/service/:slug",
     name: "service-page",
@@ -90,21 +83,6 @@ const routes = [
     path: "/terms-of-use",
     name: "term-of-use",
     component: () => import("@/pages/term-of-use.vue")
-  },
-  {
-    path: "/website-development/:priceId",
-    name: "WebsiteDevelopmentPage",
-    component: () => import('@/pages/WebsiteDevelopmentPage.vue')
-  },
-  {
-    path: "/software-development/:priceId",
-    name: "SoftwareDevelopment",
-    component: () => import('@/pages/SoftwareDevelopmentPage.vue')
-  },
-  {
-    path: "/digital-marketing/:priceId",
-    name: "DigitalMarketingPage",
-    component: () => import('@/pages/DigitalMarketingPage.vue')
   },
   {
     path: "/plan/:priceId/:planId",
@@ -117,6 +95,14 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // Always scroll to top
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 };
+    }
+  }
 });
 
 export default router;

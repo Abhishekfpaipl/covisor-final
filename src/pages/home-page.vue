@@ -57,7 +57,7 @@ import ImageSection from "@/components/ImageSection.vue";
 // import SalesFunnel from "@/components/SalesFunnel.vue";
 import CustomCounter from "@/components/CustomCounter.vue";
 import WhyChooseUs from "@/components/WhyChooseUs.vue";
-// import TempFaqs from "@/components/TempFaqs.vue";
+import TempFaqs from "@/components/TempFaqs.vue";
 import TempCustomers from "@/components/TempCustomers.vue";
 export default {
   components: {
@@ -72,38 +72,11 @@ export default {
     // SalesFunnel,
     CustomCounter,
     WhyChooseUs,
-    // TempFaqs,
+    TempFaqs,
     TempCustomers,
   },
   data() {
     return {
-      faqs: [
-        {
-          id: 1,
-          question: "What does a CRM system do ?",
-          answer: "At its core, the CRM system is designed to manage communications with customers and align all stakeholders involved in interactions with them. However, CRM systems have evolved to perform complex tasks like automating processes, setting up workflows, tracking all conversations and using all the sales and marketing data to derive meaningful reports."
-        },
-        {
-          id: 2,
-          question: "Why is CRM important for marketers?",
-          answer: "With CRM, marketers can check the performance of their marketing sources, evaluate touchpoints, and more. A CRM helps marketers better understand customers and tune their messaging accordingly. Marketers can also personalize their messages using lead details captured in the CRM platform."
-        },
-        {
-          id: 3,
-          question: "What is CRM software used for?",
-          answer: "Aligning teams and automating customer-facing processes. Standardizing sales processes and automating them. Managing customer tickets. Tracking the performance of various marketing sources. Reporting and analytics"
-        },
-        {
-          id: 4,
-          question: "Why is CRM important in sales?",
-          answer: "Because sales reps pursue many leads, CRM plays a significant role in organizing them as per their stages in the sales pipeline. It also helps them keep track of interactions with prospects, schedule meetings, set reminders, and more."
-        },
-        {
-          id: 5,
-          question: "How much does a CRM system cost?",
-          answer: "Depending on the features, the cost of a CRM system may start from $10-$25 per user per month. CRM companies also offer custom plans for specific features."
-        },
-      ],
       social: [
         {
           id: 1,
