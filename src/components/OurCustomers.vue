@@ -26,7 +26,7 @@
   import ReviewRating from "@/components/ReviewRating.vue";
   
   export default {
-    name: "SuccessSection",
+    name: "OurCustomers",
     props:{
       title:{
         type: String,

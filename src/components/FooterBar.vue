@@ -27,18 +27,14 @@
             <div class="col-12 col-md-4 d-flex justify-content-around">
                 <div class="mb-3 text-start">
                     <p class="mb-2 fw-bold">Company</p>
-                    <div class="d-flex flex-column">
-                        <!-- <router-link to="/#" class="text-decoration-none my-1 " style="color: var(--brand-color) !important"
-                            v-for="(link, index) in company" :key="index">{{ link.name }}</router-link> -->
+                    <div class="d-flex flex-column"> 
                         <router-link :to="link.link" class="text-decoration-none my-1 " style="color: var(--brand-color) !important"
                             v-for="(link, index) in company" :key="index">{{ link.name }}</router-link>
                     </div>
                 </div>
                 <div class="mb-3 text-start">
                     <p class="mb-2 fw-bold">Resources</p>
-                    <div class="d-flex flex-column">
-                        <!-- <router-link to="/#" class="text-decoration-none my-1" style="color: var(--brand-color) !important"
-                            v-for="(link, index) in links" :key="index">{{ link.name }}</router-link> -->
+                    <div class="d-flex flex-column"> 
                         <router-link :to="link.link" class="text-decoration-none my-1" style="color: var(--brand-color) !important"
                             v-for="(link, index) in links" :key="index">{{ link.name }}</router-link>
                     </div>
@@ -53,7 +49,7 @@
 </template>
 
 <script>
-import FameFoot from '@/components/services/FameFoot.vue'
+import FameFoot from '@/components/FameFoot.vue'
 export default {
     name: 'FooterBar',
     components: {

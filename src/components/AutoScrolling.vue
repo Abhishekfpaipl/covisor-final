@@ -1,18 +1,21 @@
 <template>
-    <div class="py-5 text-dark">
+    <div class="py-5" :class="textColor" :style="{ backgroundColor: bgColor }">
         <h1 class="text-center mb-5 text-capitalize ">we are featured in</h1>
         <article :class="['wrapper', { 'wrapper--vertical': isVertical }]">
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
-                <div class="marquee__group" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
+                <div class="marquee__group"
+                    :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal', '--duration': calculatedDuration }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image" style="width:100px;height:100px;object-fit: contain;" alt="">
+                        <img :src="link.image" style="width:100px;height:100px;object-fit: contain;"
+                            :style="{ filter: imageFilter }" alt="">
                         <p v-if="link.name" class="text-center mb-0">{{ link.name }}</p>
                     </div>
                 </div>
                 <div aria-hidden="true" class="marquee__group"
-                    :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
+                    :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal', '--duration': calculatedDuration }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image" style="width:100px;height:100px;object-fit: contain;" alt="">
+                        <img :src="link.image" style="width:100px;height:100px;object-fit: contain;"
+                            :style="{ filter: imageFilter }" alt="">
                         <p v-if="link.name" class="text-center mb-0">{{ link.name }}</p>
                     </div>
                 </div>
@@ -28,6 +31,19 @@ export default {
     props: {
         links: {
             type: Array,
+        },
+        baseDuration: {
+            type: Number,
+            default: 5,
+        },
+        textColor: {
+            type: String
+        },
+        bgColor: {
+            type: String
+        },
+        imageFilter: {
+            type: String
         }
     },
     data() {
@@ -35,6 +51,15 @@ export default {
             isVertical: false,
             isReverse: false,
         };
+    },
+    computed: {
+        calculatedDuration() {
+            if (this.links.length > 10) {
+                return `${this.links.length + this.baseDuration}s`;
+            } else {
+                return `${10}s`
+            }
+        },
     },
     methods: {
         toggleDirection() {
@@ -51,7 +76,7 @@ export default {
     --color-bg: papayawhip;
     --color-bg-accent: #ecdcc0;
     --size: clamp(10rem, 1rem + 40vmin, 30rem);
-    --gap: calc(var(--size) / 14);
+    --gap: calc(var(--size) / 5);
     --duration: 25s;
     --scroll-start: 0;
     --scroll-end: calc(-100% - var(--gap));

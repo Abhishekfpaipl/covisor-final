@@ -13,25 +13,14 @@
                 </router-link>
             </div>
         </div>
-        <div class="d-flex gap-3">
-            <!-- <div class="rounded-circle p-2 px-3 bg-success" @click="openWhatsapp()">
-                <i class="bi bi-whatsapp text-white fs-4"></i>
-            </div> -->
+        <!-- <div class="d-flex gap-3"> -->
             <div class="btn d-flex justify-content-center align-items-center  gap-2"
                 style="border-color: var(--brand-color) !important; color:var(--brand-color) !important"
                 @click="openDialer()">
                 <i class="bi bi-telephone fs-4"></i>
                 <span class="d-none d-md-block">Contact Sales</span>
             </div>
-            <!-- <router-link v-if="showOnDemo && !showOnFree" to="/free-trial"
-                class="text-decoration-none btn btn-danger rounded p-2 border px-2 ms-2">
-                <span class="text-capitalize">Try free</span>
-            </router-link>
-            <router-link v-if="showOnFree && !showOnDemo" to="/demo"
-                class="text-decoration-none btn btn-danger rounded p-2 border px-2 ms-2">
-                <span class="text-capitalize">Demo</span>
-            </router-link> -->
-        </div>
+        <!-- </div> -->
     </div>
 </template>
 

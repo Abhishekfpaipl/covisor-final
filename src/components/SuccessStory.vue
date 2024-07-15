@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <h1 class="pt-3">Success Story</h1>
+        <h1 class="pt-3">Our Success Story</h1>
         <div class="row mt-5">
             <div
-                class="col-12 col-md-6 position-relative  d-flex align-items-center justify-content-center pt-5">
+                class="col-12 col-md-4 position-relative  d-flex align-items-center justify-content-center pt-5">
                 <div class="card rounded-3">
                     <div class="image rounded-3">
                         <img href="#" :src="image" class="rounded-3" alt="Card image">
@@ -14,8 +14,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mt-5 mt-md-0">
-                Covisor began as a small startup in 2015, founded by three college friends with a shared
+            <div class="col-12 col-md-8 mt-5 mt-md-0 text-start">
+                Covisor began as a small startup in 2015, founded by two brothers Ayush Gupta and Piyush Gupta with a shared
                 vision of helping businesses thrive in the digital age. Initially offering basic website design
                 services, they quickly expanded their expertise to include digital marketing and custom software
                 development.
@@ -24,12 +24,12 @@
                 implemented a targeted digital marketing campaign. Within six months, the client's online sales
                 increased by 200%, and their overall revenue grew by 45%.
                 This success story spread quickly, attracting clients from various industries. Covisor's team grew from
-                5 to 50 employees in just two years. They became known for their innovative solutions and data-driven
+                2 to 20 employees in just two years. They became known for their innovative solutions and data-driven
                 approach to digital marketing.
-                In 2020, Covisor launched a proprietary AI-powered marketing analytics tool, which became a
+                <!-- In 2020, Covisor launched a proprietary AI-powered marketing analytics tool, which became a
                 game-changer for their clients and a significant revenue stream for the company. By 2023, Covisor had
                 offices in three major cities, a client base spanning 15 countries, and annual revenue exceeding $20
-                million.
+                million. -->
                 Today, Covisor is recognized as an industry leader, known for its integrated approach to
                 digital services and commitment to driving measurable results for its clients.
             </div>
@@ -46,7 +46,7 @@ export default {
         return {
             image: 'img/about/ayush.jpg',
             title: "Ayush Gupta",
-            post: "CEO"
+            post: "Managing Director"
         }
     }
 

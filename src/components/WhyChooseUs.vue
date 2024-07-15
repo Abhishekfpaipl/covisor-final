@@ -94,8 +94,6 @@ export default {
                     description: "Scalable solutions to accommodate businesses of all sizes.",
                 },
             ]
-
-
         }
     }
 }

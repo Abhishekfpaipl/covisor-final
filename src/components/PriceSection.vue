@@ -26,30 +26,22 @@
                                         <div class="py-2 border-bottom fw-bold">{{ plan.name }}</div>
                                         <div class="card-body text-center">
                                             <ul v-if="plan.features" class="list-group">
-                                                <li v-for="(feature, featureIndex) in plan.features.slice(0,4)" :key="featureIndex"
+                                                <li v-for="(feature, featureIndex) in plan.features.slice(0, 4)"
+                                                    :key="featureIndex"
                                                     class="px-0 d-flex list-group-item text-capitalize bg-light border-0">
                                                     <i class="bi bi-check-circle text-success"></i>
-                                                    <span class="px-2">
-                                                        {{ feature.name}}
+                                                    <span class="px-2 text-start">
+                                                        {{ feature.name }}
                                                     </span>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-footer bg-light p-0 border-top pt-2">
                                             <div class="btn-group w-100 my-2">
-                                                <!-- <router-link :to="plan.link + price.id"
-                                                    class="btn btn-outline-success text-capitalize px-4">
-                                                    Know More
-                                                </router-link> -->
                                                 <router-link :to="`/plan/${price.id}/${plan.id}`"
                                                     class="btn btn-outline-success text-capitalize px-4">
                                                     Know More
                                                 </router-link>
-                                                <!-- <a :href="'https://wa.me/918860012001?text=' + encodeURIComponent('Hello, I want to get your ' + price.name + ' service')"
-                                                    class="btn text-capitalize px-4 text-white btn-success">
-                                                    <i class="bi bi-whatsapp"></i>
-                                                    <span class="ms-2">Enquiry</span>
-                                                </a> -->
                                                 <button class="btn text-capitalize px-4 text-white btn-success"
                                                     @click="submitQuery(price, plan)"> <i class="bi bi-whatsapp"></i>
                                                     <span class="ms-2">Enquiry</span></button>
@@ -75,7 +67,7 @@ export default {
     },
     computed: {
         pricing() {
-            return this.$store.getters.getPricing
+            return this.$store.getters['pricing/getPricing']
         }
     },
     // mounted() {

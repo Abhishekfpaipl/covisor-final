@@ -2,8 +2,7 @@
     <div class="container">
         <div class="py-2 mb-4">
             <h1 class="text-center text-capitalize">{{ title }}</h1>
-            <!-- <p class="small mb-0 text-capitalize text-center">A simple CRM that grows with your business</p> -->
-        </div>
+         </div>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
             <div class="col" v-for="(lead, index) in values" :key="index">
                 <div class="position-relative w-100 d-flex justify-content-center align-items-center flex-fill">
@@ -24,7 +23,7 @@
 
 <script>
 export default {
-    name: "LeadManagement",
+    name: "WhatMakesUsDifferent",
     props: {
         values: {
             type: Array,

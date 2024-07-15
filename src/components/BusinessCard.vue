@@ -54,8 +54,7 @@
                     <p class="text-center card-header text-capitalize border-0">{{ place.name }}</p>
                 </router-link>
             </div>
-        </div>
-        <img :src="ass" alt="">
+        </div> 
     </div>
 </template>
 <script>

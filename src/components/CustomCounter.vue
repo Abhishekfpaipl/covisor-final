@@ -6,8 +6,11 @@
             </div>
             <div :class="{ 'col-12': !image, 'col-12 col-md-8': image }">
                 <div class="row mt-4 text-dark">
-                    <div class="d-flex flex-column justify-content-center mb-4">
-                        <h1 class=" text-center text-capitalize">{{title}}</h1>
+                    <div class="d-flex align-items-center justify-content-between px-5 mb-4">
+                        <h1 class=" text-center text-capitalize mb-0 ms-md-5">{{ title }}</h1>
+                        <router-link v-if="path" :to="path" class="text-dark me-md-5">
+                            <i class="bi bi-arrow-right fs-1" ></i>
+                        </router-link>
                     </div>
                     <div class="col">
                         <div class="text-center">
@@ -53,7 +56,9 @@ export default {
         placeCount: { type: Number, },
         categoryCount: { type: Number, },
         image: { type: String, },
-        title: { type: String, }
+        title: { type: String, },
+        icon: { type: String, },
+        path: { type: String, },
     },
 
 }

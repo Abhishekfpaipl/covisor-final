@@ -1,97 +1,45 @@
 <template>
-    <div class="my-3 py-3">
-        <div class="container">
-            <ul class="nav nav-pills justify-content-start align-items-center" id="pills-tab" role="tablist">
-                <div class="d-flex overflow-x-scroll gap-3 my-3 p-2 px-3 rounded" id="scroll">
-                    <li class="nav-item border rounded" role="presentation" v-for="(price, index) in faqs" :key="index">
-                        <button class="nav-link" style="white-space: nowrap"
-                            :class="{ 'active': index === activeTabIndex }" :id="'tab-' + index" data-bs-toggle="pill"
-                            :data-bs-target="'#content-' + index" type="button" role="tab"
-                            :aria-controls="'content-' + index" :aria-selected="index === activeTabIndex"
-                            @click="activeTabIndex = index">{{ price.name
-                            }}</button>
-                    </li>
+    <div style="background-color: var(--bg-forth)">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div v-if="imagePosition === 'left'" class="col-md-6 text-center">
+                    <img :src="imageSrc" class="img-fluid" style="height: 250px;" alt="Image">
                 </div>
-            </ul>
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <h1 class="text-center mb-5 text-capitalize">{{ title }}</h1>
+                    <router-link to="/faqs" class="btn btn-warning w-100"><span class="me-2">Click Here</span><i
+                            class="bi bi-arrow-right"></i>
 
-            <div class="tab-content" id="pills-tabContent">
-                <div class="d-flex align-items-center shadow p-2 mb-3">
-                    <input type="search" placeholder="Search for questions?" v-model="searchTerm"
-                        class="form-control border-0" ref="searchInput" @keyup.enter="search">
-                    <div>
-                        <i class="bi bi-search" @click="search"></i>
-                    </div>
+                    </router-link>
                 </div>
-                <div class="tab-pane fade" :class="{ 'show active': index === activeTabIndex }"
-                    v-for="(price, index) in faqs" :key="index" :id="'content-' + index" role="tabpanel"
-                    :aria-labelledby="'tab-' + index" tabindex="0">
-                    <div class="row">
-                        <div class="col-12" v-for="(faq, index) in filteredFaqs(price.plans)" :key="index">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item my-2 border-0">
-                                    <h2 class="accordion-header border">
-                                        <button class="accordion-button collapsed bg-light border-start border-4"
-                                            type="button" data-bs-toggle="collapse"
-                                            :data-bs-target="'#flush-collapseOne' + index" aria-expanded="false"
-                                            :aria-controls="'flush-collapseOne' + index"
-                                            style="border-color: var(--brand-color) !important;">
-                                            <span class="me-2">Q{{ index + 1 }}.</span> {{ faq.question }}
-                                        </button>
-                                    </h2>
-                                    <div :id="'flush-collapseOne' + index" class="accordion-collapse collapse border-0"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">{{ faq.answer }}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div v-if="imagePosition === 'right'" class="col-md-6 text-center">
+                    <img :src="imageSrc" class="img-fluid" style="height: 250px;" alt="Image">
                 </div>
             </div>
         </div>
     </div>
 </template>
 
-
 <script>
 export default {
-    name: "PriceSection",
-    data() {
-        return {
-            searchTerm: '',
-            activeTabIndex: 0
-        };
-    },
-    computed: {
-        faqs() {
-            return this.$store.getters.getFaqs
-        }
-    },
-    methods: {
-        filteredFaqs(plans) {
-            if (!this.searchTerm) {
-                return plans;
-            }
-            const term = this.searchTerm.toLowerCase();
-            return plans.filter(faq =>
-                faq.question.toLowerCase().includes(term) || faq.answer.toLowerCase().includes(term)
-            );
+    props: {
+        imageSrc: {
+            type: String,
+            required: true
         },
-    },
-    mounted() {
-        this.$refs.searchInput.focus();
+        title: {
+            type: String,
+            required: true
+        }, 
+        imagePosition: {
+            type: String,
+            default: 'left',
+            validator: function (value) {
+                return ['left', 'right'].includes(value.toLowerCase());
+            }
+        }
     }
 };
 </script>
 
-<style scoped>
-.nav-link {
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-link.active {
-    background-color: var(--brand-color) !important;
-    color: white;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-</style>
+<style></style>

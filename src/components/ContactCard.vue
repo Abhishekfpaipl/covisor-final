@@ -3,7 +3,8 @@
         <div class="container  py-3">
             <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Contacts ~</span></p>
             <div class="row row-cols-1 row-cols-md-4">
-                <div v-for="(icon, index) in contact" :key="index" class="col mb-3 d-flex flex-column justify-content-center align-items-center"
+                <div v-for="(icon, index) in contact" :key="index"
+                    class="col mb-3 d-flex flex-column justify-content-center align-items-center"
                     @click="handleIconClick(icon.action)">
                     <div class="d-md-flex justify-content-center align-items-center">
                         <div class="d-flex justify-content-center align-items-center rounded-circle"
@@ -12,7 +13,6 @@
                             <i class="fs-5 bi " :class="icon.icon"></i>
                         </div>
                     </div>
-                    <!-- <p class="text-center fw-bold mt-2 d-md-block mb-0">{{ icon.name }}</p> -->
                     <p class="text-center fw-bold mt-2 d-md-block mb-0">{{ getSubtext(icon.icon) }}</p>
                 </div>
             </div>
@@ -23,7 +23,7 @@
 <script>
 export default {
     name: 'ContactCard',
-    props: ['brandColorOne', 'brandTextColor','brandMobile', 'brandEmail', 'brandWhatsapp', 'brandAddress'],
+    props: ['brandColorOne', 'brandTextColor', 'brandMobile', 'brandEmail', 'brandWhatsapp', 'brandAddress'],
     data() {
         return {
             contact: [

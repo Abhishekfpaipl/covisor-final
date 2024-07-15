@@ -10,33 +10,29 @@
                     v-observe />
             </div>
             <div class="my-3">
-                <AutoScrollingFeatured :links=featured v-observe />
+                <AutoScrollingFeatured :links=featured textColor="text-dark" bgColor="white" v-observe />
             </div>
+        </div>
+        <div class="">
+            <CustomCounter service="satisfied customers" :serviceCount="1000" category="years of expirence"
+                :categoryCount="10" place="projects completed" :placeCount="4000" image="/img/smile.svg"
+                title="know about us"  path="/" v-observe />
         </div>
     </div>
 </template>
 <script>
 import SuccessStory from "@/components/SuccessStory.vue";
 import InfoSection from "@/components/InfoSection.vue";
-import AutoScrollingFeatured from "@/components/AutoScrollingFeatured.vue";
+import AutoScrollingFeatured from "@/components/AutoScrolling.vue";
+import CustomCounter from "@/components/CustomCounter.vue";
 export default {
     name: "AboutUs",
     components: {
         SuccessStory,
         InfoSection,
         AutoScrollingFeatured,
-    },
-    data() {
-        return {
-            tests: [
-                {
-                    image: 'img/about/ayush.jpg',
-                    title: "Ayush Gupta",
-                    post:"CEO"
-                },
-            ]
-        }
-    },
+        CustomCounter,
+    }, 
     computed: {
         featured() {
             return this.$store.getters.getFeaturedIn

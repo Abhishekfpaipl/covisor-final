@@ -41,9 +41,11 @@ export default {
         };
     },
     mounted() {
-        setTimeout(() => {
-            this.showModal = true;
-        }, 2000);
+        if (!localStorage.getItem('popupShown')) {
+            setTimeout(() => {
+                this.showModal = true;
+            }, 2000);
+        }
     },
     methods: {
         openModal() {
@@ -51,6 +53,7 @@ export default {
         },
         closeModal() {
             this.showModal = false;
+            localStorage.setItem('popupShown', 'true');
         },
     }
 };
