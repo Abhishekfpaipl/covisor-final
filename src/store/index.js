@@ -46,6 +46,33 @@ export default createStore({
         image: "/img/vodafone.png"
       },
     ],
+    countries: [
+      {
+        id: 1,
+        name: 'UK',
+        image: 'https://thewebtycoons.com/img/uk.png'
+      },
+      {
+        id: 2,
+        name: 'Canada',
+        image: "https://thewebtycoons.com/img/canada.png"
+      },
+      {
+        id: 3,
+        name: 'Dubai',
+        image: "https://thewebtycoons.com/img/dubai.png"
+      },
+      {
+        id: 4,
+        name: 'Singapore',
+        image: "https://thewebtycoons.com/img/singapore.png"
+      },
+      {
+        id: 5,
+        name: 'USA',
+        image: "https://thewebtycoons.com/img/usa.png"
+      },
+    ],
     featuredIn: [
       { image: '/img/featured/1.jpg' },
       { image: '/img/featured/2.jpg' },
@@ -542,6 +569,7 @@ export default createStore({
   },
   getters: {
     getAutoScrolling: state => state.autoScrolling,
+    getCountries: state => state.countries,
     getFeaturedIn: state => state.featuredIn,
     getCustomers: state => state.customers,
     getFaqs: state => state.faqs,

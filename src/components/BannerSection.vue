@@ -4,11 +4,11 @@
             <img src="/img/homeBannerDesk.jpg" class="position-relative min-vh-100 d-none d-md-block" style="width:100%; height:400px; object-fit:cover;">
             <img src="/img/homeBannerMob.jpg" class="position-relative d-md-none" style="width:100%;object-fit:cover;">
             <div class="position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white"  style="background-color:#0000008c" >
-                <div class="text-md-start text-center mt-3 mt-md-0">
+                <h3 class="mt-3 lh-1 mb-0">Covisor Infotech Pvt Ltd .</h3>
+                <div class="text-md-start text-center">
                     <p class="fs-1 fw-bold m-0 text-capitalize">Solutions for business</p>
                 </div>
                 <AutoTypeDeleteText :texts="services" :typingSpeed="150" :deleteSpeed="50" :delay="500" />
-                <h3 class="mt-3">Streamline .</h3>
                 <div class="mt-3 text-center text-md-start">
                     <p class="my-1"><i class="bi bi-check2-square me-2"></i>&nbsp;How to start your digital journey.</p>
                     <p class="my-1"><i class="bi bi-check2-square me-2"></i>&nbsp;How to grow your business online.</p>

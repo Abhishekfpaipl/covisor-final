@@ -8,7 +8,7 @@
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
                         <img :src="link.image" style="width:100px;height:100px;object-fit: contain;"
                             :style="{ filter: imageFilter }" alt="">
-                        <p v-if="link.name" class="text-center mb-0">{{ link.name }}</p>
+                        <p v-if="link.name" class="text-center mb-0" :class="textSize">{{ link.name }}</p>
                     </div>
                 </div>
                 <div aria-hidden="true" class="marquee__group"
@@ -16,11 +16,12 @@
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
                         <img :src="link.image" style="width:100px;height:100px;object-fit: contain;"
                             :style="{ filter: imageFilter }" alt="">
-                        <p v-if="link.name" class="text-center mb-0">{{ link.name }}</p>
+                        <p v-if="link.name" class="text-center mb-0" :class="textSize">{{ link.name }}</p>
                     </div>
                 </div>
             </div>
         </article>
+        
     </div>
 </template>
 
@@ -43,6 +44,9 @@ export default {
             type: String
         },
         imageFilter: {
+            type: String
+        },
+        textSize:{
             type: String
         }
     },

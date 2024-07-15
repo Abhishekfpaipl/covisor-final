@@ -39,7 +39,9 @@
     <div class="">
       <BookDemo :faqs="faqs" image-src="/img/demo.svg" title="let's book your free appointment" v-observe />
     </div>
-
+    <div class="">
+      <AutoScrolling :links="country" imageFilter="invert(1)" textColor="text-white" textSize="fs-4 pt-3" bgColor="#02539E" v-observe />
+    </div>
   </div>
 </template>
 
@@ -74,6 +76,9 @@ export default {
   computed: {
     scrolling() {
       return this.$store.getters.getAutoScrolling
+    },
+    country() {
+      return this.$store.getters.getCountries
     },
     customers() {
       return this.$store.getters.getCustomers

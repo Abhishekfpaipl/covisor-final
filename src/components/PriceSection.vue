@@ -2,8 +2,6 @@
     <div class="my-3 py-3">
         <div class="container">
             <h1 class="text-center text-capitalize">Services</h1>
-            <small>No hidden charges only pay what you see</small>
-
             <div class="my-3">
                 <ul class="nav nav-pills justify-content-center sticky-container" id="pills-tab" role="tablist">
                     <div class="d-flex border p-2 px-3 rounded shadow " style="">
