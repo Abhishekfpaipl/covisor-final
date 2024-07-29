@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div>
         <div class="col-12 ">
             <img src="/img/homeBannerDesk.jpg" class="position-relative min-vh-100 d-none d-md-block" style="width:100%; height:400px; object-fit:cover;">
@@ -51,19 +51,4 @@ export default {
         },
     }
 }
-</script>
-<style>
-.bg-image {
-    /* background-image: url('/img/homeBanner.jpg'); */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    /* Adjust based on your desired height */
-}
-
-/* @media (max-width: 768px) {
-    .bg-image {
-        transform: rotate(180deg);
-    }
-} */
-</style>
+</script> 

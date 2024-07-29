@@ -1,6 +1,7 @@
 <template>
     <div class="container my-5">
-        <h1 class="text-capitalize text-center">Testimonials</h1>
+        <h1 class="text-capitalize text-center">Hear From Our Clients</h1>
+        <p class="text-center mb-0">More than 5000 business owners dubbled their business or more you can grow your business too</p>
         <div class="w-100 d-block">
             <div class="w-100 overflow-auto d-flex align-items-center justify-content-center overflow-x-hidden" ref="slider">
                 <div v-for="(review, index) in infiniteReviews" :key="index" @click="showUser(review, index)"

@@ -1,41 +1,33 @@
 <template>
     <div class="my-5 py-3" style="background-color: var(--brand-color);">
         <div class="container">
-            <h1 class="text-white mb-0 text-capitalize text-center">Schedule for business health checkup</h1>
-            <p class="text-center mb-3 text-white">Get a complete health check-up for the 7 important business areas</p>
+            <h1 class="text-white mb-0 text-capitalize text-center">Do you want to <br> Grow your business on autopilot
+                mode</h1>
+            <p class="text-center mb-3 text-white">Get a hand holding guidance to upgrade from a busy man to
+                businessman. Get a complete health check-up for the 7 important business areas</p>
             <div class="row d-flex align-items-start rounded-md-5 rounded-0 p-md-5 p-3 text-dark">
-                <div class="col-12 col-md-6 text-center text-md-start">
+                <div class="col-12 col-md-6 text-center text-md-start"> 
+                    <img src="/img/consultation.svg" style="min-width: 200px" alt="">
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column mt-5 mt-md-0">
                     <div class="mt-4">
                         <div v-for="(link, index) in test" :key="index" class="d-flex text-center text-white my-3">
                             <i class="bi bi-check-square-fill me-2"></i>
                             <p class="mb-0 text-start text-capitalize">{{ link }}</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 d-flex flex-column mt-5 mt-md-0">
-                    <!-- <form @submit.prevent="submitQuery()" class="mt-4 row g-3 needs-validation">
-                        <div class="w-100 form-floating mt-0">
-                            <input type="text" class="form-control" placeholder="" v-model="name" required>
-                            <label for="floatingInput" class="text-muted ms-2">Name</label>
-                        </div>
-                        <div class="w-100 form-floating mt-2">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
-                                v-model="note" required></textarea>
-                            <label for="floatingTextarea" class="ms-2 text-muted">Describe your requirements</label>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-warning py-2 fs-5 w-100 rounded-0 text-dark text-capitalize">booking
-                                confirm</button>
-                        </div>
-                    </form> -->
+                    <router-link to="/free-consultation" class="btn btn-dark">Book Now</router-link>
                 </div>
             </div>
         </div>
+
     </div>
 </template>
 <script>
 export default {
     name: 'RequestDemo',
+    components: {
+    },
     data() {
         return {
             title: "Why Choose Us",
@@ -44,7 +36,7 @@ export default {
                 "Sales System.",
                 "Auto-Pilot System.",
                 "Hr & People System.",
-                "Order/Serive Fulfilment system.",
+                "Order/Service Fulfilment System.",
                 "Financial system.",
                 "Monitoring system.",
             ],

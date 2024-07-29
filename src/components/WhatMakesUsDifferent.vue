@@ -1,7 +1,8 @@
 <template>
     <div class="container">
         <div class="py-2 mb-4">
-            <h1 class="text-center text-capitalize">{{ title }}</h1>
+            <h3 class="text-center text-capitalize">{{ title }}</h3>
+            <h1 class="text-center">{{ subTitle }}</h1>
          </div>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
             <div class="col" v-for="(lead, index) in values" :key="index">
@@ -29,6 +30,9 @@ export default {
             type: Array,
         },
         title: {
+            type: String,
+        },
+        subTitle: {
             type: String,
         },
     },

@@ -1,6 +1,7 @@
 <template>
   <div class="" style="padding-top:66px">
     <Banner brandColorOne="#125252" v-observe />
+    <CounterModal/>
     <div class="">
       <WelcomeModal />
     </div>
@@ -15,7 +16,7 @@
     </div>
     <div class="">
       <CustomCounter service="satisfied customers" :serviceCount="1000" category="years of expirence"
-        :categoryCount="10" place="projects completed" :placeCount="4000" image="/img/smile.svg" title="know about us"
+        :categoryCount="10" place="projects completed" :placeCount="4000" image="/img/smile.svg" title="Here's the Impact i have created"
         path="/about-us" v-observe />
     </div>
     <div class="">
@@ -23,11 +24,7 @@
     </div>
     <div class="">
       <WhyChooseUs v-observe />
-    </div>
-
-    <div class="my-5">
-      <OurCustomers :reviews="customers" title="Hear From Our Clients" subtitle="More than 5000 business owners dubbled their business or more you can grow your business too" v-observe />
-    </div>
+    </div> 
     <div class="my-5">
       <TestimonialSection/>
     </div>
@@ -43,7 +40,7 @@
     </div>
     <div class="">
       <AutoScrolling :links="country" imageFilter="invert(1)" textColor="text-white" textSize="fs-4 pt-3" bgColor="#02539E" v-observe />
-    </div>
+    </div> 
   </div>
 </template>
 
@@ -58,9 +55,9 @@ import PriceSection from "@/components/PriceSection.vue";
 import ImageSection from "@/components/ImageSection.vue";
 import CustomCounter from "@/components/CustomCounter.vue";
 import WhyChooseUs from "@/components/WhyChooseUs.vue";
-import FaqSection from "@/components/FaqSection.vue";
-import OurCustomers from "@/components/OurCustomers.vue";
+import FaqSection from "@/components/FaqSection.vue"; 
 import TestimonialSection from "@/components/TestimonialSection.vue";
+import CounterModal from "@/components/CounterModal.vue";
 export default {
   components: {
     Banner,
@@ -73,9 +70,9 @@ export default {
     ImageSection,
     CustomCounter,
     WhyChooseUs,
-    FaqSection,
-    OurCustomers,
+    FaqSection, 
     TestimonialSection,
+    CounterModal, 
   },
   computed: {
     scrolling() {
