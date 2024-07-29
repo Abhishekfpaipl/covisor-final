@@ -66,7 +66,7 @@ body {
 }
 
 .smaller {
-  font-size: 10px;
+  font-size: 10px !important;
 }
 
 .text-ellipsis {

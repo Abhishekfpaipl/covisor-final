@@ -26,9 +26,11 @@
     </div>
 
     <div class="my-5">
-      <OurCustomers :reviews="customers" title="our customers" v-observe />
+      <OurCustomers :reviews="customers" title="Hear From Our Clients" subtitle="More than 5000 business owners dubbled their business or more you can grow your business too" v-observe />
     </div>
-
+    <div class="my-5">
+      <TestimonialSection/>
+    </div>
     <div class="">
       <FaqSection :faqs="faqs" image-src="/img/faq.svg" title="Frequently asked questions" image-position="left"
         v-observe />
@@ -58,6 +60,7 @@ import CustomCounter from "@/components/CustomCounter.vue";
 import WhyChooseUs from "@/components/WhyChooseUs.vue";
 import FaqSection from "@/components/FaqSection.vue";
 import OurCustomers from "@/components/OurCustomers.vue";
+import TestimonialSection from "@/components/TestimonialSection.vue";
 export default {
   components: {
     Banner,
@@ -72,6 +75,7 @@ export default {
     WhyChooseUs,
     FaqSection,
     OurCustomers,
+    TestimonialSection,
   },
   computed: {
     scrolling() {

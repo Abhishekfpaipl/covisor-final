@@ -94,6 +94,26 @@ const routes = [
     name: "OurClients",
     component: () => import('@/pages/OurClients.vue')
   },
+  {
+    path: "/digital-marketing",
+    name: "DigitalMarketingPage",
+    component: () => import('@/pages/DigitalMarketingPage.vue')
+  },
+  {
+    path: "/website-development",
+    name: "WebsiteDevelopmentPage",
+    component: () => import('@/pages/WebsiteDevelopmentPage.vue')
+  },
+  {
+    path: "/software-development",
+    name: "SoftwareDevelopmentPage",
+    component: () => import('@/pages/SoftwareDevelopmentPage.vue')
+  },
+  {
+    path: "/free-consultation",
+    name: "free-consultation",
+    component: () => import('@/pages/free-consultation.vue')
+  },
 
 ];
 

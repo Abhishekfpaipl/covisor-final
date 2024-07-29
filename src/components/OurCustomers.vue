@@ -1,6 +1,7 @@
 <template> 
       <div class="container">
         <h1 class="text-capitalize text-center">{{title}}</h1>
+        <p class="text-center">{{ subtitle }}</p>
         <div class="w-100 d-block">
           <div class="w-100 overflow-auto d-flex align-items-center hide-scroll" ref="slider">
             <div v-for="(review, index) in infiniteReviews" :key="index" @click="showUser(review, index)"
@@ -34,6 +35,10 @@
       },
       reviews:{
         type: Array,
+        required: true
+      },
+      subtitle:{
+        type: String,
         required: true
       }
     },

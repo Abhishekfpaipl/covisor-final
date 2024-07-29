@@ -1,18 +1,12 @@
 <template>
-    <div class="my-5 py-3" style="background-color: var(--brand-color);">
-        <div class="container">
-            <h1 class="text-white mb-0 text-capitalize text-center">Schedule for business health checkup</h1>
-            <p class="text-center mb-3 text-white">Get a complete health check-up for the 7 important business areas</p>
-            <div class="row d-flex align-items-start rounded-md-5 rounded-0 p-md-5 p-3 text-dark">
-                <div class="col-12 col-md-6 text-center text-md-start">
-                    <div class="mt-4">
-                        <div v-for="(link, index) in test" :key="index" class="d-flex text-center text-white my-3">
-                            <i class="bi bi-check-square-fill me-2"></i>
-                            <p class="mb-0 text-start text-capitalize">{{ link }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 d-flex flex-column mt-5 mt-md-0">
+    <div style="padding-top: 70px;">
+        <div class="container mb-5 pb-5">
+            <div class="row">
+                <div class="col-12 col-md-6 py-3 text-center px-4 px-md-2">
+                    <h1 class="mt-3 text-capitalize">book your free consultation</h1>
+                    <p class="fs-5 text-capitalize">and learn how to, start your digital journey, grow your business
+                        digitally, compete online with big giants.</p>
+                        <ContactForm/>
                     <!-- <form @submit.prevent="submitQuery()" class="mt-4 row g-3 needs-validation">
                         <div class="w-100 form-floating mt-0">
                             <input type="text" class="form-control" placeholder="" v-model="name" required>
@@ -20,7 +14,7 @@
                         </div>
                         <div class="w-100 form-floating mt-2">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
-                                v-model="note" required></textarea>
+                                v-model="note" style="height: 100px;"></textarea>
                             <label for="floatingTextarea" class="ms-2 text-muted">Describe your requirements</label>
                         </div>
                         <div class="col-12">
@@ -29,27 +23,38 @@
                         </div>
                     </form> -->
                 </div>
+                <div class="col-12 col-md-6 p-3">
+                    <img src="/img/free-trial.svg" class="" style="width:250px; object-fit: contain;" alt="">
+                    <p class="text-center mt-4 text-capitalize">in this 30 minutes free consultation you will get </p>
+                    <div class="d-flex gap-2 justify-content-start justify-content-md-center align-items-center"
+                        v-for="(link, index) in links" :key="index">
+                        <i class="bi bi-check text-success fs-4"></i>
+                        <p class="my-1 text-start">{{ link }}</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <p class="text-center py-4 text-white mb-0 position-fixed bottom-0 w-100"
+            style="background-color: var(--brand-color);">Questions? Talk to an
+            expert: 91 8860012001</p>
     </div>
 </template>
 <script>
+import ContactForm from '@/components/ContactForm.vue';
+
 export default {
-    name: 'RequestDemo',
+    components:{
+        ContactForm
+    },
     data() {
         return {
-            title: "Why Choose Us",
-            test: [
-                "Marketing System.",
-                "Sales System.",
-                "Auto-Pilot System.",
-                "Hr & People System.",
-                "Order/Serive Fulfilment system.",
-                "Financial system.",
-                "Monitoring system.",
+            links: [
+                "How to start your digital journey.",
+                "How to grow your business online.",
+                "How to compete online with big giants.",
             ],
-            name: "",
-            note: "",
+            name: '',
+            note: '',
         }
     },
     methods: {
@@ -66,4 +71,3 @@ export default {
     }
 }
 </script>
-<style scoped></style>
