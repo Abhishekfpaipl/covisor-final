@@ -6,7 +6,8 @@
                     <img :src="img" style="width: 100px;object-fit: contain;">
                 </router-link>
                 <p class="mb-0 fw-bold fs-2 text-uppercase" >covisor</p>
-                <p class="mb-2 text-capitalize" >solutions for business</p>
+                <p class="mb-0 fs-4 fw-bold text-uppercase" >Infotech Pvt Ltd</p>
+                <p class="my-0 text-capitalize fs-4" >solutions for business</p>
 
             </div>
 

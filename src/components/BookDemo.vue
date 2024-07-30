@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color: var(--bg-forth)">
+    <div class="bg-white">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center">

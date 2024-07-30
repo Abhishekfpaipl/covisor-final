@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="query border rounded d-flex flex-column p-1" style="background-color:#212529a3 !important" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
+        <div class="query border rounded d-flex flex-column p-1" style="background-color:#212529a3 !important"
+            data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="d-flex align-items-center gap-1">
-                <span class="text-white fs-5">9.5</span>
                 <img src="/img/fameset.svg" style="width: 35px; height: 35px;" alt="">
+                <span class="text-white fs-5">9.5</span>
                 <!-- <i class="bi bi-star-fill text-warning"></i> -->
             </div>
             <p class=" mb-0 text-white small fw-bold">Fameset</p>
@@ -12,36 +12,35 @@
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg ">
-                <div class="modal-content">
+                <div class="modal-content position-relative">
                     <div class="modal-body p-0">
-                        <div class="container text-dark bg-white my-3">
-                            <div class="row rounded  border mx-1 p-3 text-bg-dark align-items-center">
-                                <div class="col-md-3">
+                        <div class="container my-2">
+                            <div class="row rounded  border mx-1 p-md-3 p-1 text-bg-light align-items-center">
+                                <div class="col-md-2">
                                     <img src="/img/logo.svg" alt="" class="rounded-circle"
                                         style="width: 120px; height: 120px; object-fit: contain;">
                                 </div>
                                 <div class="col-md-9 text-center text-md-start">
-                                    <p class="my-1 fs-2 fw-bold">Mariana Anderson</p>
-                                    <p class="d-inline-block text-start my-1 fs-5">Marketing Manager</p>
-                                    <div class="d-flex gap-2 my-1 fs-5">
-                                        <span>Fameset</span>
-                                        <div class="">
-                                            <span v-for="(star, index) in stars" :key="index" class="text-warning">
-                                                <i v-if="star === 'full'" class="bi bi-star-fill"></i>
-                                                <i v-else-if="star === 'half'" class="bi bi-star-half"></i>
-                                                <i v-else class="bi bi-star"></i>
-                                            </span>
+                                    <p class="my-0 fs-3">Covisor Infotech Pvt Ltd</p>
+                                    <p class="d-inline-block text-start my-0 fs-5">Solutions for business</p>
+                                    <div
+                                        class="d-flex flex-column justify-content-center justify-content-md-start flex-md-row align-items-center my-1 fs-5">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="/img/fameset.svg"
+                                                style="width:50px; height: 50px; object-fit: cover;" alt="">
+                                            <span class="fs-3">9.5</span>
+                                            <span class="text-secondary fs-3">/ 10</span>
                                         </div>
-                                        <span>5 Rating</span>
+                                        <span class="fs-3">Fameset Rating</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="container text-dark bg-white mt-4">
-                            <div class="row row-cols-4 row-cols-md-4 mx-1 g-1">
+                        <div class="container text-dark bg-white mt-2 mt-md-4">
+                            <div class="row row-cols-2 row-cols-md-2 mx-1 g-2">
                                 <div v-for="(item, index) in fav" :key="index" class="col">
-                                    <div class="p-2 card shadow"
+                                    <div class="p-md-2 p-1 card shadow"
                                         style="background-color: #FFF5DD !important;border-color: #FFCE56 !important;">
                                         <div class="d-md-flex justify-content-between align-items-center border-bottom pb-2"
                                             style="border-color: #FFCE56 !important;">
@@ -55,14 +54,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mx-3 pb-3 pt-4">
-                            <button class="w-100 btn btn-warning fs-4"><span class="text-capitalize">We'd Love To Have
-                                    Your Feedback</span> <i class="bi bi-arrow-right "></i></button>
+                        <div class="mx-3 pb-3 pt-md-4 pt-2">
+                            <a href="https://www.fameset.com"
+                                class="w-100 btn btn-dark text-warning fs-4 btn-hover"><span
+                                    class="text-capitalize">We'd Love To Have
+                                    Your Feedback</span> <i class="bi bi-arrow-right "></i></a>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                    <div class="position-absolute rounded-circle wh-40 text-bg-danger  px-2 p-1 end-0"
+                        data-bs-dismiss="modal" style="top: -3%">
+                        <i class="bi bi-x fs-5"></i>
                     </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -79,30 +84,17 @@ export default {
         return {
             fav: [
                 {
-                    iconClass: 'bi bi-trophy-fill',
-                    iconColor: '#BCDFFB',
-                    data: 10,
-                    label: 'Awards',
-
-                },
-                {
-                    iconClass: 'bi bi-award-fill',
-                    iconColor: '#C9E7CA',
-                    data: 10,
-                    label: 'Rewards'
-                },
-                {
-                    iconClass: 'bi bi-shield-fill-check',
-                    iconColor: '#FFB2B2',
-                    data: 50,
-                    label: 'Badges'
-                },
-                {
                     iconClass: 'bi bi-hand-thumbs-up-fill',
                     iconColor: '#BCDFFB',
                     data: 10,
                     label: 'Likes',
 
+                },
+                {
+                    iconClass: 'bi bi-heart-fill',
+                    iconColor: '#C9E7CA',
+                    data: 10,
+                    label: 'Hearts'
                 },
                 {
                     iconClass: 'bi bi-megaphone-fill',
@@ -111,23 +103,38 @@ export default {
                     label: 'Promoters'
                 },
                 {
-                    iconClass: 'bi bi-heart-fill',
-                    iconColor: '#C9E7CA',
-                    data: 10,
-                    label: 'Thankful'
-                },
-                {
                     iconClass: 'bi bi-chat-dots-fill',
                     iconColor: '#C9E7CA',
                     data: 10,
                     label: 'Reviews'
                 },
-                {
-                    iconClass: 'bi bi-people-fill',
-                    iconColor: '#C9E7CA',
-                    data: 10,
-                    label: 'Users'
-                },
+                // {
+                //     iconClass: 'bi bi-trophy-fill',
+                //     iconColor: '#BCDFFB',
+                //     data: 10,
+                //     label: 'Awards',
+
+                // },
+                // {
+                //     iconClass: 'bi bi-award-fill',
+                //     iconColor: '#C9E7CA',
+                //     data: 10,
+                //     label: 'Rewards'
+                // },
+                // {
+                //     iconClass: 'bi bi-shield-fill-check',
+                //     iconColor: '#FFB2B2',
+                //     data: 50,
+                //     label: 'Badges'
+                // },
+
+
+                // {
+                //     iconClass: 'bi bi-people-fill',
+                //     iconColor: '#C9E7CA',
+                //     data: 10,
+                //     label: 'Users'
+                // },
             ],
             rating: 4.5,
         };
@@ -161,5 +168,10 @@ export default {
     border-radius: 5px;
     display: flex;
     align-items: center;
+}
+
+.btn-hover:hover {
+    background-color: #ffc107 !important;
+    color: #000 !important;
 }
 </style>

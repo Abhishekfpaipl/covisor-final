@@ -4,7 +4,7 @@
             <h1 class="text-center mb-4">Here is What I Wanna Give You...</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
                 <div class="col" v-for="(plan, index) in plans" :key="index">
-                    <div class="card px-3 bg-light rounded-0" style="min-height: 530px;">
+                    <div class="card px-3 bg-light rounded-0" style="min-height: 585px;">
                         <div class="py-2 border-bottom fw-bold">{{ plan.name }}</div>
                         <div class="card-body text-center">
                             <ul v-if="plan.features" class="list-group">
@@ -16,6 +16,12 @@
                                     </span>
                                 </li>
                             </ul>
+                        </div>
+                        <div v-if="plan.buttonText" class="card-footer bg-light">
+                            <a :href="plan.link" class="btn btn-light border text-dark text-capitalize" style="">
+                                <img v-if="plan.logo" :src="plan.logo" style="width:30px; height: 30px; object-fit: contain;" alt="">
+                                {{ plan.buttonText }}
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -43,7 +49,10 @@ export default {
                         { "name": "Setting Up Automated Processes" },
                         { "name": "Automated Customer Service Systems" },
                         { "name": "Integrating AI for Automation" }
-                    ]
+                    ],
+                    "buttonText":"custom solutions",
+                    "link":"",
+                    "logo":"",
                 },
                 {
                     "id": 2,
@@ -60,7 +69,10 @@ export default {
                         { "name": "Employee Retention Techniques" },
                         { "name": "Developing Training Programs" },
                         { "name": "Implementing Employee Feedback Systems" }
-                    ]
+                    ],
+                    "buttonText":"custom solutions",
+                    "link":"",
+                    "logo":"",
                 },
                 {
                     "id": 3,
@@ -77,7 +89,10 @@ export default {
                         { "name": "Effective Follow-Up Strategies" },
                         { "name": "Sales Team Management" },
                         { "name": "Cross-Selling and Up-Selling Techniques" }
-                    ]
+                    ],
+                    "buttonText":"saleswik",
+                    "link":"https://www.saleswik.in",
+                    "logo":"img/saleswik.svg",
                 },
                 {
                     "id": 4,
@@ -94,7 +109,10 @@ export default {
                         { "name": "Tax Planning Strategies" },
                         { "name": "Investment Analysis" },
                         { "name": "Debt Management Techniques" }
-                    ]
+                    ],
+                    "buttonText":"custom solutions",
+                    "link":"",
+                    "logo":"",
                 },
                 {
                     "id": 5,
@@ -111,7 +129,10 @@ export default {
                         { "name": "Brand Positioning" },
                         { "name": "Analyzing Marketing Metrics" },
                         { "name": "Optimizing Marketing Budget" }
-                    ]
+                    ],
+                    "buttonText":"custom solutions",
+                    "link":"",
+                    "logo":"",
                 },
                 {
                     "id": 6,
@@ -128,7 +149,10 @@ export default {
                         { "name": "Community Relations" },
                         { "name": "Reputation Management" },
                         { "name": "Measuring PR Campaign Success" }
-                    ]
+                    ],
+                    "buttonText":"Fameset",
+                    "link":"https://www.fameset.com",
+                    "logo":"img/fameset.svg",
                 },
                 {
                     "id": 7,
@@ -145,7 +169,10 @@ export default {
                         { "name": "Stock Auditing Techniques" },
                         { "name": "Handling Overstock and Understock" },
                         { "name": "Improving Order Fulfillment" }
-                    ]
+                    ],
+                    "buttonText":"custom solutions",
+                    "link":"",
+                    "logo":"",
                 },
                 {
                     "id": 8,
@@ -162,7 +189,10 @@ export default {
                         { "name": "Customer Satisfaction Monitoring" },
                         { "name": "Using Dashboards for Monitoring" },
                         { "name": "Identifying Areas for Improvement" }
-                    ]
+                    ],
+                    "buttonText":"custom solutions",
+                    "link":"",
+                    "logo":"",
                 },
                 {
                     "id": 9,
@@ -179,7 +209,10 @@ export default {
                         { "name": "Conflict Resolution in Teams" },
                         { "name": "Motivating Team Members" },
                         { "name": "Tracking Team Performance" }
-                    ]
+                    ],
+                    "buttonText":"workwity",
+                    "link":"https://www.workwity.com",
+                    "logo":"img/workwity.svg",
                 },
                 {
                     "id": 10,
@@ -196,7 +229,10 @@ export default {
                         { "name": "Digital Marketing Strategies" },
                         { "name": "Analyzing Ecommerce Metrics" },
                         { "name": "Ensuring Website Security" }
-                    ]
+                    ],
+                    "buttonText":"custom solutions",
+                    "link":"",
+                    "logo":"",
                 }
             ]
 

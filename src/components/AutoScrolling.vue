@@ -1,6 +1,6 @@
 <template>
     <div class="py-5" :class="textColor" :style="{ backgroundColor: bgColor }">
-        <h1 class="text-center mb-5 text-capitalize ">we are featured in</h1>
+        <h1 class="text-center mb-5 text-capitalize ">{{ title }}</h1>
         <article :class="['wrapper', { 'wrapper--vertical': isVertical }]">
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group"
@@ -21,7 +21,7 @@
                 </div>
             </div>
         </article>
-        
+
     </div>
 </template>
 
@@ -30,6 +30,9 @@
 export default {
     name: "AutoScrolling",
     props: {
+        title: {
+            type: String,
+        },
         links: {
             type: Array,
         },
@@ -46,7 +49,7 @@ export default {
         imageFilter: {
             type: String
         },
-        textSize:{
+        textSize: {
             type: String
         }
     },

@@ -4,9 +4,10 @@
             <img src="/img/homeBannerDesk.jpg" class="position-relative min-vh-100 d-none d-md-block" style="width:100%; height:400px; object-fit:cover;">
             <img src="/img/homeBannerMob.jpg" class="position-relative d-md-none" style="width:100%;object-fit:cover;">
             <div class="position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white"  style="background-color:#0000008c" >
-                <h3 class="mt-3 lh-1 mb-0">Covisor Infotech Pvt Ltd .</h3>
+                <img src="/img/logo.svg" alt="" style="width:250px;filter: brightness(150);">
+                <h3 class="mt-3 lh-1 fs-1 fw-bold text-uppercase">Covisor</h3>
                 <div class="text-md-start text-center">
-                    <p class="fs-1 fw-bold m-0 text-capitalize">Solutions for business</p>
+                    <p class="h3 mb-2 text-capitalize">Solutions for business</p>
                 </div>
                 <AutoTypeDeleteText :texts="services" :typingSpeed="150" :deleteSpeed="50" :delay="500" />
                 <div class="mt-3 text-center text-md-start">
@@ -37,9 +38,9 @@ export default {
                 // 'Graphic designing',
                 // 'B2B ecommerce development',
                 // 'B2C ecommerce development',
-                'Digital Marketing',
                 'Website Development',
                 'Software Development',
+                'Digital Marketing',
             ],
             // show: false,
         }

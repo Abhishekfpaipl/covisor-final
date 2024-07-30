@@ -33,7 +33,7 @@
             <ServiceComponent />
         </div>
         <div class="my-5">
-            <PrivateCoaching :coaching="mission" title="know us" />
+            <PrivateCoaching :coaching="mission" title=" " />
         </div>
         <div class="my-5">
             <CertificateSection />
@@ -41,8 +41,8 @@
         <div class="my-5">
             <HomeTestimonialSection />
         </div>
-        <p class="text-center py-3 text-dark mb-0 position-fixed bottom-0 w-100 bg-warning" @click="submit()"><i
-                class="bi bi-whatsapp me-3"></i>Enquiry Now</p>
+        <p class="text-center py-3 text-dark mb-0 position-fixed bottom-0 w-100 bg-warning" @click="submit()">
+            <i class="bi bi-whatsapp me-3 fs-5"></i> <span class="fs-5">Enquiry Now</span></p>
     </div>
 </template>
 <script>
@@ -93,16 +93,16 @@ export default {
                 },
             ],
             test: [
-                { "title": "Marketing System", "description": "Comprehensive strategies and tools to attract and retain customers, ensuring your marketing efforts are effective and targeted." },
                 { "title": "Sales System", "description": "Techniques and processes to streamline sales operations, boost conversions, and maximize revenue growth." },
-                { "title": "HR System", "description": "Best practices for recruiting, training, and managing a top-performing team that aligns with your business goals." },
-                { "title": "Stock System", "description": "Efficient inventory management solutions to optimize stock levels, reduce waste, and ensure timely fulfillment." },
                 { "title": "PR System", "description": "Strategies to manage public relations, enhance brand reputation, and consistently deliver exceptional quality to customers." },
+                { "title": "HR System", "description": "Best practices for recruiting, training, and managing a top-performing team that aligns with your business goals." },
+                { "title": "Work System", "description": "Frameworks and techniques to enhance team productivity, collaboration, and overall work effectiveness." },
+                { "title": "Stock System", "description": "Efficient inventory management solutions to optimize stock levels, reduce waste, and ensure timely fulfillment." },
+                { "title": "Marketing System", "description": "Comprehensive strategies and tools to attract and retain customers, ensuring your marketing efforts are effective and targeted." },
                 { "title": "Financial System", "description": "Guidelines for robust financial planning, budgeting, and management to prevent cash flow issues and ensure financial stability." },
+                { "title": "Ecommerce System", "description": "Strategies for building and managing a successful ecommerce platform, focusing on customer experience and business reliability." },
                 { "title": "Monitoring System", "description": "Tools and methods to assess and track the performance of your business systems, ensuring operational efficiency." },
                 { "title": "Auto-Pilot System", "description": "Automation solutions to streamline business processes, reduce manual workload, and increase efficiency." },
-                { "title": "Work System", "description": "Frameworks and techniques to enhance team productivity, collaboration, and overall work effectiveness." },
-                { "title": "Ecommerce System", "description": "Strategies for building and managing a successful ecommerce platform, focusing on customer experience and business reliability." }
             ],
             coaching: [
                 {

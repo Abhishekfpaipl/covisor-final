@@ -1,12 +1,12 @@
 <template>
-    <div style="padding-top: 70px;">
+    <div >
         <div class="container mb-5 pb-5">
             <div class="row">
                 <div class="col-12 col-md-6 py-3 text-center px-4 px-md-2">
                     <h1 class="mt-3 text-capitalize">book your free consultation</h1>
                     <p class="fs-5 text-capitalize">and learn how to, start your digital journey, grow your business
                         digitally, compete online with big giants.</p>
-                        <ContactForm/>
+                    <ContactForm />
                     <!-- <form @submit.prevent="submitQuery()" class="mt-4 row g-3 needs-validation">
                         <div class="w-100 form-floating mt-0">
                             <input type="text" class="form-control" placeholder="" v-model="name" required>
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <p class="text-center py-4 text-white mb-0 position-fixed bottom-0 w-100"
+        <p class="text-center py-4 text-white mb-0 position-fixed bottom-0 w-100" @click="openDialer()"
             style="background-color: var(--brand-color);">Questions? Talk to an
             expert: 91 8860012001</p>
     </div>
@@ -43,7 +43,7 @@
 import ContactForm from '@/components/ContactForm.vue';
 
 export default {
-    components:{
+    components: {
         ContactForm
     },
     data() {
@@ -67,7 +67,11 @@ export default {
                 this.name = "";
                 this.note = "";
             }
-        }
+        },
+        openDialer() {
+            const phoneNumber = 918860012001;
+            window.location.href = `tel:${phoneNumber}`;
+        },
     }
 }
 </script>
