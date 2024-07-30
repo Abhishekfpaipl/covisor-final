@@ -1,26 +1,13 @@
 <template>
     <div style="padding-top: 66px;">
-        <div class="col-12 ">
-            <img src="/img/homeBannerDesk.jpg" class="position-relative min-vh-100 d-none d-md-block"
-                style="width:100%; height:400px; object-fit:cover;">
-            <img src="/img/homeBannerMob.jpg" class="position-relative d-md-none" style="width:100%;object-fit:cover;">
-            <div class="position-absolute top-0 w-100 d-flex flex-column justify-content-center align-items-center text-white min-vh-100"
-                style="background-color:#0000008c; ">
-                <h1 class="text-center text-uppercase">Personalized Business Development Program </h1>
-                <h3 class="text-center text-capitalize card p-4 my-4">One to One Consultation <br> for your <br> Step by
-                    Step Evolution</h3>
-                <p class="mt-3 text-capitalize">Do you want to see your business become scalable, profitable, and
-                    on autopilot?<br> and you want implementation in your business and no more trainings now.</p>
-            </div>
-        </div>
-
-
+        <ConsultationBanner />
         <div class="my-5">
             <WhatMakesUsDifferent :values="values" title="🚀 TRANSFORM YOURSELF FROM "
                 subTitle="BUSY MAN TO BUSINESSMAN" v-observe />
         </div>
         <div class="my-5">
-            <PrivateCoaching :coaching="coaching" title="RAISE YOUR STANDARDS OF SUCCESS" subtitle="PRIVATE BUSINESS OWNER COACHING" />
+            <PrivateCoaching :coaching="coaching" title="RAISE YOUR STANDARDS OF SUCCESS"
+                subtitle="PRIVATE BUSINESS OWNER COACHING" />
         </div>
         <div class="my-5">
             <h3 class="text-center text-uppercase">Find out the clear steps for your business growth</h3>
@@ -64,6 +51,7 @@ import WhatMakesUsDifferent from "@/components/WhatMakesUsDifferent.vue";
 import ServiceComponent from "@/components/ServiceComponent.vue";
 import CertificateSection from '@/components/CertificateSection.vue';
 import PrivateCoaching from '@/components/PrivateCoaching.vue';
+import ConsultationBanner from "@/components/ConsultationBanner.vue";
 export default {
     components: {
         WhatMakesUsDifferent,
@@ -71,6 +59,7 @@ export default {
         CertificateSection,
         PrivateCoaching,
         HomeTestimonialSection,
+        ConsultationBanner,
     },
     data() {
         return {
@@ -104,14 +93,16 @@ export default {
                 },
             ],
             test: [
-                { title: "Marketing System.", description: "Marketing management Checklist to Get More Customers" },
-                { title: "Sales System.", description: "Sales management Checklist to Get More Customers" },
-                { title: "Hr & People System.", description: "HR management Checklist to Create a Champion Team" },
-                { title: "Order Fulfilment System.", description: "Ordering management Checklist to enhance efficency of order fullfillment " },
-                { title: "Operation System.", description: "Operation management Checklist to Deliver Extraordinary Quality Every Time" },
-                { title: "Financial System.", description: "Financial management Checklist to Avoid Fund issues" },
-                { title: "Monitoring System.", description: "Monitoring management Checklist to Analyze Efficency of System" },
-                { title: "Auto-Pilot System.", description: "Autopilot management Checklist to Automate Your Business" },
+                { "title": "Marketing System", "description": "Comprehensive strategies and tools to attract and retain customers, ensuring your marketing efforts are effective and targeted." },
+                { "title": "Sales System", "description": "Techniques and processes to streamline sales operations, boost conversions, and maximize revenue growth." },
+                { "title": "HR System", "description": "Best practices for recruiting, training, and managing a top-performing team that aligns with your business goals." },
+                { "title": "Stock System", "description": "Efficient inventory management solutions to optimize stock levels, reduce waste, and ensure timely fulfillment." },
+                { "title": "PR System", "description": "Strategies to manage public relations, enhance brand reputation, and consistently deliver exceptional quality to customers." },
+                { "title": "Financial System", "description": "Guidelines for robust financial planning, budgeting, and management to prevent cash flow issues and ensure financial stability." },
+                { "title": "Monitoring System", "description": "Tools and methods to assess and track the performance of your business systems, ensuring operational efficiency." },
+                { "title": "Auto-Pilot System", "description": "Automation solutions to streamline business processes, reduce manual workload, and increase efficiency." },
+                { "title": "Work System", "description": "Frameworks and techniques to enhance team productivity, collaboration, and overall work effectiveness." },
+                { "title": "Ecommerce System", "description": "Strategies for building and managing a successful ecommerce platform, focusing on customer experience and business reliability." }
             ],
             coaching: [
                 {
@@ -128,18 +119,18 @@ export default {
                 },
             ],
             mission: [
-                {   
-                    icon:'bi bi-bullseye',
+                {
+                    icon: 'bi bi-bullseye',
                     title: "mission",
                     description: "Make Indian Businesses more successful that grows exponentially and sustainably"
                 },
                 {
-                    icon:'bi bi-eye',
+                    icon: 'bi bi-eye',
                     title: "vision",
                     description: "Build an enterprise that genuinely serves the nation and creates a positive impact in the world"
                 },
                 {
-                    icon:'bi bi-gem',
+                    icon: 'bi bi-gem',
                     title: "value",
                     description: "Find your true north. Master your craft and set the standards for world-class"
                 },

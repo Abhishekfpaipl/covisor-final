@@ -42,18 +42,18 @@
             </div>
         </div>
     </div>
-    <FameFoot />
+    <!-- <FameFoot /> -->
     <div class="bg-light text-center py-3 d-flex align-items-center justify-content-center">
         <p class="text-dark mb-0"> Copyright © 2024 Covisor Infotech Pvt Ltd All rights reserved</p>
     </div>
 </template>
 
 <script>
-import FameFoot from '@/components/FameFoot.vue'
+// import FameFoot from '@/components/FameFoot.vue'
 export default {
     name: 'FooterBar',
     components: {
-        FameFoot,
+        // FameFoot,
     },
     data() {
         return {

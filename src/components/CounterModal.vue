@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div class="query border rounded d-flex flex-column" style="background-color:#212529a3 !important" data-bs-toggle="modal"
+        <div class="query border rounded d-flex flex-column p-1" style="background-color:#212529a3 !important" data-bs-toggle="modal"
             data-bs-target="#exampleModal">
             <div class="d-flex align-items-center gap-1">
-                <!-- <img src="/img/fameset.svg" style="width: 40px; height: 40px;" alt=""> -->
-                <span class="text-white">9.5</span>
-                <i class="bi bi-star-fill text-warning"></i>
+                <span class="text-white fs-5">9.5</span>
+                <img src="/img/fameset.svg" style="width: 35px; height: 35px;" alt="">
+                <!-- <i class="bi bi-star-fill text-warning"></i> -->
             </div>
             <p class=" mb-0 text-white small fw-bold">Fameset</p>
         </div>
