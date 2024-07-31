@@ -1,13 +1,14 @@
 <template>
-    <div class="" style="padding-top: 66px;">
+    <div class="">
         <div class="col-12">
-            <img src="/img/homeBannerDesk.jpg" class="position-relative min-vh-100 d-none d-md-block"
-                style="width:100%; height:400px; object-fit:cover;">
-            <img src="/img/homeBannerMob.jpg" class="position-relative d-md-none" style="width:100%;object-fit:cover;">
+            <img src="/img/banner/software-development.jpg" class="position-relative"
+                style="width:100%; object-fit:cover;">
+            <!-- <img src="/img/homeBannerMob.jpg" class="position-relative d-md-none" style="width:100%;object-fit:cover;"> -->
         </div>
 
-
-        <div class="container mt-5">
+       
+        <div class="container mt-5 pt-4">
+            <h1 class="text-center mb-5">Software Development</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
                 <div class="col" v-for="(plan, index) in plans" :key="index">
                     <div class="card px-3 bg-light rounded-0">
@@ -38,11 +39,12 @@
                 </div>
             </div>
         </div>
-
+        <div class="my-5">
+            <FreeConsultation />
+        </div>
         <div class="container-fluid mt-5">
-            <div class="row d-flex align-items-center justify-content-center p-md-5 p-3 py-5"
-                style="background-color: var(--bg-forth);">
-                <div class="col-12 col-md-6 align-items-center text-center text-md-start">
+            <div class="row d-flex align-items-center justify-content-center p-md-5 p-3 py-5" >
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                     <img src="/img/formwelcome.svg" class="mt-3" style="width: 350px;max-width: 80%;" alt="">
                 </div>
                 <div class="col-12 col-md-6 d-flex flex-column mt-5 mt-md-3">
@@ -56,10 +58,11 @@
 </template>
 
 <script>
+import FreeConsultation from "@/components/FreeConsultation.vue";
 import ContactForm from "@/components/ContactForm.vue"
 export default {
     name: 'PlanDetails',
-    components: { ContactForm },
+    components: { ContactForm,FreeConsultation },
     data() {
         return {
             plans: [

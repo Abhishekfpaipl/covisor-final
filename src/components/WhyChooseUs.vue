@@ -1,5 +1,5 @@
 <template>
-    <div class="" style="background-color: var(--bg-forth);">
+    <div class="" >
         <div class="container px-3 px-md-0">
             <h1 class="text-center text-capitalize py-3">Why Choose Us</h1>
             <div class="row d-flex justify-content-center pb-5 pt-2">

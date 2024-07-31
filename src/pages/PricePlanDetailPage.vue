@@ -1,6 +1,6 @@
-<!-- src/components/PlanDetails.vue -->
+ 
 <template>
-    <div class="" style="padding-top: 66px;">
+    <div class="" >
         <!-- <div style="width: 100%;"> -->
         <img :src="plan.banner" class="d-md-block d-none"
             style="width: 100%; height: 400px; object-fit: cover; object-position: center;" alt="">

@@ -1,5 +1,5 @@
 <template>
-    <div style="padding-top: 66px;">
+    <div >
         <div class="text-center fw-bold py-5 text-white" style="background-color: var(--brand-color)">
             <p class="fs-1">Legal Warning</p>
         </div>
@@ -75,9 +75,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
+        </div> 
     </div>
 </template>
 

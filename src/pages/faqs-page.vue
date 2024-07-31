@@ -1,5 +1,5 @@
 <template>
-    <div style="padding-top: 66px;">
+    <div >
         <div class="text-center fw-bold py-5 text-white" style="background-color: var(--brand-color);">
             <h1 class="text-center mb-4">Frequently Asked Questions</h1>
         </div>

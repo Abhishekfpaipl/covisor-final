@@ -1,5 +1,5 @@
 <template>
-    <div style="padding-top: 66px;">
+    <div >
         <div class="text-center fw-bold py-5 text-white" style="background-color: var(--brand-color);" v-observe>
             <p class="fs-1 mb-0">Career</p>
             <p class="fs-5">LOOKING FOR A CAREER, JOIN US !</p>

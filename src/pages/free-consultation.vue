@@ -1,13 +1,15 @@
 <template>
-    <div style="padding-top: 66px;">
+    <div >
         <ConsultationBanner />
-        <div class="my-5">
-            <WhatMakesUsDifferent :values="values" title="🚀 TRANSFORM YOURSELF FROM "
-                subTitle="BUSY MAN TO BUSINESSMAN" v-observe />
-        </div>
+
         <div class="my-5">
             <PrivateCoaching :coaching="coaching" title="RAISE YOUR STANDARDS OF SUCCESS"
                 subtitle="PRIVATE BUSINESS OWNER COACHING" />
+        </div>
+        <div class="my-5">
+            <div class="my-5 py-5" style="background-color: var(--brand-color);font-size: 45px !important;">
+                <p class="container text-center text-white p-2 text-capitalize"> "transform yourself from busy man to businessman "</p>
+            </div>
         </div>
         <div class="my-5">
             <h3 class="text-center text-uppercase">Find out the clear steps for your business growth</h3>
@@ -23,7 +25,7 @@
                     <p class="mb-0 text-start text-capitalize">{{ link.description }}</p>
                 </div>
             </div>
-            <div class="my-5 py-3" style="background-color: var(--brand-color);">
+            <div class="my-5 py-5" style="background-color: var(--brand-color);">
                 <h4 class="container text-center text-white p-2 text-capitalize">After the compelete health Check-Up
                     of your business, we will focus on the things which are </h4>
                 <span class="fs-4 p-2 text-uppercase bg-light text-dark">IMPORTANT for Growth</span>
@@ -34,32 +36,21 @@
         </div>
         <div class="my-5">
             <PrivateCoaching :coaching="mission" title=" " />
-        </div>
-        <div class="my-5">
-            <CertificateSection />
-        </div>
-        <div class="my-5">
-            <HomeTestimonialSection />
-        </div>
+        </div> 
         <p class="text-center py-3 text-dark mb-0 position-fixed bottom-0 w-100 bg-warning" @click="submit()">
-            <i class="bi bi-whatsapp me-3 fs-5"></i> <span class="fs-5">Enquiry Now</span></p>
+            <i class="bi bi-whatsapp me-3 fs-5"></i> <span class="fs-5">Enquiry Now</span>
+        </p>
     </div>
 </template>
-<script>
-import HomeTestimonialSection from "@/components/HomeTestimonialSection.vue";
-import WhatMakesUsDifferent from "@/components/WhatMakesUsDifferent.vue";
-import ServiceComponent from "@/components/ServiceComponent.vue";
-import CertificateSection from '@/components/CertificateSection.vue';
+<script> 
+import ServiceComponent from "@/components/ServiceComponent.vue"; 
 import PrivateCoaching from '@/components/PrivateCoaching.vue';
-import ConsultationBanner from "@/components/ConsultationBanner.vue";
+import ConsultationBanner from "@/components/ConsultationBanner.vue"; 
 export default {
     components: {
-        WhatMakesUsDifferent,
-        ServiceComponent,
-        CertificateSection,
-        PrivateCoaching,
-        HomeTestimonialSection,
-        ConsultationBanner,
+        ServiceComponent, 
+        PrivateCoaching, 
+        ConsultationBanner, 
     },
     data() {
         return {

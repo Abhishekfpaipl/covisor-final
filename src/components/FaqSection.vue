@@ -1,9 +1,9 @@
 <template>
-    <div style="background-color: var(--bg-forth)">
-        <div class="container py-4">
+    <div class=" bg-light text-dark border-bottom">
+        <div class="container py-5">
             <div class="row align-items-center">
                 <div v-if="imagePosition === 'left'" class="col-md-6 text-center">
-                    <img :src="imageSrc" class="img-fluid" style="height: 250px;" alt="Image">
+                    <img :src="imageSrc" class="img-fluid" style="height: 200px;" alt="Image">
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0">
                     <h1 class="text-center mb-5 text-capitalize">{{ title }}</h1>
@@ -13,7 +13,7 @@
                     </router-link>
                 </div>
                 <div v-if="imagePosition === 'right'" class="col-md-6 text-center">
-                    <img :src="imageSrc" class="img-fluid" style="height: 250px;" alt="Image">
+                    <img :src="imageSrc" class="img-fluid" style="height: 200px;" alt="Image">
                 </div>
             </div>
         </div>

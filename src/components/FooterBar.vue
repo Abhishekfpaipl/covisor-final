@@ -18,11 +18,11 @@
                 <p class="mb-2">Address : 2nd Floor, Block B1/632, <br> Janakpuri, 110058, Delhi, India</p>
                 <div class="d-flex gap-2 justify-content-center">
                     <p class="fw-bold">Follow Us :</p>
-                    <i class="bi bi-twitter-x"></i>
+                    <!-- <i class="bi bi-twitter-x"></i> -->
                     <i class="bi bi-facebook"></i>
                     <i class="bi bi-linkedin"></i>
                     <i class="bi bi-youtube"></i>
-                    <i class="bi bi-instagram"></i>
+                    <!-- <i class="bi bi-instagram"></i> -->
                 </div>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-around">

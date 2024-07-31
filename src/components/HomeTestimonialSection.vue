@@ -8,7 +8,7 @@
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
                         <div class="card-container position-relative rounded p-2" style="background-color: #f0f8ff;">
-                            <div class="card">
+                            <div class="card px-2">
                                 <div
                                     class="card-header px-1 bg-white d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle border border-dark border-2 overflow-hidden p-1"
@@ -16,13 +16,13 @@
                                         <img :src="card.image" class="rounded-circle" alt="Profile"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <p class=" smaller mb-0 mt-2 text-ellipsis1">{{ card.name }}</p>
                                 </div>
                                 <div class="card-body p-0" style="max-width: 250px;">
                                     <p class="text-emphasis-danger smaller mb-0 text-ellipsis1">{{ card.title }}</p>
                                     <p class="smaller mb-0 text-ellipsis1">{{ card.tax }} </p>
                                     <p class="fw-bold text-info smaller mb-0 text-ellipsis1">{{ card.time }}</p>
-                                    <p class="name smaller mb-0 mt-0">{{ card.review }}</p>
+                                    <p class=" smaller mb-0 mt-0 text-ellipsis5 p-2">{{ card.review }}</p>
                                 </div>
                             </div>
                         </div>
@@ -30,9 +30,9 @@
                 </div>
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
+                    <div class="" v-for="(card, index) in cards" :key="index" style="min-height: 170px;">
                         <div class="card-container position-relative rounded p-2" style="background-color: #f0f8ff;">
-                            <div class="card">
+                            <div class="card px-2">
                                 <div
                                     class="card-header px-1 bg-white d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle border border-dark border-2 overflow-hidden p-1"
@@ -40,24 +40,25 @@
                                         <img :src="card.image" class="rounded-circle" alt="Profile"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <p class=" smaller mb-0 mt-2 text-ellipsis1">{{ card.name }}</p>
                                 </div>
                                 <div class="card-body p-0" style="max-width: 250px;">
                                     <p class="text-emphasis-danger smaller mb-0 text-ellipsis1">{{ card.title }}</p>
                                     <p class="smaller mb-0 text-ellipsis1">{{ card.tax }} </p>
                                     <p class="fw-bold text-info smaller mb-0 text-ellipsis1">{{ card.time }}</p>
-                                    <p class="name smaller mb-0 mt-0">{{ card.review }}</p>
+                                    <p class=" smaller mb-0 mt-0 text-ellipsis5 p-2">{{ card.review }}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="marquee marquee--reverse" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
+                    <div class="" v-for="(card, index) in cards" :key="index" style="min-height: 170px;">
                         <div class="card-container position-relative rounded p-2" style="background-color: #f0f8ff;">
-                            <div class="card">
+                            <div class="card px-2">
                                 <div
                                     class="card-header px-1 bg-white d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle border border-dark border-2 overflow-hidden p-1"
@@ -65,13 +66,13 @@
                                         <img :src="card.image" class="rounded-circle" alt="Profile"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <p class=" smaller mb-0 mt-2 text-ellipsis1">{{ card.name }}</p>
                                 </div>
                                 <div class="card-body p-0" style="max-width: 250px;">
                                     <p class="text-emphasis-danger smaller mb-0 text-ellipsis1">{{ card.title }}</p>
                                     <p class="smaller mb-0 text-ellipsis1">{{ card.tax }} </p>
                                     <p class="fw-bold text-info smaller mb-0 text-ellipsis1">{{ card.time }}</p>
-                                    <p class="name smaller mb-0 mt-0">{{ card.review }}</p>
+                                    <p class=" smaller mb-0 mt-0 text-ellipsis5 p-2">{{ card.review }}</p>
                                 </div>
                             </div>
                         </div>
@@ -79,9 +80,9 @@
                 </div>
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
+                    <div class="" v-for="(card, index) in cards" :key="index" style="min-height: 170px;">
                         <div class="card-container position-relative rounded p-2" style="background-color: #f0f8ff;">
-                            <div class="card">
+                            <div class="card px-2">
                                 <div
                                     class="card-header px-1 bg-white d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle border border-dark border-2 overflow-hidden p-1"
@@ -89,24 +90,25 @@
                                         <img :src="card.image" class="rounded-circle" alt="Profile"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <p class=" smaller mb-0 mt-2 text-ellipsis1">{{ card.name }}</p>
                                 </div>
                                 <div class="card-body p-0" style="max-width: 250px;">
                                     <p class="text-emphasis-danger smaller mb-0 text-ellipsis1">{{ card.title }}</p>
                                     <p class="smaller mb-0 text-ellipsis1">{{ card.tax }} </p>
                                     <p class="fw-bold text-info smaller mb-0 text-ellipsis1">{{ card.time }}</p>
-                                    <p class="name smaller mb-0 mt-0">{{ card.review }}</p>
+                                    <p class=" smaller mb-0 mt-0 text-ellipsis5 p-2">{{ card.review }}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
+                    <div class="" v-for="(card, index) in cards" :key="index" style="min-height: 170px;">
                         <div class="card-container position-relative rounded p-2" style="background-color: #f0f8ff;">
-                            <div class="card">
+                            <div class="card px-2">
                                 <div
                                     class="card-header px-1 bg-white d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle border border-dark border-2 overflow-hidden p-1"
@@ -114,13 +116,13 @@
                                         <img :src="card.image" class="rounded-circle" alt="Profile"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <p class="smaller mb-0 mt-2 text-ellipsis1">{{ card.name }}</p>
                                 </div>
                                 <div class="card-body p-0" style="max-width: 250px;">
                                     <p class="text-emphasis-danger smaller mb-0 text-ellipsis1">{{ card.title }}</p>
                                     <p class="smaller mb-0 text-ellipsis1">{{ card.tax }} </p>
                                     <p class="fw-bold text-info smaller mb-0 text-ellipsis1">{{ card.time }}</p>
-                                    <p class="name smaller mb-0 mt-0">{{ card.review }}</p>
+                                    <p class="smaller mb-0 mt-0 text-ellipsis5 p-2">{{ card.review }}</p>
                                 </div>
                             </div>
                         </div>
@@ -128,9 +130,9 @@
                 </div>
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
+                    <div class="" v-for="(card, index) in cards" :key="index" style="min-height: 170px;">
                         <div class="card-container position-relative rounded p-2" style="background-color: #f0f8ff;">
-                            <div class="card">
+                            <div class="card px-2">
                                 <div
                                     class="card-header px-1 bg-white d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle border border-dark border-2 overflow-hidden p-1"
@@ -138,13 +140,13 @@
                                         <img :src="card.image" class="rounded-circle" alt="Profile"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <p class="smaller mb-0 mt-2 text-ellipsis1">{{ card.name }}</p>
                                 </div>
                                 <div class="card-body p-0" style="max-width: 250px;">
                                     <p class="text-emphasis-danger smaller mb-0 text-ellipsis1">{{ card.title }}</p>
                                     <p class="smaller mb-0 text-ellipsis1">{{ card.tax }} </p>
                                     <p class="fw-bold text-info smaller mb-0 text-ellipsis1">{{ card.time }}</p>
-                                    <p class="name smaller mb-0 mt-0">{{ card.review }}</p>
+                                    <p class="smaller mb-0 mt-0 text-ellipsis5 p-2">{{ card.review }}</p>
                                 </div>
                             </div>
                         </div>
@@ -171,48 +173,100 @@ export default {
             isReverse: false,
             cards: [
                 {
-                    "image": "img/customers/1.jpeg",
+                    "image": "/img/customers/1.jpeg",
                     "name": "Kusum Malik",
                     "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
                     "review": "The digital marketing strategies provided by this team have significantly increased our online presence and engagement. Their expertise in SEO and social media marketing is exceptional!"
                 },
                 {
-                    "image": "img/customers/2.jpeg",
+                    "image": "/img/customers/2.jpeg",
                     "name": "Payal Sharma",
                     "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
                     "review": "The custom software development solutions delivered by this company have streamlined our operations. Their understanding of our business needs and the quality of the software is truly impressive."
                 },
                 {
-                    "image": "img/customers/3.jpeg",
+                    "image": "/img/customers/3.jpeg",
                     "name": "Sumit Rawat",
                     "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
                     "review": "Their website development services transformed our online platform into a user-friendly and visually appealing site. The project was completed on time, and the team's attention to detail was outstanding."
                 },
                 {
-                    "image": "img/customers/4.jpeg",
+                    "image": "/img/customers/4.jpeg",
                     "name": "Abhishek Kumar",
                     "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
                     "review": "Thanks to their comprehensive digital marketing strategies, we've seen a remarkable increase in website traffic and customer inquiries. The team's dedication and creativity are commendable."
                 },
                 {
-                    "image": "img/customers/5.jpeg",
+                    "image": "/img/customers/5.jpeg",
                     "name": "Rajat Yadav",
                     "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
                     "review": "The software development team provided us with innovative solutions that have greatly enhanced our business processes. Their professional approach and technical expertise are top-notch."
                 },
+            ],
+            secondCard: [
                 {
-                    "image": "img/customers/6.jpeg",
-                    "name": "Jayshree",
+                    "image": "/img/customers/6.jpeg",
+                    "name": "Vaishali Gupta",
                     "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
-                    "review": "The website they developed for us is not only aesthetically pleasing but also highly functional. The team's ability to understand our brand and translate it into a digital experience is impressive."
+                    "review": "The digital marketing strategies provided by this team have significantly increased our online presence and engagement. Their expertise in SEO and social media marketing is exceptional!"
                 },
                 {
-                    "image": "img/customers/7.jpeg",
-                    "name": "Lokesh Kumar",
+                    "image": "/img/customers/7.jpeg",
+                    "name": "Yogesh Sharma",
                     "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
-                    "review": "Their digital marketing expertise has helped us reach a wider audience and achieve better ROI on our campaigns. The team is knowledgeable, responsive, and a pleasure to work with."
-                }
-            ]
+                    "review": "The custom software development solutions delivered by this company have streamlined our operations. Their understanding of our business needs and the quality of the software is truly impressive."
+                },
+                {
+                    "image": "/img/customers/8.jpeg",
+                    "name": "Sahil Gupta",
+                    "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
+                    "review": "Their website development services transformed our online platform into a user-friendly and visually appealing site. The project was completed on time, and the team's attention to detail was outstanding."
+                },
+                {
+                    "image": "/img/customers/9.jpeg",
+                    "name": "Sikander Khan",
+                    "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
+                    "review": "Thanks to their comprehensive digital marketing strategies, we've seen a remarkable increase in website traffic and customer inquiries. The team's dedication and creativity are commendable."
+                },
+                {
+                    "image": "/img/customers/10.jpeg",
+                    "name": "Nandini Singh",
+                    "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
+                    "review": "The software development team provided us with innovative solutions that have greatly enhanced our business processes. Their professional approach and technical expertise are top-notch."
+                },
+            ],
+            thirdCard: [
+                {
+                    "image": "/img/customers/11.jpeg",
+                    "name": "Mathivanan R",
+                    "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
+                    "review": "The digital marketing strategies provided by this team have significantly increased our online presence and engagement. Their expertise in SEO and social media marketing is exceptional!"
+                },
+                {
+                    "image": "/img/customers/12.jpeg",
+                    "name": "Muhammad Junaid",
+                    "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
+                    "review": "The custom software development solutions delivered by this company have streamlined our operations. Their understanding of our business needs and the quality of the software is truly impressive."
+                },
+                {
+                    "image": "/img/customers/13.jpeg",
+                    "name": "Kirti Shahi",
+                    "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
+                    "review": "Their website development services transformed our online platform into a user-friendly and visually appealing site. The project was completed on time, and the team's attention to detail was outstanding."
+                },
+                {
+                    "image": "/img/customers/14.jpeg",
+                    "name": "Pratham Jindal",
+                    "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
+                    "review": "Thanks to their comprehensive digital marketing strategies, we've seen a remarkable increase in website traffic and customer inquiries. The team's dedication and creativity are commendable."
+                },
+                {
+                    "image": "/img/customers/15.jpeg",
+                    "name": "Atif Gul",
+                    "subtitle": "Director at RBB Buildcon Pvt. Ltd.",
+                    "review": "The software development team provided us with innovative solutions that have greatly enhanced our business processes. Their professional approach and technical expertise are top-notch."
+                },
+            ],
 
         };
     },
@@ -226,47 +280,16 @@ export default {
 </script>
 
 <style scoped>
-
-
-.card-header bg-white {
-    /* background: linear-gradient(to right, #ff6b6b, #4ecdc4); */
-    /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 254, 196, 1) 29%, rgba(255, 217, 102, 1) 90%); */
-    padding: 10px;
-    text-align: center;
-}
-
+.card {
+    min-height: 170px !important;
+} 
 .card-body {
     padding: 20px;
     text-align: center;
 }
-
-.loan-type {
-    color: #ff6b6b;
-    margin-bottom: 10px;
-}
-
-
-.amount {
-    font-weight: bold;
-    color: #4ecdc4;
-}
-
-
-.name {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.rating {
-    color: gold;
-}
-
-.star::before {
-    content: "\2605";
-}
-
+   
 .card-container {
-    min-width: 15rem !important
+    min-width: 15rem !important;
 }
 
 /* Quotation marks */

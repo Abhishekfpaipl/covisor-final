@@ -1,5 +1,5 @@
 <template>
-    <div class="" style="padding-top: 66px;">
+    <div class="">
         <div class="text-white py-5" style=" background-color:var(--brand-color) ;padding-bottom: 6rem !important;"
             v-observe>
             <h1 class="text-center mb-0 fw-bold">Contact Page</h1>
@@ -45,25 +45,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-        <!-- <div class="container my-5" v-observe>
-            <h1 class="text-capitalize my-5 text-center">Follow us on</h1>
-            <div class="row row-cols-4">
-                <div v-for="(contact, index) in folows" :key="index" class="col py-2">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="rounded-circle border d-flex align-items-center justify-content-center"
-                            style="width: 60px; height: 60px;">
-                            <a class="text-white" :href="contact.url" target="_blank">
-                                <i :class="contact.icon" :style="'color:' + contact.color"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="text-center mt-2 fw-bold">{{ contact.name }}</p>
-                </div>
-            </div>
-        </div>  -->
+            </div> 
+        </div> 
     </div>
 </template>
 

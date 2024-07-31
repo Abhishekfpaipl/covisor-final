@@ -1,5 +1,5 @@
 <template>
-    <div style="padding-top: 66px;">
+    <div >
         <div class="text-center fw-bold py-5 text-white" style="background-color: var(--brand-color)" v-observe>
             <p class="fs-1">Our Clients</p>
         </div>

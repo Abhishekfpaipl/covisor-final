@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid" style="background-color: var(--bg-forth);">
+    <div class="container-fluid py-5">
         <div class="row py-4">
             <div v-if="image" class="col-12 col-md-4">
                 <img :src="image" style="width: 450px; max-width: 80%" alt="">

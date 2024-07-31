@@ -122,10 +122,10 @@ export default {
             const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
             const scrollPercentage = (scrollTop / scrollHeight) * 100;
 
-            if (scrollPercentage >= 30) {
+            if (scrollPercentage >= 5) {
                 this.backgroundOpacity = 1;
                 this.hideOnScroll = false;
-            } else if (scrollPercentage >= 10) {
+            } else if (scrollPercentage >= 3) {
                 this.backgroundOpacity = 0.5;
                 this.hideOnScroll = false;
             } else {
