@@ -31,8 +31,8 @@
             <ImageSection banner="/img/banner1.png" v-observe />
         </div>
         <div class="">
-            <CustomCounter :service="service" :serviceCount="2000" :category="category" :categoryCount="1500"
-                :place="place" :placeCount="5000" image="/img/smile.svg" title="our happy customers" path="/"
+            <CustomCounter :service="service" :serviceCount="300" :category="category" :categoryCount="50"
+                :place="place" :placeCount="500" image="/img/smile.svg" title="our happy customers" path="/"
                 v-observe />
         </div>
         <div class="">

@@ -1,5 +1,5 @@
 <template>
-    <div class="container my-5">
+    <div class="container">
         <h1 class="my-4 text-center text-capitalize">We are offering softwares</h1>
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-2">
             <div class="col" v-for="(service, index) in services" :key="index">

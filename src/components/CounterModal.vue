@@ -29,9 +29,9 @@
                                             <img src="/img/fameset.svg"
                                                 style="width:50px; height: 50px; object-fit: cover;" alt="">
                                             <span class="fs-3">9.5</span>
-                                            <span class="text-secondary fs-3">/ 10</span>
+                                            <span class="text-secondary fs-3">/ 10&nbsp;</span>
                                         </div>
-                                        <span class="fs-3">Fameset Rating</span>
+                                        <span class="fs-3"> Fameset Rating</span>
                                     </div>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@
                                             <p class="fw-bold smaller mb-0">{{ item.label }}</p>
                                         </div>
                                         <p class="fw-bold fs-1 mb-0 d-flex justify-content-center align-items-center">
-                                            <AutoCounter :data="item.data" />&nbsp;+
+                                            <AutoCounter :data="item.data" />K&nbsp;+
                                         </p>
                                     </div>
                                 </div>
@@ -86,20 +86,20 @@ export default {
                 {
                     iconClass: 'bi bi-hand-thumbs-up-fill',
                     iconColor: '#BCDFFB',
-                    data: 10,
+                    data: 20,
                     label: 'Likes',
 
                 },
                 {
                     iconClass: 'bi bi-heart-fill',
                     iconColor: '#C9E7CA',
-                    data: 10,
+                    data: 200,
                     label: 'Hearts'
                 },
                 {
                     iconClass: 'bi bi-megaphone-fill',
                     iconColor: '#FFB2B2',
-                    data: 50,
+                    data: 10,
                     label: 'Promoters'
                 },
                 {
@@ -107,34 +107,7 @@ export default {
                     iconColor: '#C9E7CA',
                     data: 10,
                     label: 'Reviews'
-                },
-                // {
-                //     iconClass: 'bi bi-trophy-fill',
-                //     iconColor: '#BCDFFB',
-                //     data: 10,
-                //     label: 'Awards',
-
-                // },
-                // {
-                //     iconClass: 'bi bi-award-fill',
-                //     iconColor: '#C9E7CA',
-                //     data: 10,
-                //     label: 'Rewards'
-                // },
-                // {
-                //     iconClass: 'bi bi-shield-fill-check',
-                //     iconColor: '#FFB2B2',
-                //     data: 50,
-                //     label: 'Badges'
-                // },
-
-
-                // {
-                //     iconClass: 'bi bi-people-fill',
-                //     iconColor: '#C9E7CA',
-                //     data: 10,
-                //     label: 'Users'
-                // },
+                }, 
             ],
             rating: 4.5,
         };

@@ -9,8 +9,15 @@
                     style="color:var(--brand-color) !important">covisor</span>
             </router-link>
         </div>
-        <i class="bi bi-list fs-2" :class="{ 'hide-on-scroll': hideOnScroll }" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+        <div class="d-flex gap-2 align-items-center" 
+            :class="{ 'hide-on-scroll': hideOnScroll }">
+            <button class="btn text-white d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#contactModal" style="background-color: var(--brand-color);">
+                <i class="bi bi-telephone fs-4"></i>
+                <span class="d-none d-md-block">Contact Sales</span>
+            </button>
+            <i class="bi bi-list fs-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"></i>
+        </div>
     </div>
     <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel" style="">
@@ -49,10 +56,7 @@
                 </router-link>
             </ul>
             <p class="text-center fs-4 my-4">Reach Us</p>
-            <div class="d-flex justify-content-evenly fs-2 w-100">
-                <a href="https://www.instagram.com/" class="text-decoration-none" style="color: var(--primary-color)">
-                    <i class="bi bi-instagram"></i>
-                </a>
+            <div class="d-flex justify-content-evenly fs-2 w-100"> 
                 <a href="https://www.facebook.com/" class="text-decoration-none" style="color: var(--primary-color)">
                     <i class="bi bi-facebook"></i>
                 </a>
@@ -65,10 +69,38 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg ">
+            <div class="modal-content text-white position-relative" style="background-color: var(--brand-color)">
+                <div class="modal-body">
+                    <h3 class="my-2 text-capitalize">Hello, how can we help you?</h3>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <img src="/img/welcome.svg" style="width: 200px; max-width: 90%" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <ContactForm />
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute rounded-circle wh-40 bg-light text-dark px-2 p-1 end-0"
+                    data-bs-dismiss="modal" style="top: -3%">
+                    <i class="bi bi-x fs-5"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
+import ContactForm from "@/components/ContactForm.vue";
 export default {
+    components: {
+        ContactForm,
+    },
     data() {
         return {
             selectedMenu: null,
@@ -93,14 +125,22 @@ export default {
                 {
                     id: 3,
                     title: 'Contact Us',
-                    path: '/contact-us',
-                    bgColor: '#F8F9FA',
+                    path: '/contact-us', 
                 },
                 {
                     id: 4,
                     title: 'About Us',
-                    path: '/about-us',
-                    bgColor: '#F8F9FA',
+                    path: '/about-us',  
+                },
+                {
+                    id: 4,
+                    title: 'Patnership',
+                    path: '/reseller-program', 
+                },
+                {
+                    id: 4,
+                    title: 'Career',
+                    path: '/career', 
                 },
             ],
             backgroundOpacity: 0,

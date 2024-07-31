@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="my-5">
+        <div class="mb-5">
             <FormBanner />
         </div>
         <div class="">
