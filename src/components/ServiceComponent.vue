@@ -18,9 +18,10 @@
                             </ul>
                         </div>
                         <div v-if="plan.buttonText" class="card-footer bg-light">
-                            <a :href="plan.link" class="btn btn-light border text-dark text-capitalize" style="">
+                            <a :href="plan.link" class="btn btn-light border text-dark text-capitalize w-100" style="">
                                 <img v-if="plan.logo" :src="plan.logo" style="width:30px; height: 30px; object-fit: contain;" alt="">
-                                {{ plan.buttonText }}
+                                <i v-else class="bi bi-sliders mx-2"></i>
+                                <span class="text-uppercase">{{ plan.buttonText }}</span>
                             </a>
                         </div>
                     </div>
