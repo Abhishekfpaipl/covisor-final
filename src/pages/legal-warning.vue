@@ -1,81 +1,74 @@
 <template>
-    <div >
+    <div>
         <div class="text-center fw-bold py-5 text-white" style="background-color: var(--brand-color)">
             <p class="fs-1">Legal Warning</p>
         </div>
         <div class="container py-5 rounded-top-5 bg-white" style="margin-top: -40px;">
-            <div class="card border-0"> 
+            <div class="card border-0">
                 <div class="card-body text-start">
-                    <p><strong>Please read this legal warning ("Disclaimer") carefully before using our Lead
-                            Management Software ("Software").</strong></p>
+                    <h1>Legal Warning</h1>
 
-                    <ol>
-                        <li>
-                            <strong>Acceptance of Terms:</strong> By accessing and using the Software, you agree to
-                            be bound by the terms and conditions set forth in this Disclaimer. If you do not agree
-                            with any part of this Disclaimer, you must not use the Software.
-                        </li>
-                        <li>
-                            <strong>No Warranty:</strong> The Software is provided "as is" and "as available,"
-                            without any representations or warranties of any kind, express or implied. We do not
-                            warrant that the Software will be uninterrupted, error-free, or free of harmful
-                            components. We disclaim all warranties, including but not limited to, implied warranties
-                            of merchantability, fitness for a particular purpose, and non-infringement.
-                        </li>
-                        <li>
-                            <strong>Limitation of Liability:</strong> In no event shall we be liable for any direct,
-                            indirect, incidental, special, or consequential damages, or damages for loss of profits,
-                            revenue, data, or use, incurred by you or any third party, whether in an action in
-                            contract, tort, or otherwise, arising from your access to, or use of, the Software.
-                        </li>
-                        <li>
-                            <strong>Compliance with Laws:</strong> You agree to comply with all applicable laws and
-                            regulations when using the Software. It is your responsibility to ensure that your use
-                            of the Software does not violate any applicable laws or regulations.
-                        </li>
-                        <li>
-                            <strong>Intellectual Property:</strong> All intellectual property rights in and to the
-                            Software and all content and materials contained therein are owned by us or our
-                            licensors. You are granted a limited, non-exclusive, non-transferable, revocable license
-                            to use the Software for its intended purpose, subject to the terms of this Disclaimer.
-                        </li>
-                        <li>
-                            <strong>Third-Party Services:</strong> The Software may contain links to third-party
-                            websites or services that are not owned or controlled by us. We have no control over,
-                            and assume no responsibility for, the content, privacy policies, or practices of any
-                            third-party websites or services.
-                        </li>
-                        <li>
-                            <strong>Modification and Termination:</strong> We reserve the right to modify or
-                            discontinue, temporarily or permanently, the Software or any features or portions
-                            thereof without prior notice. We also reserve the right to terminate your access to the
-                            Software at our sole discretion, without notice and without liability to you.
-                        </li>
-                        <li>
-                            <strong>Governing Law:</strong> This Disclaimer shall be governed by and construed in
-                            accordance with the laws of India, without regard to its conflict of law principles. Any
-                            disputes arising out of or in connection with this Disclaimer shall be subject to the
-                            exclusive jurisdiction of the courts located in [Your City], India.
-                        </li>
-                        <li>
-                            <strong>Contact Information:</strong> If you have any questions or concerns regarding
-                            this Disclaimer or the Software, please contact us at [Your Contact Information].
-                        </li>
-                    </ol>
+                    <p><strong>PLEASE READ THIS LEGAL WARNING CAREFULLY BEFORE USING OUR WEBSITE OR SERVICES.</strong>
+                    </p>
 
-                    <p>By using our Software, you acknowledge that you have read, understood, and agree to be bound
-                        by this Disclaimer.</p>
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>By accessing or using the website and services of Covisor Infotech, you agree to be bound by
+                        this Legal Warning, our Terms of Service, Privacy Policy, and all applicable laws and
+                        regulations. If you do not agree with any part of these terms, you must not use our website or
+                        services.</p>
 
-                    <div class="mt-4">
-                        <p><strong>Covisor</strong></p>
-                        <p>2nd Floor, Block B1/632,
-                            Janakpuri, 110058, Delhi, India</p>
-                        <p>support@salwsik.in</p>
-                        <p>8860012001</p>
-                    </div>
+                    <h2>2. Intellectual Property Rights</h2>
+                    <p>All content on this website, including but not limited to text, graphics, logos, images, audio
+                        clips, digital downloads, and software, is the property of Covisor Infotech or its content
+                        suppliers and is protected by Indian and international copyright laws. Unauthorized use,
+                        reproduction, or distribution of this content is strictly prohibited and may result in severe
+                        civil and criminal penalties.</p>
+
+                    <h2>3. Limitation of Liability</h2>
+                    <p>Covisor Infotech and its affiliates shall not be liable for any direct, indirect, incidental,
+                        consequential, or punitive damages arising out of your access to, or use of, the website and our
+                        services. This includes, but is not limited to, loss of data, income, or profit, and property
+                        damage, whether based on warranty, contract, tort, or any other legal theory, and whether or not
+                        we have been advised of the possibility of such damages.</p>
+
+                    <h2>4. Accuracy of Information</h2>
+                    <p>While we strive to provide accurate and up-to-date information on our website, we make no
+                        representations or warranties of any kind, express or implied, about the completeness, accuracy,
+                        reliability, suitability, or availability of the website or the information, products, services,
+                        or related graphics contained on the website for any purpose.</p>
+
+                    <h2>5. Third-Party Links</h2>
+                    <p>Our website may contain links to third-party websites or services that are not owned or
+                        controlled by Covisor Infotech. We have no control over, and assume no responsibility for,
+                        the content, privacy policies, or practices of any third-party websites or services.</p>
+
+                    <h2>6. Indemnification</h2>
+                    <p>You agree to indemnify, defend, and hold harmless Covisor Infotech, its officers, directors,
+                        employees, agents, and affiliates from and against any and all claims, liabilities, damages,
+                        losses, or expenses, including reasonable attorneys' fees and costs, arising out of or in any
+                        way connected with your access to or use of our website and services.</p>
+
+                    <h2>7. Governing Law and Jurisdiction</h2>
+                    <p>This Legal Warning shall be governed by and construed in accordance with the laws of India. Any
+                        dispute arising under or in connection with this Legal Warning shall be subject to the exclusive
+                        jurisdiction of the courts located in [Your City/State], India.</p>
+
+                    <h2>8. Changes to Legal Warning</h2>
+                    <p>We reserve the right to modify this Legal Warning at any time without prior notice. Your
+                        continued use of our website and services after any changes indicates your acceptance of the
+                        modified Legal Warning.</p>
+
+                    <h2>9. Contact Information</h2>
+                    <p>If you have any questions about this Legal Warning, please contact us at:</p>
+                    <p>Covisor Infotech<br>
+                        Email: support@covisor.in<br>
+                        Phone: +91 8860012001<br>
+                        Address: Address : 2nd Floor, Block B1/632, Janakpuri, 110058, Delhi, India</p>
+
+                    <p>Last Updated: 08/2024</p>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 </template>
 

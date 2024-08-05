@@ -9,14 +9,14 @@
                     style="color:var(--brand-color) !important">covisor</span>
             </router-link>
         </div>
-        <div class="d-flex gap-2 align-items-center" 
-            :class="{ 'hide-on-scroll': hideOnScroll }">
-            <button class="btn text-white d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#contactModal" style="background-color: var(--brand-color);">
-                <i class="bi bi-telephone fs-4"></i>
-                <span class="d-none d-md-block">Contact Sales</span>
+        <div class="d-flex gap-1 align-items-center" :class="{ 'hide-on-scroll': hideOnScroll }">
+            <button class="btn d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#contactModal"
+                style="color: var(--brand-color);">
+                <i class="bi bi-telephone-inbound-fill fs-5"></i>
+                <span class="d-md-block d-none">Contact Sales</span>
             </button>
-            <i class="bi bi-list fs-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample"></i>
+            <i class="bi bi-list btn text-white p-0 fs-4 px-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample" style="background-color: var(--brand-color);"></i>
         </div>
     </div>
     <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasExample"
@@ -56,7 +56,7 @@
                 </router-link>
             </ul>
             <p class="text-center fs-4 my-4">Reach Us</p>
-            <div class="d-flex justify-content-evenly fs-2 w-100"> 
+            <div class="d-flex justify-content-evenly fs-2 w-100">
                 <a href="https://www.facebook.com/" class="text-decoration-none" style="color: var(--primary-color)">
                     <i class="bi bi-facebook"></i>
                 </a>
@@ -125,22 +125,22 @@ export default {
                 {
                     id: 3,
                     title: 'Contact Us',
-                    path: '/contact-us', 
+                    path: '/contact-us',
                 },
                 {
                     id: 4,
                     title: 'About Us',
-                    path: '/about-us',  
+                    path: '/about-us',
                 },
                 {
                     id: 4,
                     title: 'Patnership',
-                    path: '/reseller-program', 
+                    path: '/reseller-program',
                 },
                 {
                     id: 4,
                     title: 'Career',
-                    path: '/career', 
+                    path: '/career',
                 },
             ],
             backgroundOpacity: 0,

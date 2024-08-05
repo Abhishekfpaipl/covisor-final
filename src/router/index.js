@@ -109,6 +109,16 @@ const routes = [
     name: "free-consultation",
     component: () => import('@/pages/free-consultation.vue')
   },
+  {
+    path: "/cookies",
+    name: "CookiesPage",
+    component: () => import('@/pages/CookiesPage.vue')
+  },
+  {
+    path: "/return-policy",
+    name: "ReturnPolicyPage",
+    component: () => import('@/pages/ReturnPolicyPage.vue')
+  },
 
 ];
 

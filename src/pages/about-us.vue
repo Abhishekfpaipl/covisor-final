@@ -12,7 +12,7 @@
         </div>
         <div class="">
             <CustomCounter service="satisfied customers" :serviceCount="1000" category="years of expirence"
-                :categoryCount="10" place="projects completed" :placeCount="4000" image="/img/smile.svg"
+                :categoryCount="10" place="projects completed" :placeCount="4000" image="/img/smile2.svg"
                 title="know about us" path="/" v-observe />
         </div>
         <div class="my-5">

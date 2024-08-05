@@ -5,9 +5,9 @@
                 <router-link to="/">
                     <img :src="img" style="width: 100px;object-fit: contain;">
                 </router-link>
-                <p class="mb-0 fw-bold fs-2 text-uppercase" >covisor</p>
-                <p class="mb-0 fs-4 fw-bold text-uppercase" >Infotech Pvt Ltd</p>
-                <p class="my-0 text-capitalize fs-4" >solutions for business</p>
+                <p class="mb-0 fw-bold fs-2 text-uppercase">covisor</p>
+                <p class="mb-0 fs-4 fw-bold text-uppercase">Infotech Pvt Ltd</p>
+                <p class="my-0 text-capitalize fs-4">solutions for business</p>
 
             </div>
 
@@ -28,16 +28,18 @@
             <div class="col-12 col-md-4 d-flex justify-content-around">
                 <div class="mb-3 text-start">
                     <p class="mb-2 fw-bold">Company</p>
-                    <div class="d-flex flex-column"> 
-                        <router-link :to="link.link" class="text-decoration-none my-1 " style="color: var(--brand-color) !important"
-                            v-for="(link, index) in company" :key="index">{{ link.name }}</router-link>
+                    <div class="d-flex flex-column">
+                        <router-link :to="link.link" class="text-decoration-none my-1 "
+                            style="color: var(--brand-color) !important" v-for="(link, index) in company"
+                            :key="index">{{ link.name }}</router-link>
                     </div>
                 </div>
                 <div class="mb-3 text-start">
                     <p class="mb-2 fw-bold">Resources</p>
-                    <div class="d-flex flex-column"> 
-                        <router-link :to="link.link" class="text-decoration-none my-1" style="color: var(--brand-color) !important"
-                            v-for="(link, index) in links" :key="index">{{ link.name }}</router-link>
+                    <div class="d-flex flex-column">
+                        <router-link :to="link.link" class="text-decoration-none my-1"
+                            style="color: var(--brand-color) !important" v-for="(link, index) in links" :key="index">{{
+                            link.name }}</router-link>
                     </div>
                 </div>
             </div>
@@ -80,6 +82,11 @@ export default {
                     name: 'Career',
                     link: '/career'
                 },
+                {
+                    id: 3,
+                    name: 'Business',
+                    link: '/business'
+                },
             ],
             links: [
                 {
@@ -97,12 +104,18 @@ export default {
                     name: 'Terms Of Use',
                     link: '/terms-of-use'
                 },
-
                 {
-                    id: 3,
-                    name: 'Business',
-                    link: '/business'
+                    id: 1,
+                    name: 'Cookies',
+                    link: '/cookies'
                 },
+                {
+                    id: 1,
+                    name: 'Return Policy',
+                    link: '/return-policy'
+                },
+
+
 
             ],
         }
