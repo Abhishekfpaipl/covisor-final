@@ -4,8 +4,9 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 import observe from "./directives/v-observe.js";
+import VueHead from 'vue-head';
 
-createApp(App).directive('observe', observe).use(store).use(router).mount("#app");
+createApp(App).directive('observe', observe).use(store).use(router).use(VueHead).mount("#app");
 document.addEventListener('keydown', function (e) {
     // F12
     if (e.keyCode === 123) {

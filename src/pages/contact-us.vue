@@ -5,8 +5,34 @@
             <h1 class="text-center mb-0 fw-bold">Contact Page</h1>
             <p class="small mb-0 text-capitalize text-center">The secret of getting ahead, is getting started</p>
         </div>
-        <div class="container bg-white rounded-top-5" style="margin-top: -40px;" v-observe>
-            <div class="row p-3">
+        <div class="container bg-white rounded-top-5 py-5" style="margin-top: -40px;" v-observe>
+            <h1 class="text-uppercase mb-4 text-center">Need to get in touch with us?</h1>
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="/img/contactus.svg" style="width: 500px; max-width: 80%;" alt="">
+                </div>
+                <div class="col-12 col-md-6 mt-5 mt-md-0 d-flex">
+                    <div class="row row-cols-1">
+                        <div v-for="(icon, index) in contact" :key="index" class="col py-2"
+                            @click="handleIconClick(icon.action)">
+                            <div class="d-flex justify-content-between align-items-center border p-2 px-4">
+                                <a class="text-dark d-flex gap-2 align-items-center text-decoration-none"
+                                    :href="icon.url" target="_blank">
+                                    <i :class="icon.icon" class=""></i>
+                                    <p class="text-start ms-2 fw-bold mb-0">{{ icon.name }}</p>
+                                </a>
+                                <img src="/img/right-arrow.svg" style="width: 30px;filter: invert(1);" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="mt-5 py-5 text-white" style="background-color: var(--brand-color)" v-observe>
+         <div class="container">
+            <div class="row p-3 gx-md-5">
                 <div class="col-12 col-md-6 pt-4 text-center">
                     <ContactForm />
 
@@ -23,38 +49,16 @@
                 </div>
 
             </div>
+         </div>
         </div>
-        <div class="container-fluid mt-5 py-5 text-white" style="background-color: var(--brand-color)" v-observe>
-            <h1 class="text-uppercase mb-4 text-center">Need to get in touch with us?</h1>
-            <div class="row">
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="/img/contactus.svg" style="width: 500px; max-width: 80%;" alt="">
-                </div>
-                <div class="col-12 col-md-6 mt-5 mt-md-0 d-flex">
-                    <div class="row row-cols-1">
-                        <div v-for="(icon, index) in contact" :key="index" class="col py-2"
-                            @click="handleIconClick(icon.action)">
-                            <div class="d-flex justify-content-between align-items-center border p-2 px-4">
-                                <a class="text-white d-flex gap-2 align-items-center text-decoration-none"
-                                    :href="icon.url" target="_blank">
-                                    <i :class="icon.icon" class=""></i>
-                                    <p class="text-start ms-2 fw-bold mb-0">{{ icon.name }}</p>
-                                </a>
-                                <img src="/img/right-arrow.svg" style="width: 30px;filter: invert(1);" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div> 
     </div>
 </template>
 
 <script>
-import ContactForm from "@/components/ContactForm.vue"; 
+import ContactForm from "@/components/ContactForm.vue";
 export default {
     name: "ContactPage",
-    components: { 
+    components: {
         ContactForm,
     },
     data() {
@@ -161,14 +165,14 @@ export default {
 .cutout>span:before {
     right: 100%;
     border-bottom: 2px solid;
-    border-color: black;
+    border-color: #ffc107;
     border-image-slice: 1;
 }
 
 .cutout>span:after {
     left: 100%;
     border-bottom: 2px solid;
-    border-color: black;
+    border-color: #ffc107;
     border-image-slice: 1;
 }
 </style>

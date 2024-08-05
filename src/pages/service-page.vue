@@ -18,7 +18,7 @@
         </div>
         <div class="">
             <AutoScrolling :links="autoScrolling" imageFilter="invert(1)" textColor="text-white" bgColor="#02539E"
-                title="our tech service provider" v-observe />
+                title="our tech service providers" v-observe />
         </div>
         <div class="">
             <FaqSection :faqs="faqs" image-src="/img/faq.svg" title="Frequently asked questions" image-position="left"

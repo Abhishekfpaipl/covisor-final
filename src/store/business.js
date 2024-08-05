@@ -111,9 +111,10 @@ export default {
             { id: 107, img: '', name: "Drug De Addiction Centres" }
         ],
         services: [
-            { id: 1, name: "Digital Marketing", description: "Track and manage leads throughout the sales pipeline efficiently." },
-            { id: 2, name: "Website Development", description: "Manage customer relationships, track interactions, and streamline sales processes." },
-            { id: 3, name: "Software Development", description: "Generate and capture leads through various online and offline channels." },
+            { id: 2, name: "Business Automation", description: "Streamline operations, boost efficiency, and accelerate growth with our customized business automation solutions." },
+            { id: 2, name: "Website Development", description: "Create stunning, functional websites that engage visitors and drive business growth with our expert development services." },
+            { id: 3, name: "Software Development", description: "Build custom, scalable software solutions tailored to your specific business needs and industry requirements." },
+            { id: 1, name: "Digital Marketing", description: "Boost your online presence and attract targeted customers through strategic, data-driven digital marketing campaigns." },
         ],
         customers: [
             { id: 1, name: "Businessman", color: "#c6def1" },

@@ -38,6 +38,7 @@ export default {
                 // 'Graphic designing',
                 // 'B2B ecommerce development',
                 // 'B2C ecommerce development',
+                'Business Automation',
                 'Website Development',
                 'Software Development',
                 'Digital Marketing',

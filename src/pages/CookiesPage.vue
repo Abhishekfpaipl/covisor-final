@@ -10,7 +10,7 @@
                         <div class="card-body">
                             <h1>Cookies Policy</h1>
 
-                            <p>This Cookies Policy explains how Covisor Infotech ("we", "us", or "our") uses cookies and
+                            <p>This Cookies Policy explains how Covisor Infotech Pvt Ltd. ("we", "us", or "our") uses cookies and
                                 similar
                                 technologies on our website. This policy is in accordance with the Information
                                 Technology Act, 2000 and

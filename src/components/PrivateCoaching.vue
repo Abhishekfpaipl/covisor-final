@@ -1,8 +1,8 @@
 <template> 
-        <div class="container py-5">
+        <div class="container">
             <h3 class="text-center text-uppercase">{{ title }}</h3>
             <h1 class="text-center text-uppercase">{{ subtitle }}</h1>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-1 g-md-5 mt-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-1 g-md-5">
                 <div class="col" v-for="(coach, index) in coaching" :key="index">
                     <div class="card text-dark p-2 bg-light"  >
                         <i v-if="coach.icon" :class="coach.icon" class="fs-1"></i>

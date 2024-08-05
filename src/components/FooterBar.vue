@@ -16,12 +16,19 @@
                 <p class="mb-2">Email : support@covisor.in</p>
                 <p class="mb-2">Mob no. : 91 8860012001</p>
                 <p class="mb-2">Address : 2nd Floor, Block B1/632, <br> Janakpuri, 110058, Delhi, India</p>
-                <div class="d-flex gap-2 justify-content-center">
-                    <p class="fw-bold">Follow Us :</p>
+                <div class="d-flex gap-2 justify-content-center align-items-center">
+                    <p class="fw-bold mb-0">Follow Us :</p>
                     <!-- <i class="bi bi-twitter-x"></i> -->
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-linkedin"></i>
-                    <i class="bi bi-youtube"></i>
+                    <a href="https://www.facebook.com/Ayush.Covisor/"
+                        class="d-flex align-items-center gap-2 text-decoration-none" style="color: var(--brand-color) !important">
+                        <i class="bi bi-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mr-ayushgupta/"
+                        class="d-flex align-items-center gap-2 text-decoration-none" style="color: var(--brand-color) !important">
+                        <i class="bi bi-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
                     <!-- <i class="bi bi-instagram"></i> -->
                 </div>
             </div>
@@ -39,7 +46,7 @@
                     <div class="d-flex flex-column">
                         <router-link :to="link.link" class="text-decoration-none my-1"
                             style="color: var(--brand-color) !important" v-for="(link, index) in links" :key="index">{{
-                            link.name }}</router-link>
+                                link.name }}</router-link>
                     </div>
                 </div>
             </div>
@@ -91,27 +98,27 @@ export default {
             links: [
                 {
                     id: 13,
-                    name: 'Legal',
+                    name: 'Legal Warnings',
                     link: '/legal-warning'
                 },
                 {
                     id: 1,
-                    name: 'Privacy Policy',
+                    name: 'Privacy Policies',
                     link: '/privacy-policy'
                 },
                 {
                     id: 1,
-                    name: 'Terms Of Use',
+                    name: 'Terms & Conditions',
                     link: '/terms-of-use'
                 },
                 {
                     id: 1,
-                    name: 'Cookies',
+                    name: 'Cookies Policies',
                     link: '/cookies'
                 },
                 {
                     id: 1,
-                    name: 'Return Policy',
+                    name: 'Return Policies',
                     link: '/return-policy'
                 },
 

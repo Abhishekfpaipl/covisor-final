@@ -12,7 +12,7 @@
 
                             <p>Last updated: 08/2024</p>
 
-                            <p>Covisor Infotech ("we", "us", or "our") is committed to protecting your privacy. This
+                            <p>Covisor Infotech Pvt Ltd. ("we", "us", or "our") is committed to protecting your privacy. This
                                 Privacy Policy explains how we collect, use, disclose, and safeguard your information
                                 when you visit our website or use our services.</p>
 
@@ -107,7 +107,7 @@
                             <h2>10. Contact Us</h2>
                             <p>If you have any questions about this Privacy Policy, please contact us:</p>
                             <p>
-                                Covisor Infotech<br>
+                                Covisor Infotech Pvt Ltd.<br>
                                 Email: support@covisor.in<br>
                                 Phone: +91 8860012001<br>
                                 Address: Address : 2nd Floor, Block B1/632, Janakpuri, 110058, Delhi, India

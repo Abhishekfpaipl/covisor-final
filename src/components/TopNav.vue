@@ -10,13 +10,19 @@
             </router-link>
         </div>
         <div class="d-flex gap-1 align-items-center" :class="{ 'hide-on-scroll': hideOnScroll }">
-            <button class="btn d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#contactModal"
+            <router-link to="/contact-us" class="btn d-flex align-items-center gap-2"
                 style="color: var(--brand-color);">
                 <i class="bi bi-telephone-inbound-fill fs-5"></i>
-                <span class="d-md-block d-none">Contact Sales</span>
-            </button>
-            <i class="bi bi-list btn text-white p-0 fs-4 px-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample" style="background-color: var(--brand-color);"></i>
+                <span class="d-md-block d-none">Contact</span>
+            </router-link>
+            <!-- <button class="btn d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#contactModal"
+                style="color: var(--brand-color);">
+                <i class="bi bi-telephone-inbound-fill fs-5"></i>
+                <span class="d-md-block d-none">Contact</span>
+            </button> -->
+            <i class="bi bi-list btn text-white p-0 fs-4 px-1" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+                style="background-color: var(--brand-color);"></i>
         </div>
     </div>
     <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasExample"
@@ -33,7 +39,7 @@
                     <button @click="selectMenu(index)" data-bs-dismiss="offcanvas"
                         class="btn rounded border-0 w-100 d-flex align-items-center p-0 py-1">
                         <div class="btn-toggle collapsed" data-bs-toggle="collapse"
-                            :data-bs-target="'#home-collapse' + index" aria-expanded="false">
+                            :data-bs-target="'#home-collapse' + index" aria-expanded="false" :disabled="index === 1">
                             <div class="d-flex align-items-center">
                                 <span>{{ link.title }}</span>
                             </div>
@@ -56,16 +62,20 @@
                 </router-link>
             </ul>
             <p class="text-center fs-4 my-4">Reach Us</p>
-            <div class="d-flex justify-content-evenly fs-2 w-100">
-                <a href="https://www.facebook.com/" class="text-decoration-none" style="color: var(--primary-color)">
+            <div class="d-flex justify-content-evenly fs-2 w-100 gap-3">
+                <a href="https://www.facebook.com/Ayush.Covisor/"
+                    class="btn rounded-0 text-decoration-none w-100 text-white"
+                    style="background-color: var(--brand-color)">
                     <i class="bi bi-facebook"></i>
+                    <span class="ms-2">Facebook</span>
                 </a>
-                <a href="https://in.linkedin.com/" class="text-decoration-none" style="color: var(--primary-color)">
+                <a href="https://www.linkedin.com/in/mr-ayushgupta/"
+                    class="btn rounded-0 text-decoration-none w-100 text-white"
+                    style="background-color: var(--brand-color)">
                     <i class="bi bi-linkedin"></i>
+                    <span class="ms-2">LinkedIn</span>
                 </a>
-                <a href="https://www.youtube.com/" class="text-decoration-none" style="color: var(--primary-color)">
-                    <i class="bi bi-youtube"></i>
-                </a>
+
             </div>
         </div>
     </div>
@@ -117,9 +127,10 @@ export default {
                     path: '',
                     bgColor: '#F8F9FA',
                     subCat: [
-                        { name: 'Digital Marketing', path: '/digital-marketing' },
+                        { name: 'Business Automation', path: '/business-automation' },
                         { name: 'Website Development', path: '/website-development' },
                         { name: 'Software Development', path: '/software-development' },
+                        { name: 'Digital Marketing', path: '/digital-marketing' },
                     ],
                 },
                 {

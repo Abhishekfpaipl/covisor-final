@@ -10,7 +10,7 @@
                         <div class="card-body">
                             <h1>Return and Refund Policy</h1>
 
-                            <p>Thank you for choosing Covisor Infotech for your website development, software
+                            <p>Thank you for choosing Covisor Infotech Pvt Ltd. for your website development, software
                                 development, and digital marketing needs. We are committed to delivering high-quality
                                 services to our clients. This Return and Refund Policy outlines our guidelines for
                                 returns, refunds, and cancellations.</p>
@@ -78,7 +78,7 @@
 
                             <h2>7. Contact Us</h2>
                             <p>If you have any questions about our Return and Refund Policy, please contact us at:</p>
-                            <p>Covisor Infotech<br>
+                            <p>Covisor Infotech Pvt Ltd.<br>
                                 Email: support@covisor.in<br>
                                 Phone:+91 8860012001</p>
 

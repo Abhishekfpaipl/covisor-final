@@ -1,5 +1,5 @@
 <template>
-    <div >
+    <div>
         <div class="text-center fw-bold py-5 text-white" style="background-color: var(--brand-color)" v-observe>
             <p class="fs-1">About Us</p>
         </div>
@@ -18,6 +18,13 @@
         <div class="my-5">
             <PrivateCoaching :coaching="mission" title=" " />
         </div>
+        <div class="">
+            <AutoScrolling :links="country" imageFilter="invert(1)" textColor="text-white" textSize="fs-4 pt-3"
+                bgColor="#02539E" title="we are currently working in" v-observe />
+        </div>
+        <div class="my-5">
+            <OurCoreValues />
+        </div>
     </div>
 </template>
 <script>
@@ -25,6 +32,8 @@ import SuccessStory from "@/components/SuccessStory.vue";
 import InfoSection from "@/components/InfoSection.vue";
 import CustomCounter from "@/components/CustomCounter.vue";
 import PrivateCoaching from "@/components/PrivateCoaching.vue";
+import AutoScrolling from "@/components/AutoScrolling.vue";
+import OurCoreValues from "@/components/OurCoreValues.vue";
 export default {
     name: "AboutUs",
     components: {
@@ -32,6 +41,8 @@ export default {
         InfoSection,
         CustomCounter,
         PrivateCoaching,
+        AutoScrolling,
+        OurCoreValues,
     },
     data() {
         return {
@@ -63,6 +74,9 @@ export default {
         },
         managementTeam() {
             return this.$store.getters['about/getManagementTeam']
+        },
+        country() {
+            return this.$store.getters.getCountries
         },
     },
 

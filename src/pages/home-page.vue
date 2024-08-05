@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <Banner brandColorOne="#125252" v-observe />
-    <CounterModal /> 
+    <!-- <CounterModal />  -->
     <div class="my-5">
       <WhatMakesUsDifferent :values="whatMakesUsDifferent" title="What makes us different ?" v-observe />
     </div>
@@ -15,7 +15,7 @@
       <WhyChooseUs v-observe />
     </div>
     <div class="">
-      <BookDemo :faqs="faqs" image-src="/img/demo.svg" title="let's book your free appointment" v-observe />
+      <BookDemo :faqs="faqs" image-src="/img/demo.svg" title="let's book your free consultation" v-observe />
     </div>
     <div class="">
       <AutoScrolling :links="scrolling" imageFilter="invert(1)" textColor="text-white" bgColor="#02539E"
@@ -27,13 +27,13 @@
     </div>
     <div class="my-5">
       <TestimonialSection />
-    </div> 
+    </div>
     <div class="">
       <ImageSection banner="/img/banner1.png" v-observe />
     </div>
     <div class="">
       <CustomCounter service="satisfied customers" :serviceCount="1000" category="years of expirence"
-        :categoryCount="10" place="projects completed" :placeCount="1500" image="/img/smile.svg"
+        :categoryCount="10" place="projects completed" :placeCount="1500" image="/img/smile2.svg"
         title="Here's the Impact we have created" path="/about-us" v-observe />
     </div>
     <div class="">
@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import Banner from "@/components/BannerSection.vue"; 
+import Banner from "@/components/BannerSection.vue";
 import WhatMakesUsDifferent from "@/components/WhatMakesUsDifferent.vue";
 import FreeConsultation from "@/components/FreeConsultation.vue";
 import AutoScrolling from "@/components/AutoScrolling.vue";
@@ -57,10 +57,10 @@ import CustomCounter from "@/components/CustomCounter.vue";
 import WhyChooseUs from "@/components/WhyChooseUs.vue";
 import FaqSection from "@/components/FaqSection.vue";
 import TestimonialSection from "@/components/HomeTestimonialSection.vue";
-import CounterModal from "@/components/CounterModal.vue";
+// import CounterModal from "@/components/CounterModal.vue";
 export default {
   components: {
-    Banner, 
+    Banner,
     WhatMakesUsDifferent,
     FreeConsultation,
     AutoScrolling,
@@ -71,7 +71,7 @@ export default {
     WhyChooseUs,
     FaqSection,
     TestimonialSection,
-    CounterModal,
+    // CounterModal,
   },
   computed: {
     scrolling() {
@@ -86,6 +86,59 @@ export default {
     whatMakesUsDifferent() {
       return this.$store.getters.getWhatMakesUsDifferent
     }
+  },
+  head() {
+    return {
+      title: 'Business Automation, Website Development, Software Development & Digital Marketing Services',
+      meta: [
+        {
+          name: 'description',
+          content: 'Discover expert business automation, website development, software development, and digital marketing services. Enhance your business efficiency and online presence with our top-notch solutions.'
+        },
+        {
+          name: 'keywords',
+          content: 'business automation, website development, software development, digital marketing, Vue.js, web development, online marketing, business solutions'
+        },
+        {
+          property: 'og:title',
+          content: 'Business Automation, Website Development, Software Development & Digital Marketing Services'
+        },
+        {
+          property: 'og:description',
+          content: 'Discover expert business automation, website development, software development, and digital marketing services. Enhance your business efficiency and online presence with our top-notch solutions.'
+        },
+        {
+          property: 'og:image',
+          content: '/img/logo.svg'
+        },
+        {
+          property: 'og:url',
+          content: 'https://www.covisor.in'
+        },
+      ],
+      script: [
+        {
+          type: 'application/ld+json',
+          json: {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Covisor Infotech",
+            "url": "https://www.covisor.in",
+            "logo": "/img/logo.svg",
+            "sameAs": [
+              "https://www.facebook.com/Ayush.Covisor/",
+              "https://www.linkedin.com/in/mr-ayushgupta/"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91 8860012001",
+              "contactType": "Customer Service"
+            },
+            "description": "Discover expert business automation, website development, software development, and digital marketing services. Enhance your business efficiency and online presence with our top-notch solutions."
+          }
+        }
+      ]
+    };
   }
 }
 </script>

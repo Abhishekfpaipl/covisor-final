@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h1 class="my-4 text-center text-capitalize">We are offering softwares</h1>
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-2">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-2 g-md-4">
             <div class="col" v-for="(service, index) in services" :key="index">
                 <router-link :to="'/service-sentence/' + service.name" class="card text-decoration-none">
                     <div class="d-flex justify-content-center align-items-center py-2">

@@ -73,7 +73,7 @@ const routes = [
     path: "/reseller-program",
     name: "reseller-program",
     component: () => import("@/pages/reseller-program.vue")
-  }, 
+  },
   {
     path: "/service/:slug",
     name: "service-page",
@@ -105,9 +105,9 @@ const routes = [
     component: () => import('@/pages/SoftwareDevelopmentPage.vue')
   },
   {
-    path: "/free-consultation",
-    name: "free-consultation",
-    component: () => import('@/pages/free-consultation.vue')
+    path: "/business-automation",
+    name: "business-automation",
+    component: () => import('@/pages/business-automation.vue')
   },
   {
     path: "/cookies",

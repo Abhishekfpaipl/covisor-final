@@ -1,10 +1,11 @@
 <template>
     <div class="my-5 py-3" style="background-color: var(--brand-color);">
         <div class="container d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-white mt-3 mb-2 text-capitalize text-center"> make your business <br> scalable, profitable, and
+            <h1 class="text-white mt-3 mb-2 text-capitalize text-center">Business Automation</h1>
+            <h5 class="text-white mb-2 text-capitalize text-center"> make your business scalable, profitable, and
                 on
-                autopilot </h1>
-            <h5 class="text-center text-capitalize card p-4 my-2">no more
+                autopilot </h5>
+            <h5 class="text-center text-capitalize card p-4 py-2 my-2">no more
                 trainings now, its time to implement in your business</h5>
             <!-- <span class="card fs-5 text-center mb-3 text-dark p-2 text-capitalize "></span> -->
             <div class="row d-flex align-items-center rounded-md-5 rounded-0 text-dark">
@@ -14,9 +15,11 @@
                 <div class="col-12 col-md-6 d-flex flex-column mt-5 mt-md-0">
                     <div class="">
                         <p class="text-white text-capitalize text-center mb-0"> Get a complete health check-up for the
-                            important business areas and <span class="text-white text-capitalize text-center fw-bold">Get a hand holding guidance with one
+                            important business areas and <span
+                                class="text-white text-capitalize text-center fw-bold">Get a hand holding guidance with
+                                one
                                 to one sessions. </span></p>
-                        
+
                         <div class="d-flex justify-content-around align-items-center">
                             <div class="">
                                 <div v-for="(link, index) in test.slice(0, 5)" :key="index"
@@ -34,7 +37,7 @@
                             </div>
                         </div>
                     </div>
-                    <router-link to="/free-consultation" class="btn btn-warning text-capitalize fw-bold">Let's upgrade
+                    <router-link to="/business-automation" class="btn btn-warning text-capitalize fw-bold">Let's upgrade
                         from a busy man to businessman <i class="bi bi-arrow-right ms-2 fs-5"></i></router-link>
                 </div>
             </div>

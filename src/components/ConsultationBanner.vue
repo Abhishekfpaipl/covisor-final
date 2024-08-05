@@ -5,8 +5,9 @@
                 style="width:100%; height:400px; object-fit:cover;" />
             <img src="/img/homeBannerMob.jpg" class="d-md-none" style="width:100%; object-fit:cover;" />
             <div class="overlay text-white">
-                <h1 class="text-center text-uppercase">Personalized Business Development Program</h1>
-                <h3 class="text-center text-capitalize card p-4 my-4">One to One Consultation <br> for your <br> Step by
+                <h1 class="text-center text-uppercase">Business Automation</h1>
+                <h5 class="text-center text-uppercase">your Personalized Business Development Program</h5>
+                <h3 class="text-center text-capitalize card p-4 py-2 my-4">One to One Consultation <br> for your <br> Step by
                     Step Evolution</h3>
                 <p class="mt-3 text-capitalize">Do you want to see your business become scalable, profitable, and on
                     autopilot?<br> and you want implementation in your business and no more trainings now.</p>
